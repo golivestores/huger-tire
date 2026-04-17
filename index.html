@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html id="html" lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLCET83EP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WLCET83EP9');
+</script>
+	
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rttl4emcsp");
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimal-ui, viewport-fit=cover">
+    <meta name="google" content="notranslate">
+    <base href=".">
+
+    <title>Relats | Top tier solutions</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <!-- <link rel="manifest" href="https://toptier.relats.com/wp-content/themes/relats/img/favicon/site.webmanifest"> -->
+    <link rel="mask-icon" href="https://toptier.relats.com/wp-content/themes/relats/img/favicon/safari-pinned-tab.svg" color="#222222">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+    <script>history.scrollRestoration = "manual"</script>
+
+    <link href="favicon.png" rel="shortcut icon">
+    <!-- Google Fonts: DM Mono + Inter (Roobert substitute) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      /* Override Roobert with Inter (visually similar geometric sans) */
+      @font-face { font-family: Roobert; font-weight: 400; font-style: normal; src: local('Inter'); }
+      @font-face { font-family: Roobert; font-weight: 500; font-style: normal; src: local('Inter'); }
+
+      /* Tire loader */
+      #loader .inner {
+        background-color: #0a0a0a !important;
+      }
+      #loader .inner .floating {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+      }
+      #loader .inner .floating .gif {
+        width: 160px !important;
+        height: 160px !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        transform: scale(1) !important;
+      }
+      @media (max-width: 1100px) {
+        #loader .inner .floating .gif {
+          width: 100px !important;
+          height: 100px !important;
+        }
+      }
+      .tire-loader {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        opacity: 1 !important;
+        animation: tire-spin 2s linear infinite;
+      }
+      @keyframes tire-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      #loader .inner .floating .progress {
+        color: #555 !important;
+        font-family: 'DM Mono', monospace !important;
+        font-size: 48px !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      /* Dark overlay on about section background image */
+      .component--about .image.--cover {
+        position: relative;
+      }
+      .component--about .image.--cover::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.45);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* === Certifications Wall === */
+      .component--certs {
+        background: #0a0a0a;
+        padding: 120px 0;
+        overflow: hidden;
+      }
+      .certs-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+      .certs-header {
+        text-align: center;
+        margin-bottom: 80px;
+      }
+      .certs-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 12px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.35);
+        margin-bottom: 20px;
+      }
+      .certs-title {
+        font-family: Roobert, Inter, sans-serif;
+        font-size: clamp(32px, 4vw, 56px);
+        font-weight: 500;
+        color: #fff;
+        margin: 0 0 16px 0;
+        letter-spacing: -1px;
+      }
+      .certs-subtitle {
+        font-family: Roobert, Inter, sans-serif;
+        font-size: clamp(14px, 1.2vw, 18px);
+        color: rgba(255,255,255,0.4);
+        margin: 0;
+        font-weight: 400;
+      }
+      .certs-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .cert-item {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px;
+        padding: 40px 24px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+      }
+      .cert-item:hover {
+        background: rgba(255,255,255,0.08);
+        border-color: rgba(255,255,255,0.12);
+        transform: translateY(-4px);
+      }
+      .cert-logo {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cert-logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+      }
+      .cert-item:hover .cert-logo img {
+        opacity: 1;
+      }
+      .cert-text-logo {
+        font-family: Roobert, Inter, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.7);
+        letter-spacing: 2px;
+        transition: color 0.3s ease;
+      }
+      .cert-item:hover .cert-text-logo {
+        color: #fff;
+      }
+      .cert-name {
+        font-family: Roobert, Inter, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+      }
+      .cert-region {
+        font-family: 'DM Mono', monospace;
+        font-size: 11px;
+        color: rgba(255,255,255,0.3);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      @media (max-width: 1100px) {
+        .component--certs { padding: 80px 0; }
+        .certs-inner { padding: 0 24px; }
+        .certs-header { margin-bottom: 48px; }
+        .certs-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .cert-item { padding: 32px 20px 24px; }
+        .cert-logo { width: 56px; height: 56px; }
+      }
+      @media (max-width: 600px) {
+        .certs-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .cert-item { padding: 24px 16px 20px; border-radius: 12px; }
+        .cert-logo { width: 48px; height: 48px; }
+        .cert-text-logo { font-size: 18px; }
+      }
+    </style>
+
+
+
+    <link rel="preload" href="js/vendor.min.js" as="script">
+    <link rel="preload" href="js/app.min.js" as="script">
+
+    
+<!-- Optimización para motores de búsqueda de Rank Math -  https://rankmath.com/ -->
+<meta name="description" content="Your 360° partner for safety in electromobility. Protection sleeves for the mobility of tomorrow."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://toptier.relats.com/" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Relats | Top tier solutions" />
+<meta property="og:description" content="Your 360° partner for safety in electromobility. Protection sleeves for the mobility of tomorrow." />
+<meta property="og:url" content="https://toptier.relats.com/" />
+<meta property="og:site_name" content="Top Tier Solutions" />
+<meta property="og:updated_time" content="2025-09-01T19:25:50+02:00" />
+<meta property="og:image" content="https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg" />
+<meta property="og:image:secure_url" content="https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Home" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2025-05-13T23:00:48+02:00" />
+<meta property="article:modified_time" content="2025-09-01T19:25:50+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Relats | Top tier solutions" />
+<meta name="twitter:description" content="Your 360° partner for safety in electromobility. Protection sleeves for the mobility of tomorrow." />
+<meta name="twitter:image" content="https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg" />
+<meta name="twitter:label1" content="Escrito por" />
+<meta name="twitter:data1" content="relatslanding" />
+<meta name="twitter:label2" content="Tiempo de lectura" />
+<meta name="twitter:data2" content="Menos de un minuto" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://toptier.relats.com/#person","name":"Relats Top Tier"},{"@type":"WebSite","@id":"https://toptier.relats.com/#website","url":"https://toptier.relats.com","name":"Top Tier Solutions","alternateName":"Relats","publisher":{"@id":"https://toptier.relats.com/#person"},"inLanguage":"es","potentialAction":{"@type":"SearchAction","target":"https://toptier.relats.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg","url":"https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg","width":"1200","height":"630","inLanguage":"es"},{"@type":"WebPage","@id":"https://toptier.relats.com/#webpage","url":"https://toptier.relats.com/","name":"Relats | Top tier solutions","datePublished":"2025-05-13T23:00:48+02:00","dateModified":"2025-09-01T19:25:50+02:00","about":{"@id":"https://toptier.relats.com/#person"},"isPartOf":{"@id":"https://toptier.relats.com/#website"},"primaryImageOfPage":{"@id":"https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg"},"inLanguage":"es"},{"@type":"Person","@id":"https://toptier.relats.com/author/relatslanding/","name":"relatslanding","url":"https://toptier.relats.com/author/relatslanding/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/08cbd14e4260bfc8556c45796b9ee4a003949d22cbe750c84b3ff9eeb906e39b?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/08cbd14e4260bfc8556c45796b9ee4a003949d22cbe750c84b3ff9eeb906e39b?s=96&amp;d=mm&amp;r=g","caption":"relatslanding","inLanguage":"es"},"sameAs":["https://local.relatslanding.com"]},{"@type":"Article","headline":"Relats | Top tier solutions","datePublished":"2025-05-13T23:00:48+02:00","dateModified":"2025-09-01T19:25:50+02:00","author":{"@id":"https://toptier.relats.com/author/relatslanding/","name":"relatslanding"},"publisher":{"@id":"https://toptier.relats.com/#person"},"description":"Your 360\u00b0 partner for safety in electromobility. Protection sleeves for the mobility of tomorrow.","name":"Relats | Top tier solutions","@id":"https://toptier.relats.com/#richSnippet","isPartOf":{"@id":"https://toptier.relats.com/#webpage"},"image":{"@id":"https://toptier.relats.com/wp-content/uploads/2025/09/top-tier-opengraph.jpeg"},"inLanguage":"es","mainEntityOfPage":{"@id":"https://toptier.relats.com/#webpage"}}]}</script>
+<!-- /Plugin Rank Math WordPress SEO -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://toptier.relats.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoptier.relats.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://toptier.relats.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoptier.relats.com%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://toptier.relats.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5' type='text/css' media='all' />
+<script type="text/javascript" src="https://toptier.relats.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-content/plugins/integration-for-cf7-pardot-form-handlers/js/functions.js?ver=2.0" id="iside-cf7-pardot-js"></script>
+
+<!-- Fragmento de código de la etiqueta de Google (gtag.js) añadida por Site Kit -->
+<!-- Fragmento de código de Google Analytics añadido por Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-WR97CW4C" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["toptier.relats.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-WR97CW4C");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://toptier.relats.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://toptier.relats.com/wp-json/wp/v2/pages/311" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://toptier.relats.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.4" />
+<link rel='shortlink' href='https://toptier.relats.com/' />
+<meta name="generator" content="Site Kit by Google 1.174.0" /><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+</head>
+<body class="home wp-singular page-template page-template-template-flexible page-template-template-flexible-php page page-id-311 wp-theme-relats" id="scrollup">
+
+    <div id="loader" class="loader">
+    <div class="inner">
+        <div class="floating --center">
+            <div class="gif">
+                <svg class="tire-loader" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Outer tire rubber -->
+                  <circle cx="60" cy="60" r="56" fill="#2d2d2d" stroke="#555" stroke-width="1.5"/>
+                  <!-- Tread surface -->
+                  <circle cx="60" cy="60" r="54" fill="none" stroke="#444" stroke-width="6"/>
+                  <!-- Tread grooves -->
+                  <g fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round">
+                    <line x1="60" y1="4" x2="60" y2="16"/>
+                    <line x1="87" y1="11.6" x2="80.5" y2="21.5"/>
+                    <line x1="108.4" y1="33" x2="98.5" y2="39.5"/>
+                    <line x1="116" y1="60" x2="104" y2="60"/>
+                    <line x1="108.4" y1="87" x2="98.5" y2="80.5"/>
+                    <line x1="87" y1="108.4" x2="80.5" y2="98.5"/>
+                    <line x1="60" y1="116" x2="60" y2="104"/>
+                    <line x1="33" y1="108.4" x2="39.5" y2="98.5"/>
+                    <line x1="11.6" y1="87" x2="21.5" y2="80.5"/>
+                    <line x1="4" y1="60" x2="16" y2="60"/>
+                    <line x1="11.6" y1="33" x2="21.5" y2="39.5"/>
+                    <line x1="33" y1="11.6" x2="39.5" y2="21.5"/>
+                  </g>
+                  <!-- Sidewall -->
+                  <circle cx="60" cy="60" r="40" fill="#222" stroke="#444" stroke-width="1"/>
+                  <!-- Rim outer -->
+                  <circle cx="60" cy="60" r="30" fill="#666" stroke="#777" stroke-width="1.5"/>
+                  <!-- Rim inner -->
+                  <circle cx="60" cy="60" r="28" fill="#555" stroke="#666" stroke-width="0.5"/>
+                  <!-- Rim spokes -->
+                  <g fill="#777" opacity="0.9">
+                    <rect x="57" y="36" width="6" height="14" rx="3" transform="rotate(0,60,60)"/>
+                    <rect x="57" y="36" width="6" height="14" rx="3" transform="rotate(72,60,60)"/>
+                    <rect x="57" y="36" width="6" height="14" rx="3" transform="rotate(144,60,60)"/>
+                    <rect x="57" y="36" width="6" height="14" rx="3" transform="rotate(216,60,60)"/>
+                    <rect x="57" y="36" width="6" height="14" rx="3" transform="rotate(288,60,60)"/>
+                  </g>
+                  <!-- Spoke holes -->
+                  <g fill="#444">
+                    <circle cx="60" cy="40" r="2" transform="rotate(36,60,60)"/>
+                    <circle cx="60" cy="40" r="2" transform="rotate(108,60,60)"/>
+                    <circle cx="60" cy="40" r="2" transform="rotate(180,60,60)"/>
+                    <circle cx="60" cy="40" r="2" transform="rotate(252,60,60)"/>
+                    <circle cx="60" cy="40" r="2" transform="rotate(324,60,60)"/>
+                  </g>
+                  <!-- Hub cap -->
+                  <circle cx="60" cy="60" r="12" fill="#777" stroke="#888" stroke-width="1"/>
+                  <circle cx="60" cy="60" r="5" fill="#888" stroke="#999" stroke-width="0.5"/>
+                </svg>
+            </div>
+            <div class="progress"><span>0</span>%</div>
+        </div>
+    </div>
+</div>
+
+    <div id="app" data-taxi>
+
+
+
+<div id="flexible" class="flexible --n-a" data-taxi-view="default" data-taxi-nocache data-taxi-slug="inicio">
+
+    <div class="inner">
+        
+            <header class="component component--header header " data-component="header" id="header">
+    <div class="container">
+        <div class="group">
+            <a href="javascript:void(0)" class="logo" aria-label="Go to Home page">
+                <img src="logo.png" alt="HUGER" style="height:34px;width:auto;mix-blend-mode:difference;filter:brightness(0) invert(1);">
+            </a>
+            <div class="mask"></div>
+            <ul id="menu-main" class="menu"><li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-311 current_page_item menu-item-347 is-active "><a href="javascript:void(0)" aria-current="page">Full view</a></li>
+<li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="javascript:void(0)">Overview</a></li>
+</ul>        </div>
+    </div>
+</header>
+
+                            
+                                        
+                    <section class="component component--hero hero " data-component="hero">
+        <div class="video --cover" data-desktop>
+        <video preload="auto" autoplay-onscroll loop playsinline muted>
+            <source data-src="hero3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video --cover" data-mobile>
+        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted>
+            <source data-src="hero3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="title --xlarge --na" data-desktop>Driven by Innovation<br>Built for the Road</div>
+        <div class="title --xlarge --na" data-mobile>Driven by Innovation Built for the Road</div>
+    </div>
+    <!-- <a href="javascript:void(0)" class="back"><i class="fa-regular fa-chevron-left"></i></a> -->
+    <div class="scrolldown">
+        <div class="mouse"></div>
+        <div class="text">Scroll down</div>
+    </div>
+</section>
+
+                
+                                        
+                    <section class="component component--intro intro" data-component="intro" autoplay-onscroll-parent>
+        <div class="sticky">
+        <div class="rows" data-desktop>
+            <div class="row --top">
+                <div class="video --cover --midleft">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/top-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --midright">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/top-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row --center">
+                <div class="video --cover --left">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/center-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --center">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/center.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --right">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/center-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row --bottom">
+                <div class="video --cover --midleft">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/bottom-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --midright">
+                    <video preload="auto" autoplay-onscroll loop playsinline muted>
+                        <source data-src="videos/intro/bottom-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="rows" data-mobile>
+            <div class="row --top">
+                <div class="video --cover --midleft">
+                    <video preload="auto" playsinline loop muted>
+                        <source data-src="videos/intro/top-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --midright">
+                    <video preload="auto" playsinline loop muted>
+                        <source data-src="videos/intro/top-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row --center">
+                <div class="video --cover --left">
+                    <video preload="auto" playsinline autoplay-onscroll loop muted>
+                        <source data-src="videos/intro/center-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --center">
+                    <video preload="auto" playsinline autoplay-onscroll loop muted>
+                        <source data-src="videos/intro/center.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --right">
+                    <video preload="auto" playsinline autoplay-onscroll loop muted>
+                        <source data-src="videos/intro/center-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row --bottom">
+                <div class="video --cover --midleft">
+                    <video preload="auto" playsinline loop muted>
+                        <source data-src="videos/intro/bottom-left.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video --cover --midright">
+                    <video preload="auto" playsinline loop muted>
+                        <source data-src="videos/intro/bottom-right.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="title --large --1 --na">From Raw Materials to the Road<br>Every Tire Tells Our Story</div>
+            <div class="title --large --2 --na">1.8 Million Tires a Year<br>Trusted Across 60+ Countries</div>
+        </div>
+    </div>
+</section>
+
+                
+                                        
+                    <section class="component component--revitex revitex" data-component="revitex">
+        <div class="desktop" data-desktop>
+        <div class="base"></div>
+        <div class="markers">
+            <div class="item --1"></div>
+            <div class="item --2"></div>
+            <div class="item --3"></div>
+        </div>
+        <div class="sticky">
+            <div class="video --cover">
+                <video preload="auto" playsinline muted>
+                    <source data-src="hot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="center">
+                <div class="title --jumbo --1 --na">Heat<br>Resistant</div>
+                <div class="title --jumbo --2 --na">Low Heat<br>Generation</div>
+                <div class="title --jumbo --3 --na">Extreme<br>Durability</div>
+            </div>
+            <div class="end">
+                <div class="image --cover --1">
+                    <img src="img/revitex/tire-1.jpg" alt="">
+                </div>
+                <div class="image --cover --2">
+                    <img src="img/revitex/tire-2.jpg" alt="">
+                </div>
+                <div class="image --cover --3">
+                    <img src="img/revitex/tire-3.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="navigation">
+                        <div class="label --plain">Crown Puncture Prevention</div>
+                        <div class="title --large --na">TAP Plus</div>
+                        <div class="title --large --na">TAP Pro</div>
+                        <div class="title --large --na">TAP Max</div>
+                        <div class="colours">
+                            <div class="label --plain">Technology Levels</div>
+                            <div class="swatch" style="background-color: #1a5fb4;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes --1">
+                    <div class="box --1">
+                        <div class="wysiwyg --small">Belt<br>Structure</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">4+2 (5+2)<br>Multi-layer<br>Reinforcement</div>
+                    </div>
+                    <div class="box --2">
+                        <div class="wysiwyg --small">Puncture<br>Resistance</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Crown tread<br>anti-puncture<br>adhesive layer</div>
+                    </div>
+                    <div class="box --3">
+                        <div class="wysiwyg --small">Skeleton<br>Material</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2" ry="2" transform="rotate(45 12 12)" fill="none"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Ultra-high strength<br>steel cord</div>
+                    </div>
+                </div>
+                <div class="boxes --2">
+                    <div class="box --1">
+                        <div class="wysiwyg --small">Belt<br>Structure</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">5+2 Multi-layer<br>Belt Package</div>
+                    </div>
+                    <div class="box --2">
+                        <div class="wysiwyg --small">Cut<br>Protection</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Anti-cutting<br>tread compound<br>technology</div>
+                    </div>
+                    <div class="box --3">
+                        <div class="wysiwyg --small">Block<br>Retention</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0-6v6"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Prevents crown<br>block chipping</div>
+                    </div>
+                </div>
+                <div class="boxes --3">
+                    <div class="box --1">
+                        <div class="wysiwyg --small">Belt<br>Layers</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Dual HE 0° belt<br>+ 4# HI layer<br>+ 3 ST+ layers</div>
+                    </div>
+                    <div class="box --2">
+                        <div class="wysiwyg --small">Impact<br>Resistance</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="title --xsmall --na">Maximum<br>crown protection<br>for harsh terrain</div>
+                    </div>
+                    <div class="box --3">
+                        <div class="wysiwyg --small">Mileage<br>Performance</div>
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div class="titles">
+                            <div class="title --xsmall --na">Extended tread life</div>
+                            <div class="title --xsmall --na">Reduced downtime</div>
+                            <div class="title --xsmall --na">Lower cost per km</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile" data-mobile>
+        <div class="start">
+            <div class="video --cover" data-mobile>
+                <video preload="auto" playsinline muted>
+                    <source data-src="hot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="groups">
+                <div class="group"><div class="title --xlarge --1 --na">Heat Resistant</div></div>
+                <div class="group"><div class="title --xlarge --2 --na">Low Heat Generation</div></div>
+                <div class="group"><div class="title --xlarge --3 --na">Extreme Durability</div></div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="navigation">
+                <div class="title --xlarge --1 --na">TAP Plus</div>
+                <div class="title --xlarge --2 --na">TAP Pro</div>
+                <div class="title --xlarge --3 --na">TAP Max</div>
+                <div class="colours">
+                    <div class="label --plain">Technology Levels</div>
+                    <div class="swatch" style="background-color: #1a5fb4;"></div>
+                </div>
+            </div>
+            <div class="image --cover --1">
+                <img src="img/revitex/tire-1.jpg" alt="">
+            </div>
+            <div class="image --cover --2">
+                <img src="img/revitex/tire-2.jpg" alt="">
+            </div>
+            <div class="image --cover --3">
+                <img src="img/revitex/tire-3.jpg" alt="">
+            </div>
+            <div class="boxes --1">
+                <div class="box --1">
+                    <div class="wysiwyg --small">Belt<br>Structure</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">4+2 (5+2)<br>Multi-layer<br>Reinforcement</div>
+                </div>
+                <div class="box --2">
+                    <div class="wysiwyg --small">Puncture<br>Resistance</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Crown tread<br>anti-puncture<br>adhesive layer</div>
+                </div>
+                <div class="box --3">
+                    <div class="wysiwyg --small">Skeleton<br>Material</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2" ry="2" transform="rotate(45 12 12)" fill="none"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Ultra-high strength<br>steel cord</div>
+                </div>
+            </div>
+            <div class="boxes --2">
+                <div class="box --1">
+                    <div class="wysiwyg --small">Belt<br>Structure</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">5+2 Multi-layer<br>Belt Package</div>
+                </div>
+                <div class="box --2">
+                    <div class="wysiwyg --small">Cut<br>Protection</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Anti-cutting<br>tread compound<br>technology</div>
+                </div>
+                <div class="box --3">
+                    <div class="wysiwyg --small">Block<br>Retention</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0-6v6"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Prevents crown<br>block chipping</div>
+                </div>
+            </div>
+            <div class="boxes --3">
+                <div class="box --1">
+                    <div class="wysiwyg --small">Belt<br>Layers</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Dual HE 0° belt<br>+ 4# HI layer<br>+ 3 ST+ layers</div>
+                </div>
+                <div class="box --2">
+                    <div class="wysiwyg --small">Impact<br>Resistance</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="title --xsmall --na">Maximum<br>crown protection<br>for harsh terrain</div>
+                </div>
+                <div class="box --3">
+                    <div class="wysiwyg --small">Mileage<br>Performance</div>
+                    <div class="icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF5710" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="titles">
+                        <div class="title --xsmall --na">Extended tread life</div>
+                        <div class="title --xsmall --na">Reduced downtime</div>
+                        <div class="title --xsmall --na">Lower cost per km</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                
+                                        
+                    <section class="component component--industries " data-component="industries" autoplay-onscroll-parent>
+        <div class="desktop" data-desktop>
+        <div class="markers">
+            <div class="base"></div>
+            <div class="item --1"></div>
+            <div class="item --2"></div>
+            <div class="item --3"></div>
+            <div class="item --4"></div>
+            <div class="item --5"></div>
+        </div>
+        <div class="sticky">
+            <div class="sections">
+                <div class="base">
+                    <div class="video --cover">
+                        <video preload="auto" playsinline muted>
+                            <source data-src="test.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="center">
+                        <div class="title --large --1 --na">Engineered Tread Patterns<br>for Every Road Condition</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="img/industries/hw1.webp">
+                            <source data-src="videos/industries/tab1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="img/industries/hw1.webp" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="img/industries/hw2.webp">
+                            <source data-src="videos/industries/tab2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="img/industries/hw2.webp" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="img/industries/hw3.webp">
+                            <source data-src="videos/industries/tab3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="img/industries/hw3.webp" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="img/industries/hw4.webp">
+                            <source data-src="videos/industries/tab4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="img/industries/hw4.webp" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="img/industries/hw1.webp">
+                            <source data-src="videos/industries/tab5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="img/industries/hw1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tabs">
+                    <div class="tab">
+                        <div class="title --small --na">Highway Long-haul</div>
+                        <div class="video">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted>
+                                <source data-src="videos/industries/tab1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="title --small --na">Heavy Load</div>
+                        <div class="video">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted>
+                                <source data-src="videos/industries/tab2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="title --small --na">Mixed Road</div>
+                        <div class="video">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted>
+                                <source data-src="videos/industries/tab3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="title --small --na">Mining & Construction</div>
+                        <div class="video">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted>
+                                <source data-src="videos/industries/tab4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="title --small --na">All-position</div>
+                        <div class="video">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted>
+                                <source data-src="videos/industries/tab5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="inner">
+                        <div class="box">
+                            <div class="title --xlarge --na">Pattern 606</div>
+                            <div class="group">
+                                <div class="label --plain">Tread Features</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">Low heat generation, anti-skid, good heat dissipation, wear resistant</div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Application</div>
+                                <div class="clearfix"></div>
+                                <div class="combolabel">
+                                    <div class="label --main">Highway</div>
+                                    <div class="label --white">Medium & long distance on expressway</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Sizes</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">11R22.5 · 11R24.5 · 295/75R22.5 · 315/80R22.5</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title --xlarge --na">Pattern 728</div>
+                            <div class="group">
+                                <div class="label --plain">Tread Features</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">Strong driving force, abrasion resistant, low heat generation, easy braking, long life</div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Application</div>
+                                <div class="clearfix"></div>
+                                <div class="combolabel">
+                                    <div class="label --main">Heavy Load</div>
+                                    <div class="label --white">Short & medium distance heavy cargo</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Sizes</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">12R22.5 · 295/80R22.5</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title --xlarge --na">Pattern 678</div>
+                            <div class="group">
+                                <div class="label --plain">Tread Features</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">Tear resistant, comfortable and safe, strong grip, deep water drainage grooves</div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Application</div>
+                                <div class="clearfix"></div>
+                                <div class="combolabel">
+                                    <div class="label --main">Mixed Road</div>
+                                    <div class="label --white">Medium & short distance mixed pavement</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Sizes</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">12R22.5 · 295/80R22.5</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title --xlarge --na">Pattern 758</div>
+                            <div class="group">
+                                <div class="label --plain">Tread Features</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">Strong drive, thorn resistance, anti falling block, strong grip for unpaved roads</div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Application</div>
+                                <div class="clearfix"></div>
+                                <div class="combolabel">
+                                    <div class="label --main">Mining</div>
+                                    <div class="label --white">Mining area, mountain, construction site</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Sizes</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">315/80R22.5 · 12R22.5</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title --xlarge --na">Pattern 999</div>
+                            <div class="group">
+                                <div class="label --plain">Tread Features</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">Good wear resistance, low noise, comfortable driving, unique tread structure</div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Application</div>
+                                <div class="clearfix"></div>
+                                <div class="combolabel">
+                                    <div class="label --main">All-position</div>
+                                    <div class="label --white">Medium & long distance on good road surface</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="label --plain">Sizes</div>
+                                <div class="clearfix"></div>
+                                <div class="title --small">12R22.5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dot">
+                    <div class="stroke"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile" data-mobile>
+        <div class="start">
+            <div class="sticky">
+                <div class="video --cover">
+                    <video preload="auto" playsinline autoplay-onscroll muted>
+                        <source data-src="test.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="center">
+                    <div class="title --large --1 --na">Engineered Tread Patterns<br>for Every Road Condition</div>
+                </div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="label --plain">Tread Pattern Series</div>
+            <div class="scroll">
+            <div class="inner">
+                <div class="box">
+                    <div class="video --cover">
+                        <video preload="auto" autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/construction.jpg">
+                            <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/construction-mobile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/plas8-na.png" alt="">
+                    </div>
+                    <div class="top">
+                        <div class="video --cover">
+                            <video preload="auto" autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/construction.jpg">
+                                <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/construction-mobile.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="title --small --na">Construction machines</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --xlarge --na">PLAS8 NA</div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/temperature.svg" alt=""></div>Operating temperature</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">-70ºC to +150ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain">Abrasion resistance</div>
+                            <div class="clearfix"></div>
+                            <div class="combolabel">
+                                <div class="label --main">ISO 6722-1</div>
+                                <div class="label --white">Class 4 (4.000 - 14.999 cycles)</div>
+                            </div>
+                        </div>
+                        <div class="group --colours">
+                            <div class="label --plain">Available in</div>
+                            <div class="swatch" style="background-color: #FF5710;"></div>
+                            <div class="swatch" style="background-color: #1C1C1C;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                     <div class="video --cover">
+                        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/hybrid.jpg">
+                            <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/hybrid-mobile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/revitex-vhg10.png" alt="">
+                    </div>
+                    <div class="top">
+                        <div class="video --cover">
+                            <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/hybrid.jpg">
+                                <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/hybrid-mobile.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="title --small --na">Hybrid & electric</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --xlarge --na">Revitex VHG10<br>Purple</div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/temperature.svg" alt=""></div>Operating temperature</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">-70ºC to +225ºC (Peaks at +300ºC)</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/impact.svg" alt=""></div>Impact protection</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">LV 312-3 X < 25</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video --cover">
+                        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/buses.jpg">
+                            <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/buses-mobile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/periflex-ps.png" alt="">
+                    </div>
+                    <div class="top">
+                        <div class="video --cover">
+                            <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/buses.jpg">
+                                <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/buses-mobile.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="title --small --na">Buses & trucks</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --xlarge --na">Periflex PS</div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/temperature.svg" alt=""></div>Operating temperature</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">-70ºC to +150ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain">Expansion Ratio</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">1:2</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain">Abrasion resistance</div>
+                            <div class="clearfix"></div>
+                            <div class="combolabel">
+                                <div class="label --main">ISO 6722-1</div>
+                                <div class="label --white">Class 4 (4.000 - 14.999 cycles)</div>
+                            </div>
+                        </div>
+                        <div class="group --colours">
+                            <div class="label --plain">Available in</div>
+                            <div class="swatch" style="background-color: #FF5710;"></div>
+                            <div class="swatch" style="background-color: #1C1C1C;"></div>
+                            <div class="swatch" style="background-color: #D3D2CD;"></div>
+                            <div class="swatch" style="background-color: #753B83;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video --cover">
+                        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/railway.jpg">
+                            <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/railway-mobile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/revitex-vsctf.png" alt="">
+                    </div>
+                    <div class="top">
+                        <div class="video --cover">
+                            <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/railway.jpg">
+                                <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/railway-mobile.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="title --small --na">Railway</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --xlarge --na">Revitex<br>VSCTF RW</div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/temperature.svg" alt=""></div>Operating temperature</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">-70ºC to +235ºC (Peaks at +300ºC)</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain">Fire Behaviour</div>
+                            <div class="clearfix"></div>
+                            <div class="label --secondary">EN 45545-2</div><br>
+                            <div class="label --plain">R22 Hazard Level: H1, H2</div><br>
+                            <div class="label --plain">R23 Hazard Level: H3</div>
+                        </div>
+                        <div class="group --colours">
+                            <div class="label --plain">Available in</div>
+                            <div class="swatch" style="background-color: #821b17;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="video --cover">
+                        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/agriculture.jpg">
+                            <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/agriculture-mobile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/plas8-na2.png" alt="">
+                    </div>
+                    <div class="top">
+                        <div class="video --cover">
+                            <video preload="auto" playsinline autoplay-onscroll loop playsinline muted poster="https://toptier.relats.com/wp-content/themes/relats/videos/industries/agriculture.jpg">
+                                <source data-src="https://toptier.relats.com/wp-content/themes/relats/videos/industries/agriculture-mobile.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="title --small --na">Agriculture machines</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --xlarge --na">PLAS8 NA</div>
+                        <div class="group">
+                            <div class="label --plain"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/temperature.svg" alt=""></div>Operating temperature</div>
+                            <div class="clearfix"></div>
+                            <div class="title --small">-70ºC to +150ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="label --plain">Abrasion resistance</div>
+                            <div class="clearfix"></div>
+                            <div class="combolabel">
+                                <div class="label --main">ISO 6722-1</div>
+                                <div class="label --white">Class 4 (4.000 - 14.999 cycles)</div>
+                            </div>
+                        </div>
+                        <div class="group --colours">
+                            <div class="label --plain">Available in</div>
+                            <div class="swatch" style="background-color: #FF5710;"></div>
+                            <div class="swatch" style="background-color: #1C1C1C;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+                
+                                        
+                    <section class="component component--about about" data-component="about">
+        <div class="desktop" data-desktop>
+        <div class="sticky">
+            <div class="image --cover">
+                <img src="road-truck.jpg" alt="HUGER truck on road">
+            </div>
+        </div>
+        <div class="sticky2">
+            <div class="container">
+                <div class="center">
+                    <div class="title">Annual Production Capacity</div>
+                    <div class="title --jumbo">2,000,000</div>
+                    <div class="title">truck & bus tires per year</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile" data-mobile>
+        <div class="image --cover">
+            <img src="road-truck.jpg" alt="HUGER truck on road">
+        </div>
+        <div class="container">
+            <div class="center">
+                <div class="title --na">Annual Production Capacity</div>
+                <div class="title --na --jumbo">2,000,000</div>
+                <div class="title --na">truck & bus tires<br>per year</div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+                    <section class="component component--other-industries " data-component="other-industries">
+        <div class="desktop" data-desktop>
+        <div class="markers">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="sticky">
+            <div class="container">
+                <div class="slides">
+                    <div class="info">
+                        <div class="top">
+                            <div class="label --plain">Production & Quality</div>
+                        </div>
+                        <div class="center">
+                            <ul>
+                                <li><div class="title --na">Mixing</div></li>
+                                <li><div class="title --na">Calendering</div></li>
+                                <li><div class="title --na">Building</div></li>
+                                <li><div class="title --na">Vulcanizing</div></li>
+                                <li><div class="title --na">X-Ray Testing</div></li>
+                                <li><div class="title --na">Strength Lab</div></li>
+                                <li><div class="title --na">Steel Cord</div></li>
+                            </ul>
+                        </div>
+                        <div class="top">
+                        <div class="title"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="label --plain">Mixing</div>
+                            <div class="label --plain">Calendering</div>
+                            <div class="label --plain">Building</div>
+                            <div class="label --plain">Vulcanizing</div>
+                            <div class="label --plain">X-Ray</div>
+                            <div class="label --plain">Strength</div>
+                            <div class="label --plain">Steel Cord</div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="images">
+                            <div class="image --cover">
+                                <img src="img/equipment/mixing.jpg" alt="Mixing Workshop">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/calendering.jpg" alt="Calendering Line">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/forming.jpg" alt="Tire Building">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/vulcanizing.jpg" alt="Vulcanizing">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/xray.jpg" alt="X-Ray Testing">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/strength.jpg" alt="Strength Lab">
+                            </div>
+                            <div class="image --cover">
+                                <img src="img/equipment/steelcord.jpg" alt="Steel Cord">
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <div class="inner">
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">18-station automatic batching system ensures precise compound formulation for consistent tire quality.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">Advanced calendering lines apply rubber compounds onto steel cord fabric with precision thickness control.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">Skilled operators assemble tire components on building machines, forming the green tire with exact specifications.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">High-pressure vulcanization at controlled temperatures cures the rubber, giving tires their final strength and tread pattern.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">X-ray inspection detects internal structural defects invisible to the naked eye, ensuring every tire meets safety standards.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">Tensile strength and endurance testing machines verify load capacity, ensuring tires withstand extreme real-world conditions.</div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                                    </div>
+                                    <div class="wysiwyg">Precision steel cord calendering produces reinforcement layers that give our tires superior strength and puncture resistance.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile" data-mobile>
+        <div class="boxes">
+            <div class="label --plain">Other industries</div>
+            <div class="scroll">
+            <div class="inner">
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/ovens.jpg" alt="Ovens">
+                    </div>
+                    <div class="top">
+                        <div class="title">Ovens</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/ovens.svg" alt="Ovens">
+                        </div>
+                        <div class="wysiwyg">Relats’ sleeves are engineered for safety and durability in high temperature environments.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/vitroceramics.jpg" alt="Vitroceramics">
+                    </div>
+                    <div class="top">
+                        <div class="title">Vitroceramics</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/vitroceramics.svg" alt="Vitroceramics">
+                        </div>
+                        <div class="wysiwyg">Relats’ heat and fire resistant sleeving ensures that your products meet the highest safety standards.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/industrial-installations.jpg" alt="Industrial installations">
+                    </div>
+                    <div class="top">
+                        <div class="title">Industrial installations</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/industrial-installations.svg" alt="Industrial installations">
+                        </div>
+                        <div class="wysiwyg">Relats offers sleeves optimized for abrasion protection in order to meet the demands of industrial machinery.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/heat.jpg" alt="Heat">
+                    </div>
+                    <div class="top">
+                        <div class="title">Heat</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/heat.svg" alt="Heat">
+                        </div>
+                        <div class="wysiwyg">The unmatched safety and durability of Relats’ sleeves make them the safest option for application in heaters.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/electricity.jpg" alt="Electricity">
+                    </div>
+                    <div class="top">
+                        <div class="title">Electricity</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/electricity.svg" alt="Electricity">
+                        </div>
+                        <div class="wysiwyg">Flexibility, durability and safety are all available together in Relats sleeves for electrical application.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/electromagnetic.jpg" alt="Electromagnetic">
+                    </div>
+                    <div class="top">
+                        <div class="title">Electromagnetic</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/electromagnetic.svg" alt="Electromagnetic">
+                        </div>
+                        <div class="wysiwyg">Relats offers durable sleeves with EMI shielding for enhanced protection.</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image --cover">
+                        <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/robotics.jpg" alt="Robotics">
+                    </div>
+                    <div class="top">
+                        <div class="title">Robotics</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon">
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/industries/robotics.svg" alt="Robotics">
+                        </div>
+                        <div class="wysiwyg">Relats’ sleeves provide protection and flexibility for optimal performance in robotic applications.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="component component--combo combo" data-component="combo">
+        <div class="container">
+        <div class="columns --1">
+            <div class="columns__item">
+                <div class="box --dark">
+                    <div class="video --cover" data-desktop>
+                        <video preload="auto" autoplay-onscroll loop playsinline muted>
+                            <source data-src="brand.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video --cover" data-mobile>
+                        <video preload="auto" playsinline autoplay-onscroll loop playsinline muted>
+                            <source data-src="brand.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="columns__item">
+                <div class="box --white --fvertical">
+                    <div class="top">
+                        <div class="label --sustainable">SINCE 1988</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="title --large">Our Story</div>
+                        <div class="wysiwyg">Founded in Guangrao, Shandong — the "Tire Capital of China" — HUGER has grown from a local rubber factory into a global tire manufacturer. With 1.8 billion yuan in total assets, three flagship brands, and products certified across 10+ international standards, we are committed to building safer, greener roads worldwide.</div>
+                        <a href="javascript:void(0)" class="button --over-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+                
+                                        
+                    <section class="component component--worldwide worldwide" data-component="worldwide">
+        <div class="container">
+        <div class="world">
+            <img src="https://toptier.relats.com/wp-content/themes/relats/img/worldwide/world.svg" alt="">
+        </div>
+        <div class="top">
+            <div class="title --large">Global<br>Reach</div>
+            <div class="wysiwyg --large">
+            <p>From Shandong, China to over 70 countries worldwide — HUGER tires keep the world moving.</p>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <div class="wysiwyg --small">Exported to</div>
+                <div class="title --small">70+<br>countries</div>
+            </div>
+            <div class="box">
+                <div class="wysiwyg --small">Across</div>
+                <div class="title --small">5<br>continents</div>
+            </div>
+            <div class="box">
+                <div class="wysiwyg --small">Annual Output</div>
+                <div class="title --small">2,000,000<br>tires</div>
+            </div>
+            <div class="box">
+                <div class="wysiwyg --small">Certifications</div>
+                <div class="title --small">10+<br>international</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                
+                                        
+<!-- Animation section removed -->
+
+
+            <!-- Certifications Wall -->
+            <section class="component component--certs" data-component="certs">
+    <div class="certs-inner">
+        <div class="certs-header">
+            <div class="certs-label">Global Certifications</div>
+            <h2 class="certs-title">Trusted Worldwide</h2>
+            <p class="certs-subtitle">Our products meet the highest international quality and safety standards</p>
+        </div>
+        <div class="certs-grid">
+            <div class="cert-item">
+                <div class="cert-logo"><img src="img/certs/ccc.png" alt="CCC"></div>
+                <div class="cert-name">CCC</div>
+                <div class="cert-region">China</div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-logo"><img src="img/certs/gso.png" alt="GSO"></div>
+                <div class="cert-name">GSO</div>
+                <div class="cert-region">Gulf States</div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-logo"><img src="img/certs/sni.png" alt="SNI"></div>
+                <div class="cert-name">SNI</div>
+                <div class="cert-region">Indonesia</div>
+            </div>
+            <div class="cert-item cert-item--text">
+                <div class="cert-logo"><span class="cert-text-logo">DOT</span></div>
+                <div class="cert-name">DOT</div>
+                <div class="cert-region">United States</div>
+            </div>
+            <div class="cert-item cert-item--text">
+                <div class="cert-logo"><span class="cert-text-logo">ECE</span></div>
+                <div class="cert-name">ECE R117</div>
+                <div class="cert-region">European Union</div>
+            </div>
+            <div class="cert-item cert-item--text">
+                <div class="cert-logo"><span class="cert-text-logo">BIS</span></div>
+                <div class="cert-name">BIS</div>
+                <div class="cert-region">India</div>
+            </div>
+            <div class="cert-item cert-item--text">
+                <div class="cert-logo"><span class="cert-text-logo">INMETRO</span></div>
+                <div class="cert-name">INMETRO</div>
+                <div class="cert-region">Brazil</div>
+            </div>
+            <div class="cert-item cert-item--text">
+                <div class="cert-logo"><span class="cert-text-logo">SASO</span></div>
+                <div class="cert-name">SASO</div>
+                <div class="cert-region">Saudi Arabia</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <footer class="component component--footer footer" data-component="footer" id="footer">
+    <div class="container">
+        <div class="columns --centered">
+            <div class="columns__item">
+                <a href="javascript:void(0)" class="logo" aria-label="Go to Home page">
+                    <img src="logo.png" alt="HUGER" style="height:34px;width:auto;filter:brightness(0) invert(1);">
+                </a>
+            </div>
+            <div class="columns__item">
+                            </div>
+            <div class="columns__item">
+                <div class="flex">
+                    <a href="javascript:void(0)" class="link --round"><div class="circle">M</div><div class="text">info@hugerubber.com</div></a>
+                    <a href="javascript:void(0)" class="link --round"><div class="circle">T</div><div class="text">400-880-8961</div></a>
+                </div>
+            </div>
+            <div class="columns__item">
+                <div class="copyright">HUGER © 2026</div>
+            </div>
+            <div class="columns__item">
+                <a href="javascript:void(0)" class="top">
+                    <i class="fa-regular fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+            <div id="floating" class="floating"  data-component="floating">
+    <!-- Catalog -->
+    <div class="button --catalog" data-rel="catalog">
+        <div class="image"><img src="https://toptier.relats.com/wp-content/themes/relats/img/floating/catalog.jpg" alt=""></div>
+        <div class="text">View digital catalog</div>
+    </div>
+
+    <!-- Hero floating -->
+    <div class="button --periflex-emi" data-rel="periflex-emi">
+        <div class="image"><img src="img/revitex/tire-1.jpg" alt=""></div>
+        <div class="text">Explore HUGER Tires</div>
+    </div>
+
+    <!-- Revitex / TAP Technology -->
+    <div class="button --revitex-wsx45" data-rel="revitex-wsx45">
+        <div class="image"><img src="img/revitex/tire-1.jpg" alt=""></div>
+        <div class="text">TAP Plus</div>
+    </div>
+    <div class="button --revitex-vsc25" data-rel="revitex-vsc25">
+        <div class="image"><img src="img/revitex/tire-2.jpg" alt=""></div>
+        <div class="text">TAP Pro</div>
+    </div>
+    <div class="button --revitex-vsctf" data-rel="revitex-vsctf">
+        <div class="image"><img src="img/revitex/tire-3.jpg" alt=""></div>
+        <div class="text">TAP Max</div>
+    </div>
+
+    <!-- Industries -->
+    <div class="button --plas8-na" data-rel="plas8-na">
+        <div class="image"><img src="img/industries/hw1.webp" alt=""></div>
+        <div class="text">Pattern 606 — Highway</div>
+    </div>
+    <div class="button --revitex-vhg10" data-rel="revitex-vhg10">
+        <div class="image"><img src="img/industries/hw2.webp" alt=""></div>
+        <div class="text">Pattern 728 — Heavy Load</div>
+    </div>
+    <div class="button --perfilex-ps" data-rel="perfilex-ps">
+        <div class="image"><img src="img/industries/hw3.webp" alt=""></div>
+        <div class="text">Pattern 678 — Mixed Road</div>
+    </div>
+    <div class="button --revitex-vsctf-rw" data-rel="revitex-vsctf-rw">
+        <div class="image"><img src="img/industries/hw4.webp" alt=""></div>
+        <div class="text">Pattern 758 — Mining</div>
+    </div>
+    <div class="button --plas8-na-black" data-rel="plas8-na">
+        <div class="image"><img src="img/industries/hw1.webp" alt=""></div>
+        <div class="text">Pattern 999 — All-position</div>
+    </div>
+
+    <!-- Equipment -->
+    <div class="button --periflex-dura-ha" data-rel="periflex-dura-ha">
+        <div class="image"><img src="img/equipment/vulcanizing.jpg" alt=""></div>
+        <div class="text">Production Equipment</div>
+    </div>
+
+    <!-- <div class="button --periflex-psd-r" data-rel="periflex-psd-r">
+        <div class="image"><img src="https://toptier.relats.com/wp-content/themes/relats/img/floating/periflex-psd-r" data-rel="periflex-psd-r">.jpg" alt=""></div>
+        <div class="text">More about Periflex PSD R</div>
+    </div> -->
+</div>
+
+
+
+
+
+            <div id="popup" class="popup"  data-component="popup">
+    <div class="background"></div>
+    <div class="content">
+        <div class="inner --catalog">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="logo">
+                            <img src="logo.png" alt="HUGER" style="height:34px;width:auto;">
+                        </div>
+                        <div class="title --xlarge --na">Be the First<br>to Explore</div>
+                        <div class="wysiwyg">Our Relats virtual catalog is nearing completion. Request your copy now and be among the first to explore its innovations and exclusive insights once it's ready.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f339-p311-o1" lang="es-ES" dir="ltr" data-wpcf7-id="339">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f339-p311-o1" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="339" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f339-p311-o1" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gkg" />
+</fieldset>
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Send" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="inner --periflex-emi">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Periflex EMI</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Braided sleeving composed of polyester monofilament and tin-copper wire mainly meant for applications of electromagnetic shielding and mechanical and thermal protection.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o2" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o2" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o2" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Periflex EMI" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/periflex-emi/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/emi-shielding.svg" alt=""></div>EMI Shielding</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/drivetrain.svg" alt=""></div>Drivetrain</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/engine-compartment.svg" alt=""></div>Engine Compartment</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="wysiwyg">Monofilament Polyester and Tin-copper Wire</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 1.47;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/periflex-emi/material.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70ºC to +150ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Expansion Ratio</div>
+                            <div class="wysiwyg">1:2 approx. (depending on size)</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --revitex-wsx45">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Revitex WSX45</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Thin wall knitbraided fiberglass sleeving, coated with high temperature resistant silicone.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o3" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o3" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o3" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Revitex WSX45" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-wsx45/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/fire-protection.svg" alt=""></div>Fire Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electrical-insulation.svg" alt=""></div>Electrical Insulation</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/busbar-protection.svg" alt=""></div>Busbar Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electric-vehicle.svg" alt=""></div>Electric Vehicle</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fiberglass and Silicone</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-wsx45/material-02.jpg" alt="">
+                                </div>
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-wsx45/material-01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70ºC to +210ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --revitex-vsc25">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Revitex VSC25</div>
+                        <div class="label --transparent">E-MOBILITY & AUTOMOTIVE</div>
+                        <div class="wysiwyg">Sleeving made of a special silicone rubber coated fiberglass braid. This is a Class 200 electrical insulating sleeving available in three voltage grades.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o4" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o4" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o4" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Revitex VSC25" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vsc25/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electrical-insulation.svg" alt=""></div>Electrical Insulation</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/fire-protection.svg" alt=""></div>Fire Protection</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/busbar-protection.svg" alt=""></div>Busbar Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electric-vehicle.svg" alt=""></div>Electric Vehicle</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/black.svg" alt="">Black</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fiberglass and Silicone</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 1.47;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vsc25/material.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70°C to +235ºC (Peaks at +300ºC)</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --revitex-vsctf">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Revitex VSCTF</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Thin wall knitbraided fiberglass sleeving, coated with high temperature resistant silicone.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o5" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o5" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o5" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Revitex VSCTF" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vsctf/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/fire-protection.svg" alt=""></div>Fire Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electrical-insulation.svg" alt=""></div>Electrical Insulation</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/high-temperature.svg" alt=""></div>High Temperature</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/busbar-protection.svg" alt=""></div>Busbar Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electric-vehicle.svg" alt=""></div>Electric Vehicle</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fiberglass and Silicone</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70°C to +210°C</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --plas8-na">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">PLAS8 NA</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Warp-knit open sleeve with unique wraparound qualities allowing easy cable bundling after wire harness assembly.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o6" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o6" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o6" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="PLAS8 NA" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/plas8-na/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/mechanical-protection.svg" alt=""></div>Mechanical Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/noise-reduction.svg" alt=""></div>Noise Reduction</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/drivetrain.svg" alt=""></div>Drivetrain</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/engine-compartment.svg" alt=""></div>Engine Compartment</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electric-vehicle.svg" alt=""></div>Electric Vehicle</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/passenger-body.svg" alt=""></div>Passenger-body</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/black.svg" alt="">Black</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Monofilament & Multifilament Polyester</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/plas8-na/material-01.jpg" alt="">
+                                </div>
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/plas8-na/material-02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70°C to +150°C</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --revitex-vhg10">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Revitex<br>VHG10</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Heat treated thick wall braided fiberglass sleeving impregnated with silicone varnish. Good thermal performance.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o7" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o7" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o7" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Revitex VHG10" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vhg10/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/impact-protection.svg" alt=""></div>Impact Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electrical-insulation.svg" alt=""></div>Electrical Insulation</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/high-temperature.svg" alt=""></div>High Temperature</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/mechanical-protection.svg" alt=""></div>Mechanical Protection</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/mechanical-protection.svg" alt=""></div>Engine compartment</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/purple.svg" alt="">Purple</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fiberglass and Silicone</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 1.47;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vhg10/material.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70°C to +350°C (Peaks at +450ºC)</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Does not ignite</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="inner --perfilex-ps">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Periflex<br>PS</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Expandable braided sleeving mainly meant for applications of mechanical protection.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o8" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o8" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o8" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Periflex PS" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/perfilex-ps/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/mechanical-protection.svg" alt=""></div>Mechanical Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electric-vehicle.svg" alt=""></div>Electric Vehicle</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/circuit-brakers.svg" alt=""></div>Circuit Brakers</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/engine-compartment.svg" alt=""></div>Engine Compartment</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/heavy-industry.svg" alt=""></div>Heavy Industry</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/passenger-body.svg" alt=""></div>Passenger-body</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/orange.svg" alt="">Orange</div>
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/black.svg" alt="">Black</div>
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/grey.svg" alt="">Grey</div>
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/violet.svg" alt="">Violet</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Polyester Monofilament</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/perfilex-ps/material-01.jpg" alt="">
+                                </div>
+                                <div class="image" style="aspect-ratio: 0.68;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/perfilex-ps/material-02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70°C to +150°C</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Expansion Ratio</div>
+                            <div class="wysiwyg">1:2</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="inner --revitex-vsctf-rw">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Revitex VSCTF RW</div>
+                        <div class="label --transparent">Mass Transport</div>
+                        <div class="wysiwyg">Fiberglass knitbraided sleeving, thick wall, coated with selfextinguishing and fire resistant silicone rubber, that guarantees a high degree of thermal insulation and fire protection.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o9" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o9" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o9" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Revitex VSCTF RW" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/revitex-vsctf-rw/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/fire-protection.svg" alt=""></div>Fire Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/flammability.svg" alt=""></div>Flammability</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/electrical-insulation.svg" alt=""></div>Electrical Insulation</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/high-temperature.svg" alt=""></div>High Temperature</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/railway.svg" alt=""></div>Railway</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/red-brown.svg" alt="">Red-brown</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fibreglass and Silicone</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70ºC to +235ºC (Peaks 300°C)<br>-94ºF to +455ºF (Peaks at +572ºF)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="inner --periflex-dura-ha">
+            <div class="columns">
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="title --xlarge --na">Periflex<br>DURA HA</div>
+                        <div class="label --transparent">E-Mobility & Automotive</div>
+                        <div class="wysiwyg">Flexible sleeving made of textured polyamide yarn intended for thermal insulation and mechanical protection.</div>
+                        
+<div class="wpcf7 no-js" id="wpcf7-f340-p311-o10" lang="es-ES" dir="ltr" data-wpcf7-id="340">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f340-p311-o10" method="post" class="wpcf7-form init" aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
+<fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="340" /><input type="hidden" name="_wpcf7_version" value="6.1.5" /><input type="hidden" name="_wpcf7_locale" value="es_ES" /><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f340-p311-o10" /><input type="hidden" name="_wpcf7_container_post" value="311" /><input type="hidden" name="_wpcf7_posted_data_hash" value="" /><input type="hidden" name="iside_cf7_pardot_formHandlerUrl" value="https://go.relats.com/l/1087742/2025-07-08/lz9gdr" />
+</fieldset>
+<input class="wpcf7-form-control wpcf7-hidden" value="Periflex DURA HA" type="hidden" name="relats-product" />
+<div class="form-group">
+    <label>Full Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name*" value="" type="text" name="relats-name" /></span>
+</div>
+<div class="form-group">
+    <label>Company Name*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" value="" type="text" name="relats-company" /></span>
+</div>
+<div class="form-group">
+    <label>Email*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="relats-email" /></span>
+</div>
+<div class="form-group">
+    <label>Phone Number*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-tel"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number*" value="" type="tel" name="relats-tel" /></span>
+</div>
+<div class="form-group">
+    <label>Your message*</label>
+    <span class="wpcf7-form-control-wrap" data-name="relats-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message*" name="relats-message"></textarea></span>
+</div>
+<div class="form-group"><span class="wpcf7-form-control-wrap" data-name="relats-acceptance"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="relats-acceptance" value="1" aria-invalid="false" /><span class="wpcf7-list-item-label">I have read and accept the <a href="javascript:void(0)" target="_blank">Terms & Conditions</a></span></label></span></span></span></div>    
+<div class="form-group">
+    <input class="wpcf7-form-control wpcf7-submit has-spinner button --main" type="submit" value="Request information" />
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="scroll" data-lenis-prevent>
+                        <div class="mask image" style="aspect-ratio: 1.704;" data-desktop>
+                            <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/periflex-dura-ha/mask.png" alt="">
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Solutions</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/mechanical-protection.svg" alt=""></div>Mechanical Protection</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/thermal-protection.svg" alt=""></div>Thermal Protection</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Applications</div>
+                            <div class="wysiwyg"><div class="icon"><img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/icons/engine-compartment.svg" alt=""></div>Engine compartment</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Material</div>
+                            <div class="colors">
+                                <div class="text">Available in</div>
+                                <div class="swatches">
+                                    <div class="swatch"><img src="https://toptier.relats.com/wp-content/themes/relats/img/swatches/black.svg" alt="">Black</div>
+                                </div>
+                            </div>
+                            <div class="wysiwyg">Fibreglass and Silicone</div>
+                            <div class="images">
+                                <div class="image" style="aspect-ratio: 1.47;">
+                                    <img src="https://toptier.relats.com/wp-content/themes/relats/img/popups/periflex-dura-ha/material.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Temperature</div>
+                            <div class="wysiwyg">-70ºC to +125ºC</div>
+                        </div>
+                        <div class="group">
+                            <div class="title --na">Flammability</div>
+                            <div class="wysiwyg">Self-extinguishing</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    </div>
+        <div class="closer">
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.64187 0.855324C1.28685 0.500302 0.711246 0.500302 0.356224 0.855324C0.00120182 1.21035 0.0012018 1.78595 0.356224 2.14097L6.14164 7.92639L0.356224 13.7118C0.00120182 14.0668 0.00120182 14.6424 0.356224 14.9975C0.711246 15.3525 1.28685 15.3525 1.64187 14.9975L7.42729 9.21204L13.2127 14.9975C13.5677 15.3525 14.1433 15.3525 14.4984 14.9975C14.8534 14.6424 14.8534 14.0668 14.4984 13.7118L8.71294 7.92639L14.4984 2.14097C14.8534 1.78595 14.8534 1.21035 14.4984 0.855325C14.1433 0.500303 13.5677 0.500302 13.2127 0.855325L7.42729 6.64074L1.64187 0.855324Z" fill="black"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+            </div>
+    <div class="bg"></div>
+</div>
+
+
+
+
+    </div>
+
+    <div id="vhr"></div>
+
+    <div id="mask" class="mask">
+    <div class="inner">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="floating --center">
+            <!-- <div class="lottie" data-name="mask" data-path="https://toptier.relats.com/wp-content/themes/relats/lottie/logo-orange.json"></div> -->
+            <!-- <div class="logo">
+                <svg width="29" height="34" viewBox="0 0 29 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0783 20.4569C17.4055 23.4623 20.4128 25.5601 23.9092 25.5601C25.8115 25.5601 27.3539 27.0976 27.3628 28.9975C27.3718 30.9177 25.7555 32.4768 23.8353 32.4678C16.6034 32.4338 10.6027 27.4355 8.95007 20.7048C8.94113 20.6678 8.93398 20.6309 8.92802 20.5933L8.90716 20.4574M2.01073 4.95418C2.01073 3.04651 3.55724 1.5 5.4649 1.5H15.7947C21.0296 1.5 25.2728 5.74382 25.2728 10.9781C25.2728 16.213 21.029 20.4563 15.7947 20.4563H8.90716M2.01073 4.95418V29.0518C2.01073 30.9565 3.55486 32.5 5.45894 32.5C7.36363 32.5 8.90716 30.9559 8.90716 29.0518V4.95417C8.90716 3.04949 7.36363 1.50595 5.45894 1.50595C3.55426 1.50595 2.01073 3.05009 2.01073 4.95418ZM8.90716 13.5491H15.7947C17.2142 13.5491 18.365 12.3983 18.365 10.9787C18.365 9.55914 17.2142 8.40834 15.7947 8.40834H8.90716M27.3634 29.0136C27.3634 30.9213 25.8169 32.4678 23.9093 32.4678C22.0016 32.4678 20.4551 30.9213 20.4551 29.0136C20.4551 27.106 22.0016 25.5595 23.9093 25.5595C25.8169 25.5601 27.3634 27.106 27.3634 29.0136ZM8.90717 4.95358C8.90717 6.86125 7.36065 8.40717 5.45358 8.40717C3.54592 8.40717 2 6.86065 2 4.95358C2 3.04651 3.54651 1.5 5.45358 1.5C7.36065 1.5 8.90717 3.04592 8.90717 4.95358Z" stroke="white" stroke-width="2.21598" stroke-miterlimit="10"/>
+                </svg>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+    
+    <script defer type="text/javascript" src="js/vendor.min.js"></script>
+    <script defer type="text/javascript" src="js/app.min.js"></script>
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/relats/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-12-01 15:45:40+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/toptier.relats.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://toptier.relats.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-7-83c32a029ed2cf5b6a82.js" id="googlesitekit-events-provider-contact-form-7-js" defer></script>
+</body>
+</html>
+
