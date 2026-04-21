@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background glow -->
+  <ellipse cx="500" cy="250" rx="450" ry="220" fill="url(#glow)"/>
+  <!-- Simplified continent outlines — low-poly style -->
+  <g opacity="0.15" fill="#fff">
+    <!-- North America -->
+    <path d="M120,80 L170,60 L220,55 L260,70 L270,90 L255,120 L240,140 L260,155 L255,175 L230,190 L210,210 L195,230 L175,240 L160,225 L140,200 L120,175 L110,150 L100,130 L95,110 L105,90Z"/>
+    <!-- Central America -->
+    <path d="M175,240 L185,250 L195,260 L200,275 L195,285 L185,290 L175,280 L170,265 L165,250Z"/>
+    <!-- South America -->
+    <path d="M200,285 L220,290 L250,300 L270,320 L280,350 L285,380 L275,410 L260,430 L240,440 L220,435 L210,415 L205,390 L195,365 L190,340 L185,315 L190,295Z"/>
+    <!-- Europe -->
+    <path d="M420,65 L445,55 L470,60 L490,55 L510,65 L520,80 L515,95 L500,105 L490,115 L480,130 L465,135 L450,125 L440,115 L430,105 L425,90 L420,80Z"/>
+    <!-- Africa -->
+    <path d="M430,160 L460,150 L490,155 L520,165 L540,180 L550,210 L555,240 L550,270 L540,300 L525,330 L510,350 L490,360 L470,355 L455,340 L445,315 L440,290 L435,260 L430,230 L425,200 L425,175Z"/>
+    <!-- Middle East -->
+    <path d="M520,115 L550,110 L575,120 L590,135 L585,155 L570,165 L550,170 L535,165 L520,155 L515,140 L515,125Z"/>
+    <!-- Russia / Northern Asia -->
+    <path d="M510,65 L550,50 L600,40 L660,35 L720,40 L780,50 L820,55 L850,65 L840,80 L810,90 L770,95 L730,90 L690,85 L650,80 L610,75 L570,72 L540,75 L520,80Z"/>
+    <!-- South Asia / India -->
+    <path d="M610,145 L640,135 L665,145 L680,165 L675,190 L660,210 L640,220 L620,215 L610,200 L605,180 L605,160Z"/>
+    <!-- Southeast Asia -->
+    <path d="M690,180 L720,170 L745,175 L760,190 L755,210 L740,225 L720,230 L705,220 L695,205 L690,190Z"/>
+    <!-- China / East Asia -->
+    <path d="M680,85 L720,75 L760,80 L790,95 L800,115 L790,135 L770,150 L745,155 L720,150 L700,140 L685,125 L675,110 L675,95Z"/>
+    <!-- Japan / Korea -->
+    <path d="M805,100 L815,95 L825,100 L830,115 L825,130 L815,140 L805,135 L800,120 L800,108Z"/>
+    <!-- Australia -->
+    <path d="M750,320 L790,310 L830,315 L860,330 L870,355 L860,380 L835,395 L805,400 L775,390 L755,370 L745,350 L745,335Z"/>
+    <!-- New Zealand -->
+    <path d="M880,385 L890,380 L895,390 L892,405 L885,410 L878,400Z"/>
+    <!-- Greenland -->
+    <path d="M280,30 L310,25 L340,30 L350,45 L340,60 L315,65 L290,55 L280,42Z"/>
+    <!-- Indonesia -->
+    <path d="M720,255 L740,250 L755,252 L770,258 L780,265 L775,272 L760,275 L740,272 L725,268 L720,262Z"/>
+  </g>
+  <!-- Export route dots — glowing markers on key markets -->
+  <g>
+    <!-- China (HQ) — larger, brighter -->
+    <circle cx="735" cy="125" r="5" fill="#fff" opacity="0.9"/>
+    <circle cx="735" cy="125" r="12" fill="#fff" opacity="0.15"/>
+    <circle cx="735" cy="125" r="20" fill="#fff" opacity="0.06"/>
+    <!-- Southeast Asia -->
+    <circle cx="725" cy="200" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="725" cy="200" r="9" fill="#fff" opacity="0.1"/>
+    <!-- India -->
+    <circle cx="640" cy="185" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="640" cy="185" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Middle East / Gulf -->
+    <circle cx="555" cy="145" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="555" cy="145" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Europe -->
+    <circle cx="470" cy="90" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="470" cy="90" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Africa -->
+    <circle cx="480" cy="270" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="480" cy="270" r="9" fill="#fff" opacity="0.1"/>
+    <!-- South America / Brazil -->
+    <circle cx="250" cy="350" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="250" cy="350" r="9" fill="#fff" opacity="0.1"/>
+    <!-- North America -->
+    <circle cx="190" cy="140" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="190" cy="140" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Australia -->
+    <circle cx="810" cy="360" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="810" cy="360" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Indonesia -->
+    <circle cx="750" cy="262" r="3.5" fill="#fff" opacity="0.6"/>
+    <circle cx="750" cy="262" r="9" fill="#fff" opacity="0.1"/>
+    <!-- Russia -->
+    <circle cx="680" cy="60" r="3" fill="#fff" opacity="0.45"/>
+    <circle cx="680" cy="60" r="8" fill="#fff" opacity="0.08"/>
+    <!-- Japan / Korea -->
+    <circle cx="815" cy="118" r="3" fill="#fff" opacity="0.45"/>
+    <circle cx="815" cy="118" r="8" fill="#fff" opacity="0.08"/>
+  </g>
+</svg>
