@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>Product Catalog — HUGER FRIDERIC All-Steel Radial Tyres</title>
+    <meta name="description" content="Browse HUGER FRIDERIC all-steel radial truck & bus tyres. Long haul, regional, and mining patterns. 10+ certifications. Export to 70+ countries.">
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+    /* ─── Reset ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; background: none; border: none; }
+
+    /* ─── Tokens ─────────────────────────────────────── */
+    :root {
+        --cream:    #f0ede8;
+        --ink:      #0f0f0d;
+        --ink-60:   rgba(15,15,13,.6);
+        --ink-30:   rgba(15,15,13,.3);
+        --ink-12:   rgba(15,15,13,.12);
+        --ink-06:   rgba(15,15,13,.06);
+        --blue:     #1244b0;
+        --navy:     #0c1a3a;
+        --gold:     #e8b400;
+        --green:    #3fa832;
+        --rule-lt:  1px solid rgba(15,15,13,.12);
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+    }
+    body::after {
+        content: '';
+        position: fixed; inset: 0; z-index: 9999;
+        pointer-events: none;
+        opacity: .03;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+        background-size: 180px;
+    }
+
+    /* ─── Layout ─────────────────────────────────────── */
+    .w { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+    @media (max-width: 960px)  { .w { padding: 0 24px; } }
+    @media (max-width: 600px)  { .w { padding: 0 16px; } }
+
+    /* ─── Scroll reveal ──────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: .08s; }
+    .reveal-d2 { transition-delay: .18s; }
+    .reveal-d3 { transition-delay: .28s; }
+
+    /* ─── Header ─────────────────────────────────────── */
+    #header {
+        color: #fff;
+        height: auto;
+        padding: clamp(10px, 0.9vw, 16px) 0;
+        pointer-events: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: 80;
+        transition: color .4s;
+    }
+    #header.hdr-light { color: #0f0f0d; }
+    #header .container { align-items: center; display: flex; height: 100%; justify-content: center; }
+    #header .group {
+        -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+        background-color: hsla(0,0%,100%,.12);
+        border-radius: clamp(15px, 1.389vw, 26.6px);
+        border: 1px solid rgba(255,255,255,.15);
+        display: flex; justify-content: space-between; align-items: center;
+        padding: clamp(5px, 0.417vw, 7.98px);
+        pointer-events: all;
+        width: min(92vw, 1240px);
+        transition: background .4s, border-color .4s;
+    }
+    #header.hdr-light .group {
+        background-color: hsla(0,0%,100%,.72);
+        border-color: rgba(0,0,0,.06);
+    }
+    #header .group .logo { display: flex; align-items: center; margin-left: clamp(14px, 1.25vw, 23.94px); flex-shrink: 0; }
+    #header .group .logo img { height: 28px; width: auto; display: block; filter: brightness(0) invert(1); transition: filter .4s; }
+    #header.hdr-light .group .logo img { filter: none; }
+    @media (max-width: 1240px) { #header .group .logo img { height: 24px; } }
+    #header .group .mask { display: none; }
+    #header .group .menu { display: flex; gap: clamp(4px, 0.556vw, 10.64px); list-style: none; padding: 0; margin: 0; }
+    #header .group .menu li { display: inline-block; }
+    #header .group .menu li a {
+        background-color: transparent; border: 1px solid transparent;
+        border-radius: clamp(14px, 1.042vw, 19.95px);
+        color: inherit; display: block;
+        font-size: clamp(13px, 1.042vw, 19.95px);
+        height: clamp(38px, 2.778vw, 53.2px);
+        line-height: clamp(38px, 2.778vw, 53.2px);
+        opacity: 0.65; padding: 0 clamp(18px, 2.222vw, 42.56px);
+        transition: all 0.6s cubic-bezier(0.16,1,0.3,1); white-space: nowrap;
+    }
+    #header .group .menu li a:hover { opacity: 1; }
+    #header .group .menu li.is-active a { opacity: 1; }
+
+    /* ─── Hero ────────────────────────────────────────── */
+    .hero-full {
+        position: relative;
+        width: 100%; height: 50vh; min-height: 320px;
+        overflow: hidden;
+        display: flex; align-items: flex-end;
+    }
+    .hero-bg {
+        position: absolute; inset: 0;
+        background: url('../img/products/hero-bg.jpg') center 60%/cover no-repeat;
+    }
+    .hero-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to bottom,
+            rgba(0,0,0,.18) 0%,
+            rgba(0,0,0,.55) 60%,
+            rgba(0,0,0,.82) 100%);
+    }
+    .hero-content {
+        position: relative; z-index: 2;
+        width: 100%;
+        padding: 0 clamp(24px,4vw,80px) 40px;
+        max-width: 1280px; margin: 0 auto;
+        display: flex; align-items: flex-end; justify-content: space-between;
+        gap: 32px; flex-wrap: wrap;
+    }
+    .hero-left {}
+    .hero-eyebrow {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: rgba(255,255,255,.45); margin-bottom: 10px;
+        display: flex; align-items: center; gap: 10px;
+    }
+    .hero-eyebrow::before { content: ''; display: block; width: 20px; height: 1px; background: rgba(255,255,255,.4); }
+    .hero-h1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(56px, 7vw, 96px);
+        line-height: .9; letter-spacing: -.02em;
+        color: #fff; margin: 0;
+    }
+    .hero-right {
+        display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+        padding-bottom: 6px;
+        flex-shrink: 0;
+    }
+    .hero-stat {
+        display: flex; align-items: baseline; gap: 8px;
+    }
+    .hero-stat-num {
+        font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+        font-size: 28px; color: var(--gold); line-height: 1; letter-spacing: -.02em;
+    }
+    .hero-stat-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: rgba(255,255,255,.45);
+    }
+    .hero-divider {
+        width: 100%; height: 1px; background: rgba(255,255,255,.1); margin: 6px 0;
+        align-self: stretch;
+    }
+    @media (max-width: 600px) { .hero-right { display: none; } }
+    .hero-desc {
+        font-size: 13px; line-height: 1.6;
+        color: rgba(255,255,255,.5);
+        max-width: 480px; margin-top: 14px;
+    }
+    /* ─── Sidebar Filter ─────────────────────────────── */
+    .cat-layout {
+        display: grid;
+        grid-template-columns: 210px 1fr;
+        gap: 56px;
+        align-items: start;
+    }
+    @media (max-width: 860px) { .cat-layout { grid-template-columns: 1fr; gap: 32px; } }
+
+    .filter-sidebar {
+        position: sticky;
+        top: 88px;
+    }
+    @media (max-width: 860px) {
+        .filter-sidebar {
+            position: static;
+            display: flex; gap: 24px; flex-wrap: wrap;
+        }
+    }
+
+    .fs-group { margin-bottom: 32px; }
+    @media (max-width: 860px) { .fs-group { margin-bottom: 0; min-width: 140px; } }
+
+    .fs-group-head {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: var(--ink-30); margin-bottom: 10px;
+        padding-bottom: 10px; border-bottom: var(--rule-lt);
+    }
+    .fs-options { display: flex; flex-direction: column; gap: 2px; }
+    @media (max-width: 860px) { .fs-options { flex-direction: row; flex-wrap: wrap; gap: 4px; } }
+
+    .fs-opt {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: .5px;
+        color: var(--ink-60); background: none; border: none;
+        padding: 8px 12px; border-radius: 6px;
+        text-align: left; cursor: pointer;
+        transition: background .15s, color .15s;
+        white-space: nowrap;
+    }
+    .fs-opt:hover { background: var(--ink-06); color: var(--ink); }
+    .fs-opt.on { background: var(--ink); color: #fff; }
+
+    .fs-count {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: var(--ink-30); margin-top: 4px; padding: 0 12px;
+    }
+    @media (max-width: 860px) { .fs-count { width: 100%; padding: 0; } }
+
+    /* ─── Catalog Section ────────────────────────────── */
+    .catalog-section { padding: 72px 0 96px; }
+    .cat-header { margin-bottom: 48px; }
+    .cat-title {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(36px, 5vw, 64px);
+        line-height: .95; letter-spacing: -.02em;
+    }
+    .cat-sub {
+        font-size: 14px; color: var(--ink-60);
+        margin-top: 12px; max-width: 480px; line-height: 1.6;
+    }
+
+    .prod-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        border: var(--rule-lt);
+    }
+    @media (max-width: 900px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 540px) { .prod-grid { grid-template-columns: 1fr; } }
+
+    .prod-card {
+        background: #fff;
+        display: flex; flex-direction: column;
+        border-right: var(--rule-lt);
+        border-bottom: var(--rule-lt);
+        transition: background .2s;
+        position: relative;
+        overflow: hidden;
+    }
+    .prod-card:hover { background: #fafaf8; }
+    .prod-card.hidden { display: none; }
+
+    .pc-img-wrap {
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
+        background: #f8f8f6;
+        border-bottom: var(--rule-lt);
+    }
+    .pc-img-wrap img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: contain;
+        padding: 16px;
+        transition: transform .55s cubic-bezier(.16,1,.3,1);
+    }
+    .prod-card:hover .pc-img-wrap img { transform: scale(1.04); }
+
+    /* Series badge top-left */
+    .pc-series {
+        position: absolute; top: 12px; left: 12px;
+        font-family: 'DM Mono', monospace;
+        font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase;
+        padding: 4px 10px; border-radius: 100px;
+        font-weight: 500;
+    }
+    .pc-series.lh { background: #e8efff; color: var(--blue); }
+    .pc-series.rg { background: #e6f7ee; color: #1a7a3e; }
+    .pc-series.mn { background: #fff4e0; color: #b25a00; }
+
+    .pc-body {
+        padding: 20px 20px 16px;
+        flex: 1; display: flex; flex-direction: column;
+    }
+    .pc-brand {
+        font-family: 'DM Mono', monospace;
+        font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
+        color: var(--gold); margin-bottom: 6px;
+    }
+    .pc-model {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(28px, 3vw, 40px);
+        line-height: 1; letter-spacing: -.01em;
+        color: var(--ink); margin-bottom: 12px;
+    }
+    .pc-meta {
+        display: flex; flex-wrap: wrap; gap: 6px;
+        margin-top: auto;
+        padding-top: 12px;
+        border-top: var(--rule-lt);
+    }
+    .pc-badge {
+        font-family: 'DM Mono', monospace;
+        font-size: 8px; letter-spacing: 1px; text-transform: uppercase;
+        color: var(--ink-60);
+        background: var(--ink-06);
+        padding: 4px 10px; border-radius: 4px;
+    }
+    .pc-foot {
+        padding: 14px 20px;
+        border-top: var(--rule-lt);
+        display: flex; align-items: center; justify-content: space-between;
+    }
+    .pc-size {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: .5px;
+        color: var(--ink-60);
+    }
+    .pc-cta {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+        color: var(--ink); display: flex; align-items: center; gap: 6px;
+        transition: gap .2s;
+    }
+    .prod-card:hover .pc-cta { gap: 10px; }
+
+    /* No-results message */
+    .no-results {
+        grid-column: 1 / -1;
+        padding: 80px 24px; text-align: center;
+        display: none;
+        font-family: 'DM Mono', monospace;
+        font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+        color: var(--ink-30);
+    }
+    .no-results.show { display: block; }
+
+    /* ─── FAQ ────────────────────────────────────────── */
+    .faq-section {
+        background: var(--cream);
+        padding: 96px 0;
+        color: var(--ink);
+    }
+    .faq-layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 80px;
+        align-items: start;
+    }
+    @media (max-width: 860px) { .faq-layout { grid-template-columns: 1fr; gap: 40px; } }
+    .faq-left {}
+    .faq-eyebrow {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: var(--ink-30); margin-bottom: 16px;
+    }
+    .faq-heading {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(40px, 5vw, 72px);
+        line-height: .92; letter-spacing: -.02em;
+        color: var(--ink);
+        margin-bottom: 24px;
+    }
+    .faq-note {
+        font-size: 13px; line-height: 1.65;
+        color: var(--ink-60);
+        max-width: 260px;
+    }
+    .faq-wrap { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: var(--rule-lt); }
+    .faq-q {
+        width: 100%; text-align: left;
+        display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        padding: 20px 0;
+        font-size: 15px; font-weight: 500; color: var(--ink-60);
+        cursor: pointer; background: none; border: none;
+        transition: color .2s;
+    }
+    .faq-q:hover { color: var(--ink); }
+    .faq-plus {
+        font-size: 22px; font-weight: 300; flex-shrink: 0;
+        color: var(--ink-30);
+        transition: transform .35s cubic-bezier(.16,1,.3,1), color .2s;
+        line-height: 1;
+    }
+    .faq-item.open .faq-plus { transform: rotate(45deg); color: var(--blue); }
+    .faq-a {
+        display: grid; grid-template-rows: 0fr;
+        transition: grid-template-rows .4s cubic-bezier(.16,1,.3,1);
+    }
+    .faq-item.open .faq-a { grid-template-rows: 1fr; }
+    .faq-a-in {
+        overflow: hidden;
+        font-size: 14px; line-height: 1.75;
+        color: var(--ink-60);
+        padding-bottom: 0;
+        transition: padding .4s;
+    }
+    .faq-item.open .faq-a-in { padding-bottom: 20px; }
+
+    /* ─── CTA Strip ──────────────────────────────────── */
+    .cta-strip {
+        background: var(--blue);
+        padding: 64px 0;
+    }
+    .cta-inner {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 32px; flex-wrap: wrap;
+    }
+    .cta-text {}
+    .cta-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: rgba(255,255,255,.5); margin-bottom: 10px;
+    }
+    .cta-h { font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+        font-size: clamp(28px, 3.5vw, 48px); line-height: 1; color: #fff; letter-spacing: -.01em; }
+    .cta-btn {
+        display: inline-flex; align-items: center; gap: 10px;
+        background: #fff; color: var(--blue);
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+        padding: 16px 28px; border-radius: 8px;
+        transition: background .2s, color .2s; white-space: nowrap;
+        flex-shrink: 0;
+    }
+    .cta-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
+
+    /* ─── Footer ─────────────────────────────────────── */
+    .footer {
+        background: #0d0d11; color: rgba(255,255,255,.55);
+        position: relative; overflow: hidden; padding: 80px 0 0;
+    }
+    .footer::before {
+        content: 'HUGER';
+        position: absolute; bottom: -0.22em; left: 50%; transform: translateX(-50%);
+        font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+        font-size: clamp(160px, 22vw, 320px); letter-spacing: -0.04em; line-height: 1;
+        color: transparent; -webkit-text-stroke: 1px rgba(232,180,0,.18);
+        white-space: nowrap; pointer-events: none; user-select: none;
+    }
+    .footer-top {
+        display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr;
+        gap: 48px; padding-bottom: 96px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; } }
+    @media (max-width: 600px)  { .footer-top { grid-template-columns: 1fr; gap: 32px; } }
+    .ft-logo { margin-bottom: 20px; }
+    .ft-logo img { height: 26px; filter: brightness(0) invert(1); opacity: .9; }
+    .ft-tagline { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,.52); max-width: 260px; margin-bottom: 28px; }
+    .ft-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+    .ft-stat-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 32px; letter-spacing: -0.02em; line-height: 1; color: #fff; }
+    .ft-stat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.45); margin-top: 4px; }
+    .ft-col-head { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .ft-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ft-links a { font-size: 13px; color: rgba(255,255,255,.7); transition: color .2s; }
+    .ft-links a:hover { color: #fff; }
+    .ft-contact-item { display: flex; flex-direction: column; gap: 3px; margin-bottom: 16px; }
+    .ft-contact-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.4); }
+    .ft-contact-val { font-size: 13px; color: rgba(255,255,255,.75); transition: color .2s; }
+    a.ft-contact-val:hover { color: #fff; }
+    .ft-brand-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .ft-brand-logo { height: 22px; width: auto; display: block; filter: brightness(0) invert(1); opacity: .75; transition: opacity .2s; flex: 1; object-fit: contain; object-position: left center; }
+    .ft-brand-row:hover .ft-brand-logo { opacity: 1; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 24px 0 32px; position: relative; z-index: 1; }
+    .ft-copy { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.2); }
+    .ft-certs { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .ft-cert-logo { height: 28px; width: auto; filter: brightness(0) invert(1); opacity: .45; transition: opacity .2s; }
+    .ft-cert-logo:hover { opacity: .8; }
+    @media (max-width: 640px) { .footer-bottom { flex-direction: column; align-items: flex-start; } }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="component component--header header" data-component="header" id="header">
+    <div class="container">
+        <div class="group">
+            <a href="../index-v2.html" class="logo" aria-label="Go to Home page">
+                <img src="../logo.png" alt="HUGER">
+            </a>
+            <div class="mask"></div>
+            <ul id="menu-main" class="menu">
+                <li class="menu-item"><a href="../index-v2.html">Home</a></li>
+                <li class="menu-item is-active"><a href="#">Products</a></li>
+                <li class="menu-item"><a href="../index-v2.html#about">About</a></li>
+                <li class="menu-item"><a href="../index-v2.html#certs">Certifications</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-full" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-eyebrow">HUGER · Product Collection</div>
+            <h1 class="hero-h1">FRIDERIC<br>All-Steel Radial</h1>
+            <p class="hero-desc">10 patterns engineered for long haul, regional, and off-road — exported to 70+ countries across 5 continents.</p>
+        </div>
+        <div class="hero-right">
+            <div class="hero-stat">
+                <span class="hero-stat-num">10</span>
+                <span class="hero-stat-label">Patterns</span>
+            </div>
+            <div class="hero-divider"></div>
+            <div class="hero-stat">
+                <span class="hero-stat-num">70+</span>
+                <span class="hero-stat-label">Countries</span>
+            </div>
+            <div class="hero-divider"></div>
+            <div class="hero-stat">
+                <span class="hero-stat-num">10+</span>
+                <span class="hero-stat-label">Certifications</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATALOG GRID -->
+<section class="catalog-section">
+    <div class="w">
+        <div class="cat-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="filter-sidebar">
+            <div class="fs-group">
+                <div class="fs-group-head">Brand</div>
+                <div class="fs-options" id="brand-filters">
+                    <button class="fs-opt on" data-brand="all">All Brands</button>
+                    <button class="fs-opt" data-brand="frideric">FRIDERIC</button>
+                    <button class="fs-opt" data-brand="chilong">CHILONG</button>
+                    <button class="fs-opt" data-brand="joseben">JOSEBEN</button>
+                    <button class="fs-opt" data-brand="huger">HUGER</button>
+                </div>
+            </div>
+            <div class="fs-group">
+                <div class="fs-group-head">Application</div>
+                <div class="fs-options" id="app-filters">
+                    <button class="fs-opt on" data-app="all">All</button>
+                    <button class="fs-opt" data-app="long-haul">Long Haul</button>
+                    <button class="fs-opt" data-app="regional">Regional</button>
+                    <button class="fs-opt" data-app="mining">Mining &amp; Off-Road</button>
+                </div>
+            </div>
+            <div class="fs-count" id="filter-count">10 patterns</div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <div>
+        <div class="prod-grid" id="prod-grid">
+
+            <!-- FA999 -->
+            <a class="prod-card reveal" data-brand="frideric" data-series="long-haul" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fa999/main.jpg" alt="FRIDERIC FA999" loading="lazy">
+                    <span class="pc-series lh">Long Haul</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FA999</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">All-Position</span>
+                        <span class="pc-badge">PR 18</span>
+                        <span class="pc-badge">Speed L</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">12R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- RS109 -->
+            <a class="prod-card reveal reveal-d1" data-brand="frideric" data-series="long-haul" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/rs109/main.jpg" alt="FRIDERIC RS109" loading="lazy">
+                    <span class="pc-series lh">Long Haul</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">RS109</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">Steer / Trailer</span>
+                        <span class="pc-badge">PR 18</span>
+                        <span class="pc-badge">Speed L</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">12R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FA808 -->
+            <a class="prod-card reveal reveal-d2" data-brand="frideric" data-series="long-haul" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fa808/main.jpg" alt="FRIDERIC FA808" loading="lazy">
+                    <span class="pc-series lh">Long Haul</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FA808</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">All-Position</span>
+                        <span class="pc-badge">PR 18</span>
+                        <span class="pc-badge">Speed M</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">11R22.5 · 12R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FA818 -->
+            <a class="prod-card reveal" data-brand="frideric" data-series="long-haul" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fa818/main.jpg" alt="FRIDERIC FA818" loading="lazy">
+                    <span class="pc-series lh">Long Haul</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FA818</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">All-Position</span>
+                        <span class="pc-badge">PR 20</span>
+                        <span class="pc-badge">Speed K</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">12.00R24 · 315/80R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FA131 -->
+            <a class="prod-card reveal reveal-d1" data-brand="frideric" data-series="long-haul" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fa131/main.jpg" alt="FRIDERIC FA131" loading="lazy">
+                    <span class="pc-series lh">Long Haul</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FA131</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">Steer / All</span>
+                        <span class="pc-badge">PR 20</span>
+                        <span class="pc-badge">Speed K</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">385/65R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FD758 -->
+            <a class="prod-card reveal reveal-d2" data-brand="frideric" data-series="regional" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fd758/main.jpg" alt="FRIDERIC FD758" loading="lazy">
+                    <span class="pc-series rg">Regional</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FD758</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">All-Position</span>
+                        <span class="pc-badge">PR 18</span>
+                        <span class="pc-badge">Speed K</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">12R22.5 · 315/80R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- RD518 -->
+            <a class="prod-card reveal" data-brand="frideric" data-series="regional" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/rd518/main.jpg" alt="FRIDERIC RD518" loading="lazy">
+                    <span class="pc-series rg">Regional</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">RD518</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">All-Position</span>
+                        <span class="pc-badge">PR 18–20</span>
+                        <span class="pc-badge">Speed J</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">11.00R20 · 12.00R20</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FD160 -->
+            <a class="prod-card reveal reveal-d1" data-brand="frideric" data-series="regional" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fd160/main.jpg" alt="FRIDERIC FD160" loading="lazy">
+                    <span class="pc-series rg">Regional</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FD160</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">Drive</span>
+                        <span class="pc-badge">PR 16</span>
+                        <span class="pc-badge">Speed L</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">11R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FD163 -->
+            <a class="prod-card reveal reveal-d2" data-brand="frideric" data-series="regional" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fd163/main.jpg" alt="FRIDERIC FD163" loading="lazy">
+                    <span class="pc-series rg">Regional</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FD163</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">Drive</span>
+                        <span class="pc-badge">PR 20</span>
+                        <span class="pc-badge">Speed L</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">385/65R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <!-- FD165 -->
+            <a class="prod-card reveal" data-brand="frideric" data-series="mining" href="fd758.html">
+                <div class="pc-img-wrap">
+                    <img src="../img/products/fd165/main.jpg" alt="FRIDERIC FD165" loading="lazy">
+                    <span class="pc-series mn">Mining &amp; Off-Road</span>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-brand">FRIDERIC</div>
+                    <div class="pc-model">FD165</div>
+                    <div class="pc-meta">
+                        <span class="pc-badge">Drive</span>
+                        <span class="pc-badge">PR 20</span>
+                        <span class="pc-badge">Speed L</span>
+                    </div>
+                </div>
+                <div class="pc-foot">
+                    <span class="pc-size">13R22.5</span>
+                    <span class="pc-cta">View <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></span>
+                </div>
+            </a>
+
+            <div class="no-results" id="no-results">No products match this filter.</div>
+
+        </div><!-- /prod-grid -->
+        </div><!-- /main content -->
+        </div><!-- /cat-layout -->
+    </div><!-- /w -->
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="w">
+        <div class="faq-layout">
+            <div class="faq-left reveal">
+                <div class="faq-eyebrow">Common Questions</div>
+                <h2 class="faq-heading">Before<br>you order</h2>
+                <p class="faq-note">Can't find your answer? Contact our sales team at info@hugerubber.com or call 400-880-8961.</p>
+            </div>
+            <div class="faq-wrap reveal reveal-d1">
+
+                <div class="faq-item">
+                    <button class="faq-q">What vehicle types are FRIDERIC tyres designed for?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">FRIDERIC all-steel radial tyres are engineered for heavy-duty commercial vehicles — long-haul semi-trucks, regional distribution trucks, dump trucks, concrete mixers, and mining haul trucks. Pattern selection (steer, drive, trailer, all-position) determines the right fitment for each axle.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">How do I choose between Long Haul, Regional, and Mining patterns?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Long Haul patterns (FA999, RS109, FA808, FA818, FA131) prioritise low rolling resistance and high mileage on smooth motorways. Regional patterns (FD758, RD518, FD160, FD163) balance highway and mixed-surface performance with stronger sidewalls and deeper tread. Mining &amp; Off-Road patterns (FD165) use heavy-ply construction and aggressive tread blocks for unpaved haul roads and construction sites.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">Which certifications do HUGER tyres hold?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Our products carry CCC (China), DOT (USA), ECE R117 (EU), INMETRO (Brazil), GSO/GCC (Gulf States), SNI (Indonesia), BIS (India), SASO (Saudi Arabia), and TISI (Thailand). Certification coverage varies by pattern and size — contact our team for the exact list for your destination market.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">What is the minimum order quantity (MOQ)?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Standard MOQ is 1 × 40HQ container — approximately 200–240 pieces depending on size. For trial orders or mixed-size containers, our team can discuss flexible arrangements. OEM / private-label orders typically require a minimum of 1,000 pieces per pattern.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">What are your lead times and delivery port?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Stock sizes ship in 25–35 days FOB Qingdao. Non-stock sizes and OEM orders require 50–65 days. We can also arrange CIF, CFR, or DDP delivery for most destinations. Contact us for a freight quote to your port.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">Can I get OEM or private-label tyres?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Yes. We offer full OEM and private-label manufacturing — including custom sidewall branding, colour coding, and unique tread patterns. Minimum quantities and development timelines apply. Reach out to our trade team for a dedicated OEM enquiry form.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">Are technical spec sheets and test reports available?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">Yes. Full technical data sheets, load/inflation tables, and third-party test reports are available on request. Certification documentation (e.g., DOT, ECE type-approval) can be provided per shipment. Contact info@hugerubber.com with your pattern and size requirements.</div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q">What warranty does HUGER offer on its tyres?<span class="faq-plus">+</span></button>
+                    <div class="faq-a"><div class="faq-a-in">HUGER provides a manufacturing quality warranty covering defects in materials and workmanship. Warranty terms — including mileage guarantees for specific markets — are detailed in our distributor agreement. Normal wear, puncture damage, and misuse are not covered. Ask your regional sales contact for the applicable warranty document.</div></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+    <div class="w">
+        <div class="cta-inner">
+            <div class="cta-text">
+                <div class="cta-label">Ready to order?</div>
+                <div class="cta-h">Get a quote from<br>our trade team</div>
+            </div>
+            <a href="../index-v2.html#inquiry" class="cta-btn">
+                Send Enquiry <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="w">
+        <div class="footer-top">
+            <div class="ft-brand">
+                <div class="ft-logo"><a href="../index-v2.html"><img src="../logo.png" alt="HUGER"></a></div>
+                <p class="ft-tagline">Shandong Hugerubber Co., Ltd. — manufacturing all-steel radial truck &amp; bus tyres since 1988. Trusted across 70+ countries.</p>
+                <div class="ft-stats">
+                    <div><div class="ft-stat-num">1988</div><div class="ft-stat-label">Founded</div></div>
+                    <div><div class="ft-stat-num">70+</div><div class="ft-stat-label">Countries</div></div>
+                    <div><div class="ft-stat-num">2M</div><div class="ft-stat-label">Annual Tires</div></div>
+                </div>
+            </div>
+            <div>
+                <div class="ft-col-head">Navigation</div>
+                <ul class="ft-links">
+                    <li><a href="../index-v2.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="../index-v2.html#about">About HUGER</a></li>
+                    <li><a href="../index-v2.html#certs">Certifications</a></li>
+                    <li><a href="../index-v2.html#inquiry">Get a Quote</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="ft-col-head">Contact</div>
+                <div class="ft-contact-item"><span class="ft-contact-label">Hotline</span><a href="tel:4008808961" class="ft-contact-val">400-880-8961</a></div>
+                <div class="ft-contact-item"><span class="ft-contact-label">Office</span><a href="tel:05467726888" class="ft-contact-val">0546-7726888</a></div>
+                <div class="ft-contact-item"><span class="ft-contact-label">Email</span><a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a></div>
+                <div class="ft-contact-item"><span class="ft-contact-label">Address</span><span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span></div>
+            </div>
+            <div>
+                <div class="ft-col-head">Our Brands</div>
+                <div class="ft-brand-row"><img src="../logo1.png" alt="FRIDERIC" class="ft-brand-logo"></div>
+                <div class="ft-brand-row"><img src="../logo3.png" alt="CHILONG" class="ft-brand-logo"></div>
+                <div class="ft-brand-row"><img src="../logo2.png" alt="JOSEBEN" class="ft-brand-logo"></div>
+                <div style="margin-top:28px;">
+                    <div class="ft-col-head">Website</div>
+                    <a href="http://www.hugerubber.com" class="ft-contact-val" target="_blank" rel="noopener">www.hugerubber.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="ft-copy">© 2026 Shandong Hugerubber Co., Ltd. · All rights reserved</span>
+            <div class="ft-certs">
+                <img src="../img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+                <img src="../img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+                <img src="../img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ─── Header: switch dark/light based on scroll ───────
+(function(){
+    var hdr = document.getElementById('header');
+    var hero = document.getElementById('hero');
+    function update(){
+        if (window.scrollY > hero.offsetHeight - 60) {
+            hdr.classList.add('hdr-light');
+        } else {
+            hdr.classList.remove('hdr-light');
+        }
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+
+// ─── Sidebar filters (Brand × Application AND logic) ─
+(function(){
+    var activeBrand = 'all';
+    var activeApp   = 'all';
+    var cards   = document.querySelectorAll('.prod-card');
+    var countEl = document.getElementById('filter-count');
+    var noRes   = document.getElementById('no-results');
+
+    function applyFilters() {
+        var visible = 0;
+        cards.forEach(function(card) {
+            var brandMatch = activeBrand === 'all' || card.getAttribute('data-brand') === activeBrand;
+            var appMatch   = activeApp === 'all'   || card.getAttribute('data-series') === activeApp;
+            if (brandMatch && appMatch) { card.classList.remove('hidden'); visible++; }
+            else                        { card.classList.add('hidden'); }
+        });
+        countEl.textContent = visible + (visible === 1 ? ' pattern' : ' patterns');
+        noRes.classList.toggle('show', visible === 0);
+    }
+
+    document.querySelectorAll('#brand-filters .fs-opt').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('#brand-filters .fs-opt').forEach(function(b){ b.classList.remove('on'); });
+            btn.classList.add('on');
+            activeBrand = btn.getAttribute('data-brand');
+            applyFilters();
+        });
+    });
+
+    document.querySelectorAll('#app-filters .fs-opt').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('#app-filters .fs-opt').forEach(function(b){ b.classList.remove('on'); });
+            btn.classList.add('on');
+            activeApp = btn.getAttribute('data-app');
+            applyFilters();
+        });
+    });
+})();
+
+// ─── FAQ accordion ───────────────────────────────────
+(function(){
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var item = btn.parentElement;
+            var wasOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function(x){ x.classList.remove('open'); });
+            if (!wasOpen) item.classList.add('open');
+        });
+    });
+})();
+
+// ─── Scroll reveal ───────────────────────────────────
+(function(){
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+        return;
+    }
+    var ro = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+            if (e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el){ ro.observe(el); });
+})();
+</script>
+
+</body>
+</html>

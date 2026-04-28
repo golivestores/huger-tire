@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>FD758 — Mining &amp; Off-Road Drive Tire | HUGER FRIDERIC</title>
+    <meta name="description" content="HUGER FRIDERIC FD758 all-steel radial drive tire for mining, mountainous terrain and construction zones. High traction, puncture resistance, anti block-drop.">
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+    /* ─── Reset ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ─── v2 Header (extracted from style.css, vars inlined) ── */
+    #header {
+        color: #0f0f0d;
+        height: auto;
+        padding: clamp(10px, 0.9vw, 16px) 0;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: 80;
+    }
+    @media (max-width: 1100px) {
+        #header { padding: clamp(9px, 2.564vw, 11.5px) 0; }
+    }
+    #header .container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+    }
+    #header .group {
+        -webkit-backdrop-filter: blur(clamp(15px, 1.389vw, 26.6px));
+        backdrop-filter: blur(clamp(15px, 1.389vw, 26.6px));
+        background-color: hsla(0,0%,100%,.2);
+        border-radius: clamp(15px, 1.389vw, 26.6px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: clamp(5px, 0.417vw, 7.98px);
+        pointer-events: all;
+        width: min(92vw, 1240px);
+    }
+    #header .group .logo {
+        display: flex;
+        align-items: center;
+        margin-left: clamp(14px, 1.25vw, 23.94px);
+        overflow: visible;
+        flex-shrink: 0;
+    }
+    #header .group .logo img {
+        height: 28px;
+        width: auto;
+        display: block;
+        vertical-align: middle;
+    }
+    @media (max-width: 1240px) {
+        #header .group .logo img { height: 24px; }
+    }
+    #header .group .mask {
+        display: none;
+    }
+    #header .group .menu {
+        display: flex;
+        gap: clamp(4px, 0.556vw, 10.64px);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #header .group .menu li { display: inline-block; }
+    #header .group .menu li a {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: clamp(14px, 1.042vw, 19.95px);
+        color: #0f0f0d;
+        display: block;
+        font-size: clamp(13px, 1.042vw, 19.95px);
+        height: clamp(38px, 2.778vw, 53.2px);
+        line-height: clamp(38px, 2.778vw, 53.2px);
+        opacity: 0.6;
+        padding: 0 clamp(18px, 2.222vw, 42.56px);
+        transition: all 0.6s cubic-bezier(0.16,1,0.3,1);
+        white-space: nowrap;
+        font-family: inherit;
+    }
+    @media (max-width: 1240px) {
+        #header .group .menu li a { padding: 0 clamp(14px, 1.389vw, 26.6px); }
+    }
+    #header .group .menu li a:hover { opacity: 1; }
+    #header .group .menu li.is-active a,
+    #header .group .menu li.current-menu-item a { opacity: 1; }
+    /* Push down body so header doesn't overlap breadcrumb */
+    body { padding-top: 96px; }
+    body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background: #f0ede8;
+        color: #0f0f0d;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+    }
+
+    /* Grain overlay — removes the "digital flat" feel */
+    body::after {
+        content: '';
+        position: fixed; inset: 0; z-index: 9999;
+        pointer-events: none;
+        opacity: .032;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+        background-size: 180px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; background: none; border: none; }
+
+    /* ─── Tokens ─────────────────────────────────────── */
+    :root {
+        --cream:     #f0ede8;
+        --cream-dk:  #e6e2d9;
+        --ink:       #0f0f0d;
+        --ink-60:    rgba(15,15,13,.6);
+        --ink-30:    rgba(15,15,13,.3);
+        --ink-12:    rgba(15,15,13,.12);
+        --ink-06:    rgba(15,15,13,.06);
+        --blue:      #1244b0;   /* HUGER navy */
+        --blue-60:   rgba(18,68,176,.6);
+        --blue-08:   rgba(18,68,176,.08);
+        --navy:      #0c1a3a;   /* deep navy — header/footer/CTA */
+        --gold:      #e8b400;   /* FRIDERIC brand gold */
+        --green:     #3fa832;   /* HUGER leaf green */
+        --rule:      1.5px solid var(--ink);
+        --rule-lt:   1px solid var(--ink-12);
+    }
+
+    /* ─── Layout ─────────────────────────────────────── */
+    .w { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+    @media (max-width: 960px)  { .w { padding: 0 24px; } }
+    @media (max-width: 600px)  { .w { padding: 0 16px; } }
+
+    /* ─── Scroll reveal ──────────────────────────────── */
+    .reveal {
+        opacity: 0; transform: translateY(28px);
+        transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1);
+    }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: .08s; }
+    .reveal-d2 { transition-delay: .18s; }
+    .reveal-d3 { transition-delay: .28s; }
+
+
+    /* ─── Breadcrumb ─────────────────────────────────── */
+    .crumb {
+        border-bottom: var(--rule-lt);
+        padding: 12px 0;
+    }
+    .crumb .w {
+        display: flex; gap: 8px; align-items: center;
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
+        color: var(--ink-30);
+    }
+    .crumb a { color: var(--ink-60); transition: color .2s; }
+    .crumb a:hover { color: var(--ink); }
+    .crumb .sep { opacity: .3; }
+    .crumb .cur { color: var(--ink); }
+
+    /* ─── Hero ───────────────────────────────────────── */
+    .hero { padding: 0; overflow: hidden; }
+    .hero-inner {
+        display: grid; grid-template-columns: 1fr 1fr;
+        min-height: 90vh;
+    }
+    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; min-height: auto; } }
+
+    /* Left panel */
+    .hero-left {
+        padding: 52px 48px 52px 0;
+        display: flex; flex-direction: column; justify-content: space-between;
+        border-right: var(--rule-lt);
+    }
+    @media (max-width: 900px) {
+        .hero-left { padding: 40px 0 32px; border-right: none; border-bottom: var(--rule-lt); }
+    }
+
+    .hero-meta {
+        display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    .hero-series {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+        color: var(--ink-60);
+    }
+    .hero-brand-tag {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+        padding: 4px 10px;
+        background: var(--gold);
+        color: #0f0f0d;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+
+    /* THE BIG MOMENT — product name as graphic element */
+    .hero-model {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(96px, 14vw, 224px);
+        letter-spacing: -0.03em;
+        line-height: .88;
+        color: var(--ink);
+        margin-bottom: 28px;
+    }
+
+    .hero-tagline {
+        font-family: 'Inter', sans-serif;
+        font-size: clamp(14px, 1.2vw, 16px); line-height: 1.65;
+        color: var(--ink-60);
+        max-width: 420px;
+        margin-bottom: 32px;
+        border-left: 3px solid var(--blue);
+        padding-left: 16px;
+    }
+
+    /* Style C — icon grid */
+    .hero-attrs { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .attr-brand {
+        display: inline-flex; align-items: center; gap: 7px;
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+        color: #7a5e00;
+        background: rgba(232,180,0,.15);
+        border: 1px solid rgba(232,180,0,.5);
+        padding: 5px 14px; border-radius: 5px;
+        align-self: flex-start;
+    }
+    .attr-grid {
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 8px 28px;
+    }
+    .attr-item {
+        display: flex; align-items: center; gap: 9px;
+        font-family: 'Inter', sans-serif;
+        font-size: 13px; font-weight: 500; color: var(--ink-60);
+    }
+    .attr-item i { font-size: 12px; color: var(--blue); width: 14px; text-align: center; flex-shrink: 0; }
+
+    .hero-certs {
+        display: flex; align-items: center; gap: 20px;
+        padding: 20px 0;
+        border-top: var(--rule-lt);
+        margin-bottom: 28px;
+    }
+    .cert-logo {
+        height: 36px; width: auto;
+        object-fit: contain;
+        filter: grayscale(1);
+        opacity: .6;
+        transition: opacity .2s, filter .2s;
+    }
+    .cert-logo:hover { opacity: 1; filter: grayscale(0); }
+
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+        padding: 13px 24px;
+        border-radius: 10px;
+        display: inline-flex; align-items: center; gap: 10px;
+        transition: background .2s, color .2s, border-color .2s, transform .2s cubic-bezier(.16,1,.3,1);
+    }
+    .btn-fill { background: var(--ink); color: #fff; border: 1.5px solid var(--ink); }
+    .btn-fill:hover { background: var(--blue); border-color: var(--blue); transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink-30); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    /* Right panel — gallery */
+    .hero-right {
+        padding: 52px 0 52px 56px;
+        display: flex; flex-direction: column; gap: 16px;
+    }
+    @media (max-width: 900px) { .hero-right { padding: 32px 0 40px; } }
+
+    .gallery-main {
+        flex: 1;
+        background: var(--cream-dk);
+        position: relative; overflow: hidden;
+        min-height: 360px;
+        border-radius: 16px;
+    }
+    .gallery-thumbs {
+        display: flex; gap: 10px; flex-shrink: 0;
+    }
+    .g-thumb {
+        flex: 1; aspect-ratio: 1;
+        background: var(--cream-dk);
+        border: 1.5px solid transparent;
+        border-radius: 10px;
+        cursor: pointer; position: relative; overflow: hidden;
+        transition: border-color .2s;
+    }
+    .g-thumb.on { border-color: var(--blue); }
+    .g-thumb:hover:not(.on) { border-color: var(--ink-30); }
+
+    .gallery-main {
+        background: #fff;
+    }
+    .g-thumb {
+        background: #fff;
+    }
+    .gallery-main img,
+    .g-thumb img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: contain;
+        padding: 8px;
+        transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .15s ease;
+    }
+    .gallery-main img { opacity: 1; }
+    .g-thumb:hover img { transform: scale(1.04); }
+    .scene-img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+
+    /* ─── Section primitives ─────────────────────────── */
+    .section { padding: 80px 0; border-top: var(--rule-lt); }
+    .section.dark { background: var(--navy); color: #fff; border-top-color: transparent; }
+    .section.off  { background: var(--cream-dk); }
+
+    .s-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 12px; letter-spacing: 4px; text-transform: uppercase;
+        color: var(--blue); margin-bottom: 12px; display: block;
+    }
+    .section.dark .s-label { color: var(--gold); }
+
+    .s-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: clamp(32px, 4vw, 56px);
+        letter-spacing: -1px; line-height: 1.05;
+        margin-bottom: 8px;
+    }
+    .s-sub {
+        font-size: clamp(14px, 1.2vw, 18px); line-height: 1.65; color: var(--ink-60);
+        max-width: 560px;
+    }
+    .section.dark .s-sub { color: rgba(255,255,255,.45); }
+
+    .s-head { margin-bottom: 56px; }
+    .s-head.centered { text-align: center; }
+    .s-head.centered .s-sub { margin: 0 auto; }
+
+    /* ─── Performance ────────────────────────────────── */
+    .perf-layout {
+        display: grid; grid-template-columns: 1fr 1fr;
+        min-height: 72vh;
+    }
+    @media (max-width: 900px) { .perf-layout { grid-template-columns: 1fr; min-height: auto; } }
+
+    .perf-left {
+        padding: 72px 48px 72px 64px;
+        display: flex; flex-direction: column; justify-content: center; gap: 48px;
+    }
+    @media (max-width: 960px) { .perf-left { padding: 48px 24px; } }
+
+    /* image left */
+    .perf-right {
+        position: relative; overflow: hidden;
+        border-radius: 0;
+        order: -1;
+    }
+    .perf-right img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    @media (max-width: 900px) { .perf-right { min-height: 280px; } }
+
+    .perf-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+    @media (max-width: 600px) { .perf-wrap { grid-template-columns: 1fr; } }
+
+    .perf-row {
+        display: grid; grid-template-columns: 1fr 28px;
+        align-items: end; gap: 10px;
+        padding: 20px 0; border-bottom: var(--rule-lt);
+    }
+    .perf-row:nth-child(-n+2) { border-top: var(--rule-lt); }
+    @media (max-width: 600px) { .perf-row:nth-child(2) { border-top: none; } }
+    .perf-row-left { display: flex; flex-direction: column; gap: 10px; }
+    .perf-key {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
+        color: var(--ink-60);
+    }
+    .perf-track {
+        height: 6px; background: var(--ink-12); position: relative; overflow: hidden;
+        border-radius: 3px;
+    }
+    .perf-fill {
+        position: absolute; top: 0; left: 0; bottom: 0; width: 0;
+        background: var(--blue);
+        transition: width 1.4s cubic-bezier(.16,1,.3,1);
+    }
+    .perf-track.lit .perf-fill { width: var(--w); }
+    .perf-val {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 24px; font-weight: 800; color: var(--ink); text-align: right;
+        line-height: 1;
+    }
+
+    /* ─── Feature Slider ─────────────────────────────── */
+    .fs-section { padding: 0; border-top: var(--rule-lt); }
+    .fs-wrap {
+        display: grid; grid-template-columns: 1fr 1fr;
+        min-height: 72vh;
+    }
+    @media (max-width: 900px) { .fs-wrap { grid-template-columns: 1fr; } }
+
+    /* Left text panel */
+    .fs-left {
+        padding: 64px 56px;
+        background: var(--cream);
+        display: flex; flex-direction: column;
+        gap: 0;
+    }
+    @media (max-width: 960px) { .fs-left { padding: 48px 24px; } }
+
+    .fs-header { margin-bottom: 48px; }
+
+    .fs-slides { flex: 1; position: relative; min-height: 280px; }
+    .fs-slide {
+        position: absolute; inset: 0;
+        opacity: 0; transform: translateY(16px);
+        transition: opacity .45s cubic-bezier(.16,1,.3,1), transform .45s cubic-bezier(.16,1,.3,1);
+        pointer-events: none;
+        display: flex; flex-direction: column; justify-content: center;
+    }
+    .fs-slide.fs-active { opacity: 1; transform: none; pointer-events: auto; }
+
+    .fs-slide-num {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700; font-size: 100px; line-height: 1;
+        color: var(--ink-06); letter-spacing: -4px;
+        margin-bottom: -12px; user-select: none;
+    }
+    .fs-slide-icon-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    .fs-slide-icon { font-size: 18px; color: var(--blue); }
+    .fs-slide-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700; font-size: clamp(26px, 3vw, 44px);
+        letter-spacing: -1px; line-height: 1.1; color: var(--ink);
+        margin-bottom: 18px;
+    }
+    .fs-slide-desc { font-size: 15px; line-height: 1.7; color: var(--ink-60); max-width: 460px; }
+
+    /* Nav row */
+    .fs-nav {
+        display: flex; align-items: center; gap: 16px;
+        padding-top: 48px;
+    }
+    .fs-btn {
+        width: 44px; height: 44px; flex-shrink: 0;
+        border: 1.5px solid var(--ink-30); border-radius: 10px;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; color: var(--ink-60); font-size: 14px;
+        transition: border-color .2s, color .2s, background .2s;
+        background: none;
+    }
+    .fs-btn:hover { border-color: var(--ink); color: var(--ink); }
+    .fs-dots { display: flex; gap: 6px; align-items: center; flex: 1; }
+    .fs-dot {
+        height: 6px; width: 6px; border-radius: 3px;
+        background: var(--ink-12); cursor: pointer;
+        transition: background .25s, width .35s cubic-bezier(.16,1,.3,1);
+    }
+    .fs-dot.fs-active { background: var(--blue); width: 24px; }
+    .fs-counter {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 2px; color: var(--ink-30);
+        flex-shrink: 0;
+    }
+
+    /* Right image panel */
+    .fs-right {
+        position: relative; overflow: hidden;
+        background: var(--navy);
+    }
+    @media (max-width: 900px) { .fs-right { min-height: 320px; } }
+    .fs-imgs { position: absolute; inset: 0; }
+    .fs-img {
+        position: absolute; inset: 0;
+        opacity: 0; transition: opacity .55s ease;
+    }
+    .fs-img.fs-active { opacity: 1; }
+    .fs-img img { width: 100%; height: 100%; object-fit: cover; }
+    .fs-img::after {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(160deg, rgba(12,26,58,.35) 0%, transparent 60%);
+    }
+    .fs-img-label {
+        position: absolute; bottom: 28px; right: 28px; z-index: 2;
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: rgba(255,255,255,.3);
+    }
+
+    /* ─── Specs table ────────────────────────────────── */
+    .spec-box { overflow-x: auto; border: var(--rule-lt); border-radius: 12px; overflow: hidden; }
+    .spec-table { width: 100%; min-width: 780px; border-collapse: collapse; }
+    .spec-table thead th {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+        color: var(--ink-60); font-weight: 400;
+        text-align: left; padding: 14px 18px;
+        background: var(--cream-dk);
+        border-bottom: var(--rule-lt); white-space: nowrap;
+    }
+    .spec-table tbody td {
+        font-size: 13px; padding: 16px 18px;
+        border-bottom: var(--rule-lt); color: var(--ink);
+        white-space: nowrap;
+    }
+    .spec-table tbody tr:last-child td { border-bottom: none; }
+    .spec-table tbody tr:hover td { background: var(--blue-08); }
+    .spec-size {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px; font-weight: 700; letter-spacing: -0.3px;
+    }
+    .spec-pn {
+        font-family: 'DM Mono', monospace; font-size: 10px; color: var(--ink-30);
+    }
+    .swipe-hint {
+        display: none; padding: 10px;
+        font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px;
+        text-transform: uppercase; color: var(--ink-30); text-align: center;
+        border-top: var(--rule-lt);
+    }
+    @media (max-width: 900px) { .swipe-hint { display: block; } }
+
+    /* ─── Scenes ─────────────────────────────────────── */
+    .scenes-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; padding: 0 48px; }
+    @media (max-width: 960px) { .scenes-grid { padding: 0 24px; } }
+    @media (max-width: 840px) { .scenes-grid { grid-template-columns: 1fr; padding: 0 16px; } }
+    .scene {
+        position: relative; aspect-ratio: 3/4;
+        background: var(--cream-dk); overflow: hidden;
+        border-radius: 16px;
+        cursor: default;
+    }
+    .scene:hover .scene-overlay { opacity: 1; }
+    .scene-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(12,26,58,.92) 40%, transparent);
+        opacity: .82;
+        transition: opacity .3s;
+        display: flex; flex-direction: column; justify-content: flex-end;
+        padding: 28px;
+    }
+    .scene-tag {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase;
+        color: var(--gold); margin-bottom: 8px;
+    }
+    .scene-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700; font-size: 22px;
+        color: #fff; letter-spacing: -0.3px; margin-bottom: 6px;
+    }
+    .scene-desc { font-size: 12px; color: rgba(255,255,255,.5); line-height: 1.5; }
+
+    /* ─── Downloads ──────────────────────────────────── */
+    .dl-list { display: flex; flex-direction: column; }
+    .dl-item {
+        display: flex; align-items: center; gap: 20px;
+        padding: 20px 0; border-bottom: var(--rule-lt);
+        text-decoration: none; color: inherit;
+        transition: color .2s;
+    }
+    .dl-item:first-child { border-top: var(--rule-lt); }
+    .dl-item:hover { color: var(--blue); }
+    .dl-item:hover .dl-arrow { transform: translateX(4px); color: var(--blue); }
+    .dl-ico {
+        flex: 0 0 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--cream-dk); font-size: 16px; color: var(--ink-60);
+        border-radius: 10px;
+    }
+    .dl-body { flex: 1; }
+    .dl-name { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+    .dl-meta {
+        font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px;
+        text-transform: uppercase; color: var(--ink-30);
+    }
+    .dl-arrow { color: var(--ink-30); font-size: 13px; transition: transform .25s, color .2s; }
+
+    /* ─── Two-col section layout (title left / content right) ── */
+    .section-2col {
+        display: grid; grid-template-columns: 1fr 2fr;
+        gap: 80px; align-items: start;
+    }
+    @media (max-width: 900px) { .section-2col { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ─── FAQ ────────────────────────────────────────── */
+    .faq-wrap { }
+    .faq-item { border-bottom: var(--rule-lt); }
+    .faq-item:first-child { border-top: var(--rule-lt); }
+    .faq-q {
+        width: 100%; text-align: left; cursor: pointer;
+        padding: 22px 0;
+        display: flex; justify-content: space-between; align-items: center; gap: 16px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px; font-weight: 500; color: var(--ink);
+    }
+    .faq-plus {
+        flex: 0 0 24px; height: 24px;
+        border: 1.5px solid var(--ink-30);
+        border-radius: 6px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 13px; color: var(--ink-30);
+        transition: transform .35s cubic-bezier(.16,1,.3,1), border-color .2s, color .2s;
+    }
+    .faq-item.open .faq-plus { transform: rotate(45deg); border-color: var(--blue); color: var(--blue); }
+    .faq-a { overflow: hidden; max-height: 0; transition: max-height .45s cubic-bezier(.16,1,.3,1); }
+    .faq-a-in {
+        padding: 0 0 22px;
+        font-size: 14px; line-height: 1.75; color: var(--ink-60); max-width: 640px;
+    }
+    .faq-item.open .faq-a { max-height: 280px; }
+
+    /* ─── Related ────────────────────────────────────── */
+    .related-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    @media (max-width: 840px) { .related-grid { grid-template-columns: 1fr; } }
+    .rel-card {
+        border-right: var(--rule-lt);
+        text-decoration: none; color: inherit;
+        display: block;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: background .2s, box-shadow .2s;
+    }
+    .rel-card:last-child { border-right: none; }
+    @media (max-width: 840px) { .rel-card { border-right: none; border-bottom: var(--rule-lt); } }
+    .rel-card:hover { background: var(--blue-08); box-shadow: 0 4px 24px rgba(18,68,176,.08); }
+    .rel-img {
+        aspect-ratio: 1/1; background: #fff;
+        border-bottom: var(--rule-lt); position: relative; overflow: hidden;
+        border-radius: 16px 16px 0 0;
+    }
+    .rel-img img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: contain;
+        padding: 12px;
+        transition: transform .4s cubic-bezier(.16,1,.3,1);
+    }
+    .rel-card:hover .rel-img img { transform: scale(1.04); }
+    .rel-body { padding: 24px 28px 28px; }
+    .rel-name {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700; font-size: 32px; letter-spacing: -1px; line-height: 1.1;
+        color: var(--ink); margin-bottom: 10px;
+    }
+    .rel-desc { font-size: 13px; line-height: 1.6; color: var(--ink-60); margin-bottom: 14px; }
+    .rel-link {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: var(--blue);
+    }
+
+    /* ─── Inquiry / CTA ──────────────────────────────── */
+    .inq-inner {
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 80px; align-items: start;
+    }
+    @media (max-width: 900px) { .inq-inner { grid-template-columns: 1fr; gap: 40px; } }
+    .inq-left {}
+    .inq-left .s-title { color: #fff; }
+    .inq-detail {
+        margin-top: 28px; display: flex; flex-direction: column; gap: 14px;
+    }
+    .inq-point {
+        display: flex; gap: 12px; align-items: flex-start;
+        font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.6;
+    }
+    .inq-point i { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .inq-form { display: flex; flex-direction: column; gap: 10px; }
+    .inq-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 560px) { .inq-row { grid-template-columns: 1fr; } }
+    .inq-input {
+        width: 100%; padding: 12px 16px;
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 8px;
+        color: #fff;
+        font-family: 'Inter', sans-serif; font-size: 14px;
+        transition: border-color .2s, background .2s;
+    }
+    .inq-input::placeholder { color: rgba(255,255,255,.25); }
+    .inq-input:focus { outline: none; border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.09); }
+    textarea.inq-input { min-height: 100px; resize: vertical; }
+    .inq-submit {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+        padding: 15px 24px; width: 100%;
+        background: #fff; color: var(--navy);
+        border: 1.5px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background .2s, color .2s;
+    }
+    .inq-submit:hover { background: transparent; color: #fff; }
+
+    /* ─── Footer ─────────────────────────────────────── */
+    /* ─── Footer ─────────────────────────────────────────── */
+    .footer {
+        background: #0d0d11;
+        color: rgba(255,255,255,.55);
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0 0;
+    }
+
+    /* giant watermark wordmark */
+    .footer::before {
+        content: 'HUGER';
+        position: absolute;
+        bottom: -0.22em; left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+        font-size: clamp(160px, 22vw, 320px);
+        letter-spacing: -0.04em;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(232,180,0,.18);
+        white-space: nowrap;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr 1fr 1fr;
+        gap: 48px;
+        padding-bottom: 96px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    @media (max-width: 1024px) {
+        .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+    }
+    @media (max-width: 600px) {
+        .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* Col 1 — brand */
+    .ft-brand {}
+    .ft-logo { margin-bottom: 20px; }
+    .ft-logo img { height: 26px; filter: brightness(0) invert(1); opacity: .9; }
+    .ft-tagline {
+        font-size: 13px; line-height: 1.65;
+        color: rgba(255,255,255,.52);
+        max-width: 260px;
+        margin-bottom: 28px;
+    }
+    .ft-stats {
+        display: flex; gap: 28px; flex-wrap: wrap;
+    }
+    .ft-stat-num {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900; font-size: 32px;
+        letter-spacing: -0.02em; line-height: 1;
+        color: #fff;
+    }
+    .ft-stat-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: rgba(255,255,255,.45);
+        margin-top: 4px;
+    }
+
+    /* Col heading */
+    .ft-col-head {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+        color: rgba(255,255,255,.45);
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .ft-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ft-links a {
+        font-size: 13px; color: rgba(255,255,255,.7);
+        transition: color .2s;
+    }
+    .ft-links a:hover { color: #fff; }
+
+    /* Contact col */
+    .ft-contact-item {
+        display: flex; flex-direction: column; gap: 3px; margin-bottom: 16px;
+    }
+    .ft-contact-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: rgba(255,255,255,.4);
+    }
+    .ft-contact-val {
+        font-size: 13px; color: rgba(255,255,255,.75);
+        transition: color .2s;
+    }
+    a.ft-contact-val:hover { color: #fff; }
+
+    /* Brands col */
+    .ft-brand-row {
+        display: flex; align-items: center; gap: 12px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .ft-brand-row:last-child { border-bottom: none; }
+    .ft-brand-logo {
+        height: 22px;
+        width: auto;
+        display: block;
+        filter: brightness(0) invert(1);
+        opacity: .75;
+        transition: opacity .2s;
+        flex: 1;
+        object-fit: contain;
+        object-position: left center;
+    }
+    .ft-brand-row:hover .ft-brand-logo { opacity: 1; }
+    .ft-brand-zh {
+        font-size: 11px; color: rgba(255,255,255,.4);
+        flex-shrink: 0;
+    }
+
+    /* Bottom strip */
+    .footer-bottom {
+        display: flex; align-items: center; justify-content: space-between;
+        flex-wrap: wrap; gap: 16px;
+        padding: 24px 0 32px;
+        position: relative; z-index: 1;
+    }
+    .ft-copy {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+        color: rgba(255,255,255,.2);
+    }
+    .ft-certs {
+        display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+    }
+    .ft-cert-logo {
+        height: 28px; width: auto;
+        filter: brightness(0) invert(1);
+        opacity: .45;
+        transition: opacity .2s;
+    }
+    .ft-cert-logo:hover { opacity: .8; }
+    .ft-cert-tag {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+        color: rgba(255,255,255,.35);
+        transition: color .2s;
+    }
+    .ft-cert-tag:hover { color: rgba(255,255,255,.7); }
+    @media (max-width: 640px) {
+        .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="component component--header header" data-component="header" id="header">
+    <div class="container">
+        <div class="group">
+            <a href="../index-v2.html" class="logo" aria-label="Go to Home page">
+                <img src="../logo.png" alt="HUGER">
+            </a>
+            <div class="mask"></div>
+            <ul id="menu-main" class="menu">
+                <li class="menu-item"><a href="../index-v2.html">Home</a></li>
+                <li class="menu-item is-active"><a href="../index-v2.html#products">Products</a></li>
+                <li class="menu-item"><a href="../index-v2.html#about">About</a></li>
+                <li class="menu-item"><a href="../index-v2.html#certs">Certifications</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="crumb">
+    <div class="w">
+        <a href="../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../index.html#products">Products</a>
+        <span class="sep">/</span>
+        <span class="cur">FD758</span>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="w">
+        <div class="hero-inner">
+
+            <!-- Left: product info -->
+            <div class="hero-left reveal">
+                <div>
+                    <div class="hero-meta">
+                        <span class="hero-series">FRIDERIC Series · Drive Axle</span>
+                        <span class="hero-brand-tag">Mining &amp; Off-Road</span>
+                    </div>
+                    <h1 class="hero-model">FD758</h1>
+                    <p class="hero-tagline">All-steel radial drive tire engineered for mining sites, mountainous terrain, and construction zones — resisting puncture, block-drop, and abrasion under extreme load.</p>
+                    <div class="hero-attrs">
+                        <div class="attr-brand">
+                            <i class="fa-solid fa-registered" style="font-size:9px;"></i>
+                            FRIDERIC
+                        </div>
+                        <div class="attr-grid">
+                            <div class="attr-item">
+                                <i class="fa-solid fa-layer-group"></i>
+                                All-Steel Radial
+                            </div>
+                            <div class="attr-item">
+                                <i class="fa-solid fa-circle"></i>
+                                22.5″ Rim
+                            </div>
+                            <div class="attr-item">
+                                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                                Drive Axle Position
+                            </div>
+                            <div class="attr-item">
+                                <i class="fa-solid fa-bars"></i>
+                                PR 18 / 20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-certs">
+                        <img class="cert-logo" src="../img/certs/ccc.png" alt="CCC">
+                        <img class="cert-logo" src="../img/certs/gso.png" alt="GSO / GCC">
+                        <img class="cert-logo" src="../img/certs/sni.png" alt="SNI">
+                    </div>
+                    <div class="hero-btns">
+                        <a href="#inquiry" class="btn btn-fill">
+                            <i class="fa-solid fa-paper-plane"></i> Request Quote
+                        </a>
+                        <a href="#specs" class="btn btn-ghost">
+                            <i class="fa-solid fa-table"></i> View Specs
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: gallery -->
+            <div class="hero-right reveal reveal-d1">
+                <div class="gallery-main" id="gal-main">
+                    <img id="gal-img"
+                        src="../img/fd758/fd758-3.jpg"
+                        alt="FD758 3/4 View">
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="g-thumb on" data-i="0">
+                        <img src="../img/fd758/fd758-3.jpg" alt="3/4 View">
+                    </div>
+                    <div class="g-thumb" data-i="1">
+                        <img src="../img/fd758/fd758-1.jpg" alt="Side View">
+                    </div>
+                    <div class="g-thumb" data-i="2">
+                        <img src="../img/fd758/fd758-2.jpg" alt="Tread Face">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PERFORMANCE -->
+<section class="section off" style="padding:0; border-top: var(--rule-lt);">
+    <div class="perf-layout">
+        <!-- Left: title + bars -->
+        <div class="perf-left reveal">
+            <div class="s-head">
+                <span class="s-label">Performance Profile</span>
+                <h2 class="s-title">Built for the<br>toughest routes</h2>
+            </div>
+            <div class="perf-wrap reveal reveal-d1">
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Driving Power</div>
+                        <div class="perf-track" data-w="95%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">9.5</div>
+                </div>
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Load Capacity</div>
+                        <div class="perf-track" data-w="93%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">9.3</div>
+                </div>
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Puncture Resist.</div>
+                        <div class="perf-track" data-w="92%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">9.2</div>
+                </div>
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Anti Block-Drop</div>
+                        <div class="perf-track" data-w="90%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">9.0</div>
+                </div>
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Wet / Mud Grip</div>
+                        <div class="perf-track" data-w="88%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">8.8</div>
+                </div>
+                <div class="perf-row">
+                    <div class="perf-row-left">
+                        <div class="perf-key">Tread Mileage</div>
+                        <div class="perf-track" data-w="78%"><div class="perf-fill"></div></div>
+                    </div>
+                    <div class="perf-val">7.8</div>
+                </div>
+            </div>
+        </div>
+        <!-- Right: image — full bleed, no .w wrapper -->
+        <div class="perf-right reveal reveal-d2">
+            <img src="../img/fd758/fd758-perf.jpg" alt="FD758 tread detail">
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES + TREAD SLIDER -->
+<section class="fs-section">
+    <div class="fs-wrap">
+
+        <!-- Left: text -->
+        <div class="fs-left">
+            <div class="fs-header">
+                <span class="s-label">Key Features</span>
+                <h2 class="s-title">Engineered<br>to endure</h2>
+            </div>
+
+            <div class="fs-slides">
+                <div class="fs-slide fs-active" data-slide="0">
+                    <div class="fs-slide-num">01</div>
+                    <div class="fs-slide-icon-row">
+                        <i class="fa-solid fa-bolt fs-slide-icon"></i>
+                        <div class="fs-slide-title">High Driving Power</div>
+                    </div>
+                    <p class="fs-slide-desc">Aggressive lug pattern with deep 21 mm tread depth delivers superior traction on loose, unpaved surfaces — moving heavier loads with less wheel slip. The wide shoulder lugs distribute torque evenly under full load cycling.</p>
+                </div>
+                <div class="fs-slide" data-slide="1">
+                    <div class="fs-slide-num">02</div>
+                    <div class="fs-slide-icon-row">
+                        <i class="fa-solid fa-shield-halved fs-slide-icon"></i>
+                        <div class="fs-slide-title">Puncture Resistance</div>
+                    </div>
+                    <p class="fs-slide-desc">Reinforced 4-belt all-steel construction and stone-ejector grooves shield the casing from sharp debris common in mining and quarry environments. Tested to exceed standard penetration resistance thresholds by 30%.</p>
+                </div>
+                <div class="fs-slide" data-slide="2">
+                    <div class="fs-slide-num">03</div>
+                    <div class="fs-slide-icon-row">
+                        <i class="fa-solid fa-cubes-stacked fs-slide-icon"></i>
+                        <div class="fs-slide-title">Anti Block-Drop</div>
+                    </div>
+                    <p class="fs-slide-desc">Interlocking shoulder block design and high-tear compound prevent chunking and tread loss when operating across sharp rock and broken pavement. Compound formulation tuned for cut-and-chip resistance in extreme temperature ranges.</p>
+                </div>
+                <div class="fs-slide" data-slide="3">
+                    <div class="fs-slide-num">04</div>
+                    <div class="fs-slide-icon-row">
+                        <i class="fa-solid fa-water fs-slide-icon"></i>
+                        <div class="fs-slide-title">Wide Lateral Grooves</div>
+                    </div>
+                    <p class="fs-slide-desc">Deep cross-channels evacuate mud and water at speed, sustaining grip on slick mining haul roads and waterlogged construction sites where hydroplaning risk is high.</p>
+                </div>
+            </div>
+
+            <div class="fs-nav">
+                <button class="fs-btn" id="fs-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="fs-dots">
+                    <span class="fs-dot fs-active" data-dot="0"></span>
+                    <span class="fs-dot" data-dot="1"></span>
+                    <span class="fs-dot" data-dot="2"></span>
+                    <span class="fs-dot" data-dot="3"></span>
+                </div>
+                <button class="fs-btn" id="fs-next"><i class="fa-solid fa-arrow-right"></i></button>
+                <span class="fs-counter" id="fs-counter">01 / 04</span>
+            </div>
+        </div>
+
+        <!-- Right: images -->
+        <div class="fs-right">
+            <div class="fs-imgs">
+                <div class="fs-img fs-active" data-img="0">
+                    <img src="../img/fd758/fd758-f2.jpg" alt="High Driving Power">
+                    <span class="fs-img-label">High Driving Power</span>
+                </div>
+                <div class="fs-img" data-img="1">
+                    <img src="../img/fd758/fd758-f3.jpg" alt="Puncture Resistance">
+                    <span class="fs-img-label">Puncture Resistance</span>
+                </div>
+                <div class="fs-img" data-img="2">
+                    <img src="../img/fd758/fd758-f4.jpg" alt="Anti Block-Drop">
+                    <span class="fs-img-label">Anti Block-Drop</span>
+                </div>
+                <div class="fs-img" data-img="3">
+                    <img src="../img/fd758/fd758-f5.jpg" alt="Wide Lateral Grooves">
+                    <span class="fs-img-label">Wide Lateral Grooves</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- APPLICATION SCENES -->
+<section class="section off" style="padding-bottom:0; border-top: var(--rule-lt);">
+    <div class="w">
+        <div class="s-head reveal">
+            <span class="s-label">Where It Performs</span>
+            <h2 class="s-title">Built for where<br>the road ends</h2>
+        </div>
+    </div>
+    <div class="scenes-grid reveal reveal-d1">
+        <div class="scene">
+            <img class="scene-img" src="https://images.unsplash.com/photo-1711012604128-8339024a3e12?w=600&h=800&fit=crop&q=80" alt="Open-Pit Mining">
+            <div class="scene-overlay">
+                <div class="scene-tag">/ Mining</div>
+                <div class="scene-title">Open-Pit Mining</div>
+                <div class="scene-desc">Continuous load cycling on broken rock, slag, and unimproved haul roads.</div>
+            </div>
+        </div>
+        <div class="scene">
+            <img class="scene-img" src="https://images.unsplash.com/photo-1582280871722-424e91cbee8b?w=600&h=800&fit=crop&q=80" alt="Mountain Haulage">
+            <div class="scene-overlay">
+                <div class="scene-tag">/ Mountainous</div>
+                <div class="scene-title">Mountain Haulage</div>
+                <div class="scene-desc">Steep grades and sharp switchbacks where traction failure is not an option.</div>
+            </div>
+        </div>
+        <div class="scene">
+            <img class="scene-img" src="https://images.unsplash.com/photo-1723367194881-fe2e53534170?w=600&h=800&fit=crop&q=80" alt="Construction Site">
+            <div class="scene-overlay">
+                <div class="scene-tag">/ Construction</div>
+                <div class="scene-title">Construction Site</div>
+                <div class="scene-desc">Mixed terrain with gravel, rebar offcuts, and frequent low-speed maneuvering.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECS -->
+<section class="section" id="specs">
+    <div class="w">
+        <div class="s-head reveal">
+            <span class="s-label">Technical Specifications</span>
+            <h2 class="s-title">Available Sizes</h2>
+            <p class="s-sub">Manufactured at our Guangrao, Shandong plant. Contact us for OEM pattern and size requests.</p>
+        </div>
+        <div class="spec-box reveal reveal-d1">
+            <div style="overflow-x:auto;">
+                <table class="spec-table">
+                    <thead>
+                        <tr>
+                            <th>Part No.</th>
+                            <th>Size</th>
+                            <th>Std. Rim</th>
+                            <th>PR</th>
+                            <th>Speed</th>
+                            <th>Tread Depth</th>
+                            <th>Load Index</th>
+                            <th>Max Load (S / D)</th>
+                            <th>Inflation</th>
+                            <th>Origin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="spec-pn">FD758-31580R225-PR20</td>
+                            <td class="spec-size">315/80R22.5</td>
+                            <td>9.00</td><td>20</td><td>L · 120 km/h</td>
+                            <td>21 mm</td><td>156 / 153</td>
+                            <td>4000 / 3650 kg</td><td>900 kPa</td><td>Guangrao</td>
+                        </tr>
+                        <tr>
+                            <td class="spec-pn">FD758-12R225-PR18</td>
+                            <td class="spec-size">12R22.5</td>
+                            <td>9.00</td><td>18</td><td>K · 110 km/h</td>
+                            <td>21 mm</td><td>152 / 149</td>
+                            <td>3550 / 3250 kg</td><td>830 kPa</td><td>Guangrao</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="swipe-hint">← Swipe to see all columns →</div>
+        </div>
+    </div>
+</section>
+
+<!-- DOWNLOADS -->
+<section class="section" id="downloads">
+    <div class="w">
+        <div class="section-2col">
+            <div class="reveal">
+                <span class="s-label">Downloads</span>
+                <h2 class="s-title">Spec Sheets<br>&amp; Catalogs</h2>
+            </div>
+            <div class="dl-list reveal reveal-d1">
+                <a href="#" class="dl-item">
+                    <div class="dl-ico"><i class="fa-solid fa-file-pdf"></i></div>
+                    <div class="dl-body">
+                        <div class="dl-name">FD758 Product Spec Sheet</div>
+                        <div class="dl-meta">PDF · 1.2 MB</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right dl-arrow"></i>
+                </a>
+                <a href="#" class="dl-item">
+                    <div class="dl-ico"><i class="fa-solid fa-images"></i></div>
+                    <div class="dl-body">
+                        <div class="dl-name">FD758 High-Res Product Images</div>
+                        <div class="dl-meta">ZIP · 8 MB</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right dl-arrow"></i>
+                </a>
+                <a href="#" class="dl-item">
+                    <div class="dl-ico"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="dl-body">
+                        <div class="dl-name">FRIDERIC 2025 Full Catalog</div>
+                        <div class="dl-meta">PDF · 35 MB</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right dl-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section off">
+    <div class="w">
+        <div class="section-2col">
+            <div class="reveal">
+                <span class="s-label">Common Questions</span>
+                <h2 class="s-title">Before you order</h2>
+            </div>
+        <div class="faq-wrap reveal reveal-d1">
+            <div class="faq-item">
+                <button class="faq-q">What vehicle types is the FD758 designed for?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">FD758 is built for medium to heavy-duty trucks in off-road and mixed conditions — typically 6×4 / 8×4 dump trucks, mixers, and mining haul trucks. It is engineered for the drive axle position where torque transfer and traction are critical.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">What's the maximum load and speed rating?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">315/80R22.5 (PR20) carries up to 4000 kg single / 3650 kg dual at 900 kPa, rated for 120 km/h (Speed L). 12R22.5 (PR18) carries 3550 kg single / 3250 kg dual at 830 kPa, rated for 110 km/h (Speed K). Always observe local axle-load regulations.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">What kind of mileage can I expect?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">Field data indicates 60,000–80,000 km on typical mining and construction routes. Mileage varies significantly with road severity, axle alignment, and inflation discipline. Highway-heavy routes will see the upper end; pure mining will sit lower.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Is the FD758 suitable for highway driving?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">FD758 is optimized for unpaved and mixed routes. For long-haul highway service, we recommend our FD160 (drive) or FA999 (all-position) patterns, which deliver lower rolling resistance and longer mileage on smooth pavement.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">What certifications does the FD758 carry?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">CCC (China), DOT (USA), ECE R117 (EU), INMETRO (Brazil), GSO/GCC (Gulf), SNI (Indonesia), BIS (India), and SASO (Saudi Arabia). Contact our sales team for the certification list applicable to your destination market.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">What MOQ and lead time should I expect?<span class="faq-plus">+</span></button>
+                <div class="faq-a"><div class="faq-a-in">Standard MOQ is 1×40HQ container (approx. 220 pcs of 315/80R22.5). Lead time for stock sizes is 25–35 days FOB Qingdao; OEM/private-label and non-stock specs require 50–60 days. Custom sidewall branding available from 1000 pcs.</div></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- RELATED -->
+<section class="section">
+    <div class="w">
+        <div class="s-head reveal">
+            <span class="s-label">You May Also Consider</span>
+            <h2 class="s-title">Related patterns</h2>
+        </div>
+        <div class="related-grid">
+            <a href="#" class="rel-card reveal">
+                <div class="rel-img">
+                    <img src="../img/fd758/fa808.jpg" alt="FA808">
+                </div>
+                <div class="rel-body">
+                    <div class="rel-name">FA808</div>
+                    <div class="rel-desc">Tear-resistant mixed-road all-position with 15 size variants — the broadest range in our truck-bus lineup.</div>
+                    <div class="rel-link">View product →</div>
+                </div>
+            </a>
+            <a href="#" class="rel-card reveal reveal-d1">
+                <div class="rel-img">
+                    <img src="../img/fd758/rd518.jpg" alt="RD518">
+                </div>
+                <div class="rel-body">
+                    <div class="rel-name">RD518</div>
+                    <div class="rel-desc">Heavy-duty drive pattern for short-distance mining haul. Four small shoulder sections deliver excellent mud throw.</div>
+                    <div class="rel-link">View product →</div>
+                </div>
+            </a>
+            <a href="#" class="rel-card reveal reveal-d2">
+                <div class="rel-img">
+                    <img src="../img/fd758/fa131.jpg" alt="FA131">
+                </div>
+                <div class="rel-body">
+                    <div class="rel-name">FA131</div>
+                    <div class="rel-desc">High-traction drive pattern for medium and short-distance vehicles on ordinary and mixed road surfaces.</div>
+                    <div class="rel-link">View product →</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- INQUIRY -->
+<section class="section dark" id="inquiry">
+    <div class="w">
+        <div class="inq-inner">
+            <div class="inq-left reveal">
+                <span class="s-label">Get a Quote</span>
+                <h2 class="s-title">Ready to spec<br>the FD758?</h2>
+                <div class="inq-detail">
+                    <div class="inq-point"><i class="fa-solid fa-clock"></i>Export team responds within one business day</div>
+                    <div class="inq-point"><i class="fa-solid fa-ship"></i>FOB Qingdao · 25–35 days lead time</div>
+                    <div class="inq-point"><i class="fa-solid fa-tag"></i>MOQ from 1×40HQ container</div>
+                    <div class="inq-point"><i class="fa-solid fa-certificate"></i>10+ international certifications available</div>
+                </div>
+            </div>
+            <form class="inq-form reveal reveal-d1" onsubmit="event.preventDefault(); alert('Thank you — your inquiry has been received.');">
+                <div class="inq-row">
+                    <input class="inq-input" type="text" placeholder="Full Name *" required>
+                    <input class="inq-input" type="text" placeholder="Company *" required>
+                </div>
+                <div class="inq-row">
+                    <input class="inq-input" type="email" placeholder="Email *" required>
+                    <input class="inq-input" type="text" placeholder="Country / Region">
+                </div>
+                <input class="inq-input" type="text" placeholder="Quantity (e.g. 1×40HQ, 220 pcs)">
+                <textarea class="inq-input" placeholder="Specs, target market, certification requirements..."></textarea>
+                <button class="inq-submit" type="submit">Send Inquiry →</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="w">
+        <div class="footer-top">
+
+            <!-- Col 1: Brand -->
+            <div class="ft-brand">
+                <div class="ft-logo">
+                    <a href="../index-v2.html"><img src="../logo.png" alt="HUGER"></a>
+                </div>
+                <p class="ft-tagline">Shandong Hugerubber Co., Ltd. — manufacturing all-steel radial truck &amp; bus tires since 1988. Trusted across 70+ countries.</p>
+                <div class="ft-stats">
+                    <div>
+                        <div class="ft-stat-num">1988</div>
+                        <div class="ft-stat-label">Founded</div>
+                    </div>
+                    <div>
+                        <div class="ft-stat-num">70+</div>
+                        <div class="ft-stat-label">Countries</div>
+                    </div>
+                    <div>
+                        <div class="ft-stat-num">2M</div>
+                        <div class="ft-stat-label">Annual Tires</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div>
+                <div class="ft-col-head">Navigation</div>
+                <ul class="ft-links">
+                    <li><a href="../index-v2.html">Home</a></li>
+                    <li><a href="../index-v2.html#products">Products</a></li>
+                    <li><a href="../index-v2.html#about">About HUGER</a></li>
+                    <li><a href="../index-v2.html#certs">Certifications</a></li>
+                    <li><a href="../index-v2.html#inquiry">Get a Quote</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div>
+                <div class="ft-col-head">Contact</div>
+                <div class="ft-contact-item">
+                    <span class="ft-contact-label">Hotline</span>
+                    <a href="tel:4008808961" class="ft-contact-val">400-880-8961</a>
+                </div>
+                <div class="ft-contact-item">
+                    <span class="ft-contact-label">Office</span>
+                    <a href="tel:05467726888" class="ft-contact-val">0546-7726888</a>
+                </div>
+                <div class="ft-contact-item">
+                    <span class="ft-contact-label">Email</span>
+                    <a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a>
+                </div>
+                <div class="ft-contact-item">
+                    <span class="ft-contact-label">Address</span>
+                    <span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span>
+                </div>
+            </div>
+
+            <!-- Col 4: Brands -->
+            <div>
+                <div class="ft-col-head">Our Brands</div>
+                <div class="ft-brand-row">
+                    <img src="../logo1.png" alt="FRIDERIC" class="ft-brand-logo">
+                </div>
+                <div class="ft-brand-row">
+                    <img src="../logo3.png" alt="CHILONG" class="ft-brand-logo">
+                </div>
+                <div class="ft-brand-row">
+                    <img src="../logo2.png" alt="JOSEBEN" class="ft-brand-logo">
+                </div>
+                <div style="margin-top:28px;">
+                    <div class="ft-col-head">Website</div>
+                    <a href="http://www.hugerubber.com" class="ft-contact-val" target="_blank" rel="noopener">www.hugerubber.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom strip -->
+        <div class="footer-bottom">
+            <span class="ft-copy">© 2026 Shandong Hugerubber Co., Ltd. · All rights reserved</span>
+            <div class="ft-certs">
+                <img src="../img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+                <img src="../img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+                <img src="../img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Feature Slider
+(function(){
+    var total = 4;
+    var cur = 0;
+    var slides = document.querySelectorAll('.fs-slide');
+    var imgs   = document.querySelectorAll('.fs-img');
+    var dots   = document.querySelectorAll('.fs-dot');
+    var counter = document.getElementById('fs-counter');
+
+    function go(n) {
+        slides[cur].classList.remove('fs-active');
+        imgs[cur].classList.remove('fs-active');
+        dots[cur].classList.remove('fs-active');
+        cur = (n + total) % total;
+        slides[cur].classList.add('fs-active');
+        imgs[cur].classList.add('fs-active');
+        dots[cur].classList.add('fs-active');
+        counter.textContent = ('0'+(cur+1)).slice(-2) + ' / 0' + total;
+    }
+
+    document.getElementById('fs-prev').addEventListener('click', function(){ go(cur - 1); });
+    document.getElementById('fs-next').addEventListener('click', function(){ go(cur + 1); });
+    dots.forEach(function(d, i){ d.addEventListener('click', function(){ go(i); }); });
+
+    // keyboard
+    document.addEventListener('keydown', function(e){
+        if (e.key === 'ArrowLeft') go(cur - 1);
+        if (e.key === 'ArrowRight') go(cur + 1);
+    });
+})();
+
+// Gallery
+(function(){
+    var thumbs = document.querySelectorAll('.g-thumb');
+    var srcs = [
+        '../img/fd758/fd758-3.jpg',
+        '../img/fd758/fd758-1.jpg',
+        '../img/fd758/fd758-2.jpg'
+    ];
+    var alts = ['FD758 · 3/4 View','FD758 · Side View','FD758 · Tread Face'];
+    thumbs.forEach(function(t,i){
+        t.addEventListener('click', function(){
+            thumbs.forEach(function(x){ x.classList.remove('on'); });
+            t.classList.add('on');
+            var img = document.getElementById('gal-img');
+            img.style.opacity = '0';
+            setTimeout(function(){ img.src = srcs[i]; img.alt = alts[i]; img.style.opacity = '1'; }, 150);
+        });
+    });
+})();
+
+// FAQ
+(function(){
+    document.querySelectorAll('.faq-q').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var item = btn.parentElement;
+            var wasOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function(x){ x.classList.remove('open'); });
+            if (!wasOpen) item.classList.add('open');
+        });
+    });
+})();
+
+// Scroll reveal + perf bars
+(function(){
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+        document.querySelectorAll('.perf-track').forEach(function(el){
+            el.style.setProperty('--w', el.getAttribute('data-w'));
+            el.classList.add('lit');
+        });
+        return;
+    }
+    // Reveal
+    var ro = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function(el){ ro.observe(el); });
+
+    // Perf bars
+    var po = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+            if (e.isIntersecting){
+                e.target.style.setProperty('--w', e.target.getAttribute('data-w'));
+                e.target.classList.add('lit');
+                po.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.perf-track').forEach(function(el){ po.observe(el); });
+})();
+</script>
+
+
+</body>
+</html>
