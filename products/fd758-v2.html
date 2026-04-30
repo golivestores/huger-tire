@@ -234,8 +234,8 @@
         padding-left: 16px;
     }
 
-    /* Style C — icon grid */
-    .hero-attrs { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    /* Spec tiles */
+    .hero-attrs { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
     .attr-brand {
         display: inline-flex; align-items: center; gap: 7px;
         font-family: 'DM Mono', monospace;
@@ -249,14 +249,38 @@
     }
     .attr-grid {
         display: grid; grid-template-columns: 1fr 1fr;
-        gap: 10px 28px;
+        gap: 10px;
     }
     .attr-item {
-        display: flex; align-items: center; gap: 10px;
-        font-family: 'Inter', sans-serif;
-        font-size: 15px; font-weight: 600; color: var(--ink-60);
+        display: flex; align-items: center; gap: 14px;
+        padding: 16px 18px;
+        background: #fff;
+        border: 1.5px solid var(--ink-12);
+        border-radius: 10px;
+        transition: border-color .2s, box-shadow .2s;
     }
-    .attr-item i { font-size: 14px; color: var(--blue); width: 16px; text-align: center; flex-shrink: 0; }
+    .attr-item:hover {
+        border-color: var(--blue);
+        box-shadow: 0 2px 12px rgba(18,68,176,.08);
+    }
+    .attr-icon {
+        width: 40px; height: 40px; flex-shrink: 0;
+        background: var(--blue);
+        border-radius: 8px;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .attr-icon i { font-size: 16px; color: #fff; }
+    .attr-text { display: flex; flex-direction: column; gap: 2px; }
+    .attr-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
+        color: var(--ink-30); font-weight: 500;
+    }
+    .attr-value {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px; font-weight: 700; color: var(--ink);
+        line-height: 1.2;
+    }
 
     .hero-certs {
         display: flex; align-items: center; gap: 20px;
@@ -936,20 +960,32 @@
                         </div>
                         <div class="attr-grid">
                             <div class="attr-item">
-                                <i class="fa-solid fa-layer-group"></i>
-                                All-Steel Radial
+                                <div class="attr-icon"><i class="fa-solid fa-layer-group"></i></div>
+                                <div class="attr-text">
+                                    <span class="attr-label">Construction</span>
+                                    <span class="attr-value">All-Steel Radial</span>
+                                </div>
                             </div>
                             <div class="attr-item">
-                                <i class="fa-solid fa-circle"></i>
-                                22.5″ Rim
+                                <div class="attr-icon"><i class="fa-solid fa-circle-dot"></i></div>
+                                <div class="attr-text">
+                                    <span class="attr-label">Rim Size</span>
+                                    <span class="attr-value">22.5″ Rim</span>
+                                </div>
                             </div>
                             <div class="attr-item">
-                                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-                                Drive Axle Position
+                                <div class="attr-icon"><i class="fa-solid fa-arrow-up-from-ground-water"></i></div>
+                                <div class="attr-text">
+                                    <span class="attr-label">Axle</span>
+                                    <span class="attr-value">Drive Axle Position</span>
+                                </div>
                             </div>
                             <div class="attr-item">
-                                <i class="fa-solid fa-bars"></i>
-                                PR 18 / 20
+                                <div class="attr-icon"><i class="fa-solid fa-bars"></i></div>
+                                <div class="attr-text">
+                                    <span class="attr-label">Ply Rating</span>
+                                    <span class="attr-value">PR 18 / 20</span>
+                                </div>
                             </div>
                         </div>
                     </div>

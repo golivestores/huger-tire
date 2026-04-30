@@ -259,28 +259,38 @@
         background: #fff;
         display: flex; flex-direction: column;
         border: var(--rule-lt);
-        transition: background .2s;
+        border-top: 3px solid transparent;
+        transition: background .2s, box-shadow .25s;
         position: relative;
         overflow: hidden;
     }
-    .prod-card:hover { background: #fafaf8; }
+    .prod-card:hover {
+        background: #fafaf8;
+        box-shadow: 0 8px 28px rgba(0,0,0,.09);
+        z-index: 1;
+    }
     .prod-card.hidden { display: none; }
 
+    /* Series colour accents */
+    .prod-card[data-series="long-haul"] { border-top-color: var(--blue); }
+    .prod-card[data-series="regional"]  { border-top-color: #1a7a3e; }
+    .prod-card[data-series="mining"]    { border-top-color: #c96800; }
+
     .pc-img-wrap {
-        aspect-ratio: 1/1;
+        aspect-ratio: 4/3;
         position: relative;
         overflow: hidden;
-        background: #f8f8f6;
+        background: #f4f4f2;
         border-bottom: var(--rule-lt);
     }
     .pc-img-wrap img {
         position: absolute; inset: 0;
         width: 100%; height: 100%;
         object-fit: contain;
-        padding: 16px;
+        padding: 20px;
         transition: transform .55s cubic-bezier(.16,1,.3,1);
     }
-    .prod-card:hover .pc-img-wrap img { transform: scale(1.04); }
+    .prod-card:hover .pc-img-wrap img { transform: scale(1.05); }
 
     /* Series badge top-left */
     .pc-series {
@@ -292,56 +302,66 @@
     }
     .pc-series.lh { background: #e8efff; color: var(--blue); }
     .pc-series.rg { background: #e6f7ee; color: #1a7a3e; }
-    .pc-series.mn { background: #fff4e0; color: #b25a00; }
+    .pc-series.mn { background: #fff4e0; color: #c96800; }
 
     .pc-body {
-        padding: 20px 20px 16px;
+        padding: 24px 24px 18px;
         flex: 1; display: flex; flex-direction: column;
     }
     .pc-brand {
         font-family: 'DM Mono', monospace;
-        font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-        color: var(--blue); font-weight: 700; margin-bottom: 6px;
+        font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+        font-weight: 700; margin-bottom: 8px;
     }
+    .prod-card[data-series="long-haul"] .pc-brand { color: var(--blue); }
+    .prod-card[data-series="regional"]  .pc-brand { color: #1a7a3e; }
+    .prod-card[data-series="mining"]    .pc-brand { color: #c96800; }
+
     .pc-model {
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 900;
-        font-size: clamp(28px, 3vw, 40px);
-        line-height: 1; letter-spacing: -.01em;
-        color: var(--ink); margin-bottom: 12px;
+        font-size: clamp(36px, 4vw, 54px);
+        line-height: .95; letter-spacing: -.02em;
+        color: var(--ink); margin-bottom: 14px;
     }
     .pc-meta {
         display: flex; flex-wrap: nowrap; gap: 6px;
         margin-top: auto;
-        padding-top: 12px;
+        padding-top: 14px;
         border-top: var(--rule-lt);
         overflow: hidden;
     }
     .pc-badge {
         font-family: 'DM Mono', monospace;
         font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
-        color: var(--ink-60); font-weight: 600;
-        background: var(--ink-06);
-        padding: 4px 10px; border-radius: 4px;
+        font-weight: 700;
+        padding: 5px 11px; border-radius: 4px;
         white-space: nowrap; flex-shrink: 0;
     }
+    .prod-card[data-series="long-haul"] .pc-badge { background: #e8efff; color: var(--blue); }
+    .prod-card[data-series="regional"]  .pc-badge { background: #e6f7ee; color: #1a7a3e; }
+    .prod-card[data-series="mining"]    .pc-badge { background: #fff4e0; color: #c96800; }
+
     .pc-foot {
-        padding: 14px 20px;
+        padding: 16px 24px;
         border-top: var(--rule-lt);
+        background: #f6f6f4;
         display: flex; align-items: center; justify-content: space-between;
     }
     .pc-size {
         font-family: 'DM Mono', monospace;
-        font-size: 12px; letter-spacing: .5px; font-weight: 500;
-        color: var(--ink-60);
+        font-size: 13px; letter-spacing: .5px; font-weight: 600;
+        color: var(--ink);
     }
     .pc-cta {
         font-family: 'DM Mono', monospace;
-        font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;
-        color: var(--ink); display: flex; align-items: center; gap: 6px;
-        transition: gap .2s;
+        font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
+        color: #fff; background: var(--ink);
+        padding: 8px 16px; border-radius: 6px;
+        display: flex; align-items: center; gap: 8px;
+        transition: background .2s, gap .2s;
     }
-    .prod-card:hover .pc-cta { gap: 10px; }
+    .prod-card:hover .pc-cta { background: var(--blue); gap: 12px; }
 
     /* No-results message */
     .no-results {
