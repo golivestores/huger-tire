@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<title>Why HUGER — Shandong Hugerubber Co., Ltd. (v2)</title>
+<meta name="description" content="Why HUGER: founded 1988, 2M tyres/year, 70+ countries, 10+ certifications. Three brands.">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;background:none;border:none}
+
+:root{
+  --cream:#f0ede8;
+  --ink:#0f0f0d;
+  --ink-60:rgba(15,15,13,.6);
+  --ink-30:rgba(15,15,13,.3);
+  --ink-12:rgba(15,15,13,.12);
+  --ink-06:rgba(15,15,13,.06);
+  --blue:#1244b0;
+  --navy:#0c1a3a;
+  --gold:#e8b400;
+  --green:#3fa832;
+  --rule:1px solid rgba(15,15,13,.12);
+}
+
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+
+.w{max-width:1600px;margin:0 auto;padding:0 56px}
+@media(max-width:1200px){.w{padding:0 40px}}
+@media(max-width:960px){.w{padding:0 24px}}
+@media(max-width:600px){.w{padding:0 16px}}
+
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-60);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--ink-30)}
+.eyebrow.light{color:rgba(255,255,255,.55)}
+.eyebrow.light::before{background:rgba(255,255,255,.45)}
+
+.h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(44px,5.6vw,82px);line-height:.95;letter-spacing:-.02em;color:var(--ink)}
+.h2 em{font-style:normal;color:var(--blue)}
+.h2 .gold{color:var(--gold)}
+.lede{font-size:16px;line-height:1.65;color:var(--ink-60);max-width:620px}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.18s}
+.reveal-d3{transition-delay:.28s}
+
+/* ─── HEADER (same as v1) ─── */
+#header{color:#fff;height:auto;padding:clamp(10px,.9vw,16px) 0;pointer-events:none;position:fixed;top:0;left:0;width:100%;will-change:transform;z-index:80;transition:color .4s}
+#header.hdr-light{color:#0f0f0d}
+#header .container{align-items:center;display:flex;height:100%;justify-content:center}
+#header .group{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background-color:hsla(0,0%,100%,.12);border-radius:clamp(15px,1.389vw,26.6px);border:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:center;padding:clamp(5px,.417vw,7.98px);pointer-events:all;width:min(92vw,1240px);transition:background .4s,border-color .4s}
+#header.hdr-light .group{background-color:hsla(0,0%,100%,.72);border-color:rgba(0,0,0,.06)}
+#header .group .logo{display:flex;align-items:center;margin-left:clamp(14px,1.25vw,23.94px);flex-shrink:0}
+#header .group .logo img{height:28px;width:auto;display:block;filter:brightness(0) invert(1);transition:filter .4s}
+#header.hdr-light .group .logo img{filter:none}
+@media(max-width:1240px){#header .group .logo img{height:24px}}
+#header .group .menu{display:flex;gap:clamp(4px,.556vw,10.64px);list-style:none;padding:0;margin:0}
+#header .group .menu li{display:inline-block}
+#header .group .menu li a{background-color:transparent;border:1px solid transparent;border-radius:clamp(14px,1.042vw,19.95px);color:inherit;display:block;font-size:clamp(13px,1.042vw,19.95px);height:clamp(38px,2.778vw,53.2px);line-height:clamp(38px,2.778vw,53.2px);opacity:.65;padding:0 clamp(18px,2.222vw,42.56px);transition:all .6s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+#header .group .menu li a:hover{opacity:1}
+#header .group .menu li.is-active a{opacity:1}
+@media(max-width:720px){#header .group .menu li:nth-child(4){display:none}#header .group .menu li a{padding:0 14px;font-size:12px}}
+
+/* ─── 1. HERO — SPLIT 50/50 ─── */
+.hero-split{height:100vh;min-height:680px;display:grid;grid-template-columns:1fr 1fr;background:#000;color:#fff;overflow:hidden}
+@media(max-width:880px){.hero-split{grid-template-columns:1fr;grid-template-rows:1fr 1fr;min-height:100vh}}
+.hero-left{display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(40px,5vw,80px);position:relative;background:radial-gradient(ellipse at top left,rgba(232,180,0,.08),transparent 60%)}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--gold)}
+.hero-h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(56px,6.8vw,128px);line-height:.84;letter-spacing:-.03em;margin:0}
+.hero-h1 .gold{color:var(--gold)}
+.hero-h1 .outline{-webkit-text-stroke:1.5px #fff;color:transparent}
+.hero-desc{font-size:14px;line-height:1.65;color:rgba(255,255,255,.6);max-width:440px;margin-top:24px}
+.hero-mini-stats{display:flex;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,.15)}
+.hero-mini-stat{}
+.hms-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;color:var(--gold);line-height:1}
+.hms-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:6px}
+.hero-right{position:relative;overflow:hidden;background:#000}
+.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.4) 0%,transparent 30%);pointer-events:none}
+.hero-img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(.95)}
+.hero-corner-tag{position:absolute;top:32px;right:32px;background:var(--gold);color:#000;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;border-radius:4px;font-weight:600;z-index:2}
+
+/* ─── 2. STATS — ONE GIANT ANCHOR + CARDS ─── */
+.anchor-stats{background:var(--cream);padding:clamp(80px,10vw,140px) 0;position:relative;overflow:hidden}
+.anchor-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:center}
+@media(max-width:880px){.anchor-grid{grid-template-columns:1fr;gap:48px}}
+.anchor-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(120px,18vw,280px);line-height:.82;letter-spacing:-.04em;color:var(--ink);position:relative}
+.anchor-num .blue{color:var(--blue)}
+
+.anchor-num .count-num{display:inline-block}
+.anchor-num .count-num::first-letter{color:var(--blue)}
+.ac-num .count-num{display:inline-block}
+.anchor-num small{display:block;font-family:'DM Mono',monospace;font-size:.08em;letter-spacing:4px;text-transform:uppercase;color:var(--ink-60);margin-top:24px;font-weight:500;line-height:1.5;max-width:480px}
+.anchor-sub{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:var(--rule);border-left:var(--rule)}
+.anchor-card{padding:24px 24px 28px;border-right:var(--rule);border-bottom:var(--rule);transition:background .3s}
+.anchor-card:hover{background:rgba(15,15,13,.04)}
+.ac-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:52px;line-height:1;color:var(--blue);margin-bottom:8px;letter-spacing:-.02em}
+.ac-num small{font-size:.55em;color:var(--blue);opacity:.6;font-weight:700}
+.ac-lbl{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-60)}
+.ac-desc{font-size:12px;color:var(--ink-60);margin-top:6px;line-height:1.5}
+
+/* ─── 3. ORIGIN — MAGAZINE EDITORIAL ─── */
+.editorial{padding:clamp(100px,12vw,160px) 0;background:#fff;position:relative;border-top:var(--rule);border-bottom:var(--rule)}
+.ed-wrap{max-width:920px;margin:0 auto;padding:0 clamp(24px,4vw,48px)}
+.ed-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-60);text-align:center;margin-bottom:32px;display:flex;align-items:center;justify-content:center;gap:14px}
+.ed-eyebrow::before,.ed-eyebrow::after{content:'';width:48px;height:1px;background:var(--ink-30)}
+.ed-h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(48px,5.6vw,84px);line-height:.95;letter-spacing:-.02em;text-align:center;margin-bottom:56px}
+.ed-h2 em{font-style:normal;color:var(--blue)}
+.ed-body{font-size:17px;line-height:1.8;color:var(--ink);max-width:620px;margin:0 auto;font-weight:400}
+.ed-body p{margin-bottom:24px}
+.ed-body p::first-letter{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:5.5em;float:left;line-height:.85;margin:6px 14px -6px 0;color:var(--blue)}
+.ed-pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(28px,3.4vw,46px);line-height:1.25;color:var(--ink);max-width:780px;margin:64px auto;padding:32px 48px;border-left:4px solid var(--gold);text-align:left}
+.ed-pull cite{display:block;font-family:'DM Mono',monospace;font-style:normal;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-60);margin-top:20px;font-weight:500}
+.ed-pull cite::before{content:'— '}
+.ed-photos{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:64px}
+@media(max-width:600px){.ed-photos{grid-template-columns:1fr}}
+.ed-photo figure{margin:0}
+.ed-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.ed-photo figcaption{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-60);margin-top:10px;line-height:1.5}
+
+
+/* ─── Editorial motion ─── */
+.ed-h2 .word{display:inline-block;opacity:0;transform:translateY(36px) rotateX(-25deg);transform-origin:0 100%;transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1);transition-delay:calc(var(--i,0) * 70ms);will-change:transform,opacity}
+.ed-h2.in .word{opacity:1;transform:translateY(0) rotateX(0)}
+.ed-h2 em{position:relative;display:inline-block}
+.ed-h2 em::after{content:'';position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform 1.1s cubic-bezier(.7,0,.3,1);transition-delay:1.05s;z-index:-1;opacity:.85}
+.ed-h2.in em::after{transform:scaleX(1)}
+.ed-eyebrow.ed-motion{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
+.ed-eyebrow.ed-motion.in{opacity:1;transform:none}
+.ed-body.ed-motion-body p{opacity:0;transform:translateY(18px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.ed-body.ed-motion-body p.in{opacity:1;transform:none}
+.ed-pull.ed-motion{position:relative;border-left:0!important;padding-left:48px;opacity:0;transition:opacity 1s ease .25s}
+.ed-pull.ed-motion::before{content:'';position:absolute;left:0;top:0;width:4px;height:0;background:var(--gold);transition:height 1.2s cubic-bezier(.7,0,.3,1)}
+.ed-pull.ed-motion.in{opacity:1}
+.ed-pull.ed-motion.in::before{height:100%}
+.ed-pull.ed-motion cite{opacity:0;transform:translateX(-10px);transition:opacity .7s ease .9s,transform .7s ease .9s;display:inline-block}
+.ed-pull.ed-motion.in cite{opacity:1;transform:none}
+.ed-photo.ed-motion{overflow:hidden;clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.7,0,.3,1)}
+.ed-photo.ed-motion.in{clip-path:inset(0 0 0 0)}
+.ed-photo.ed-motion img{transform:scale(1.18);transition:transform 1.6s cubic-bezier(.16,1,.3,1)}
+.ed-photo.ed-motion.in img{transform:scale(1)}
+.ed-photo.ed-motion:nth-of-type(2),.ed-photo.ed-motion:nth-of-type(2) img{transition-delay:.18s}
+.ed-photo.ed-motion figcaption{opacity:0;transform:translateY(8px);transition:opacity .6s ease .9s,transform .6s ease .9s}
+.ed-photo.ed-motion.in figcaption{opacity:1;transform:none}
+
+/* ─── 4. CULTURE — VERTICAL ACCORDION + IMG ─── */
+.acc-wrap{padding:clamp(80px,10vw,140px) 0;background:var(--cream)}
+.acc-head{margin-bottom:64px;max-width:720px}
+.acc-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+@media(max-width:880px){.acc-layout{grid-template-columns:1fr;gap:32px}}
+.acc-list{border-top:var(--rule)}
+.acc-item{border-bottom:var(--rule);cursor:pointer}
+.acc-trigger{padding:28px 0;display:grid;grid-template-columns:60px 1fr auto;align-items:center;gap:20px;transition:padding .3s}
+.acc-num{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--ink-30)}
+.acc-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;line-height:1;letter-spacing:-.01em;transition:color .3s,font-size .3s}
+.acc-item.open .acc-title{color:var(--blue);font-size:38px}
+.acc-toggle{width:32px;height:32px;border-radius:50%;border:1px solid var(--ink-12);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--ink-60);transition:transform .4s,background .3s,color .3s,border-color .3s}
+.acc-item.open .acc-toggle{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.4,0,.2,1)}
+.acc-item.open .acc-body{max-height:240px}
+.acc-content{padding-left:80px;padding-bottom:28px}
+.acc-cn{font-size:14px;color:var(--blue);font-weight:500;margin-bottom:10px}
+.acc-desc{font-size:15px;line-height:1.65;color:var(--ink-60);max-width:520px}
+.acc-image{position:sticky;top:120px;aspect-ratio:3/4;overflow:hidden;border-radius:8px;background:var(--ink-06)}
+.acc-image img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:0;transition:opacity .6s,transform 1.2s}
+.acc-image img.active{opacity:1;transform:scale(1.02)}
+.acc-image::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);pointer-events:none;z-index:2}
+.acc-image-cap{position:absolute;bottom:24px;left:24px;right:24px;color:#fff;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;z-index:3}
+
+/* ─── 5. BRANDS — STICKY FULL-SCREEN SCROLL ─── */
+.bs-container{position:relative}
+.bs-section{height:100vh;min-height:640px;position:sticky;top:0;display:grid;grid-template-columns:1fr 1fr;color:#fff;overflow:hidden}
+@media(max-width:880px){.bs-section{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto;min-height:100vh}}
+.bs-text{padding:clamp(40px,6vw,100px);display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.bs-img{position:relative;overflow:hidden}
+.bs-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.05)}
+.bs-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.5) 0%,transparent 50%);pointer-events:none}
+.bs-section.t-premium{background:linear-gradient(135deg,#0a1d4d 0%,#0c1a3a 100%)}
+.bs-section.t-mid{background:linear-gradient(135deg,#0d2e1f 0%,#0a1c14 100%)}
+.bs-section.t-entry{background:linear-gradient(135deg,#1a1a1a 0%,#0a0a0a 100%)}
+.bs-counter{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:24px}
+.bs-counter b{color:var(--gold)}
+.bs-tier{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:6px 14px;border-radius:4px;margin-bottom:24px;font-weight:600;align-self:flex-start}
+.bs-section.t-premium .bs-tier{background:var(--gold);color:#000}
+.bs-section.t-mid .bs-tier{background:var(--green);color:#fff}
+.bs-section.t-entry .bs-tier{background:#fff;color:#000}
+.bs-logo{height:48px;width:auto;margin-bottom:28px;filter:brightness(0) invert(1)}
+.bs-h{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(64px,8vw,128px);line-height:.88;letter-spacing:-.025em;margin-bottom:20px}
+.bs-zh{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:28px}
+.bs-desc{font-size:15px;line-height:1.65;color:rgba(255,255,255,.75);max-width:440px;margin-bottom:40px}
+.bs-meta{display:flex;gap:40px;flex-wrap:wrap;padding-top:32px;border-top:1px solid rgba(255,255,255,.15)}
+.bs-meta-item{}
+.bs-meta-l{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:6px}
+.bs-meta-v{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;color:#fff;line-height:1}
+
+/* ─── 6. R&D — HORIZONTAL FLOW DIAGRAM ─── */
+.flow-wrap{background:var(--navy);color:#fff;padding:clamp(80px,10vw,140px) 0;overflow:hidden}
+.flow-head{margin-bottom:80px}
+.flow-head .h2{color:#fff}
+.flow-head .lede{color:rgba(255,255,255,.6)}
+.flow-track{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;position:relative}
+@media(max-width:900px){.flow-track{grid-template-columns:1fr 1fr;gap:24px}}
+@media(max-width:520px){.flow-track{grid-template-columns:1fr}}
+.flow-step{position:relative;padding:32px 24px 28px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;transition:background .3s,border-color .3s,transform .3s}
+.flow-step:hover{background:rgba(232,180,0,.08);border-color:rgba(232,180,0,.4);transform:translateY(-4px)}
+.flow-step:not(:last-child)::after{content:'→';position:absolute;right:-24px;top:50%;transform:translateY(-50%);color:rgba(232,180,0,.6);font-size:24px;font-weight:300;z-index:2;font-family:'Inter',sans-serif}
+@media(max-width:900px){.flow-step::after{display:none}}
+.flow-num{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:20px}
+.flow-icon{width:48px;height:48px;border-radius:50%;background:rgba(232,180,0,.12);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:20px}
+.flow-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:24px;line-height:1.1;color:#fff;margin-bottom:10px;letter-spacing:-.01em}
+.flow-desc{font-size:13px;line-height:1.55;color:rgba(255,255,255,.6)}
+.flow-partners{margin-top:64px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:760px){.flow-partners{grid-template-columns:1fr;gap:24px}}
+.fp-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.fp-list{display:flex;flex-direction:column;gap:14px}
+.fp-item{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:#fff;letter-spacing:-.01em}
+.fp-item small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:13px;color:rgba(255,255,255,.55);margin-top:2px}
+.fp-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;line-height:1.4;color:rgba(255,255,255,.85)}
+
+/* ─── 7. CHEMISTRY — TIRE CROSS-SECTION DIAGRAM ─── */
+.tire-section{padding:clamp(100px,12vw,160px) 0;background:var(--cream)}
+.tire-head{text-align:center;max-width:720px;margin:0 auto 80px}
+.tire-head .eyebrow{justify-content:center}
+.tire-diagram{position:relative;display:grid;grid-template-columns:1fr 460px 1fr;gap:64px;align-items:center}
+@media(max-width:900px){.tire-diagram{grid-template-columns:1fr;gap:24px}}
+.tire-svg-wrap{position:relative;display:flex;justify-content:center;align-items:center}
+.tire-svg{width:100%;max-width:420px;height:auto}
+.cs-label{position:relative;display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:var(--rule);transition:color .3s}
+.cs-label:hover{color:var(--blue)}
+.cs-label-num{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--blue);font-weight:600;width:32px}
+.cs-label-text h5{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;line-height:1;margin-bottom:6px}
+.cs-label-text p{font-size:13px;line-height:1.55;color:var(--ink-60);max-width:240px}
+.cs-left{text-align:right}
+.cs-left .cs-label{flex-direction:row-reverse}
+.cs-left .cs-label-text{text-align:right}
+.cs-left .cs-label-text p{margin-left:auto}
+@media(max-width:900px){.cs-left,.cs-right{text-align:left}.cs-left .cs-label{flex-direction:row}.cs-left .cs-label-text{text-align:left}.cs-left .cs-label-text p{margin-left:0}}
+
+
+/* Tire diagram — slow continuous rotation (whole tire) */
+.tire-svg-wrap{position:relative}
+.tire-svg{animation:tire-spin 24s linear infinite;transform-origin:center;will-change:transform}
+@keyframes tire-spin{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@media(prefers-reduced-motion:reduce){.tire-svg{animation:none}}
+
+/* ─── 8. MANUFACTURING — STEPS TAB SWITCHER ─── */
+.steps{padding:clamp(80px,10vw,140px) 0;background:#fff;border-top:var(--rule);border-bottom:var(--rule)}
+.steps-head{margin-bottom:60px;text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
+.steps-head .eyebrow{justify-content:center}
+.steps-tabs{display:grid;grid-template-columns:repeat(7,1fr);gap:0;border-top:var(--rule);border-bottom:var(--rule);margin-bottom:56px}
+.steps-tab{padding:24px 16px;text-align:center;cursor:pointer;border-right:var(--rule);position:relative;transition:background .25s,color .25s;background:transparent}
+.steps-tab:last-child{border-right:0}
+.steps-tab:hover{background:rgba(15,15,13,.025)}
+.steps-tab.active{background:rgba(18,68,176,.04)}
+.steps-tab::after{content:'';position:absolute;left:50%;bottom:-2px;width:0;height:3px;background:var(--blue);transition:width .4s cubic-bezier(.4,0,.2,1),left .4s cubic-bezier(.4,0,.2,1)}
+.steps-tab.active::after{width:80%;left:10%}
+.steps-tab-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:40px;line-height:1;color:var(--ink-30);margin-bottom:10px;letter-spacing:-.02em;transition:color .3s,transform .35s}
+.steps-tab.active .steps-tab-num{color:var(--blue);transform:translateY(-2px)}
+.steps-tab-name{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-60);transition:color .3s}
+.steps-tab.active .steps-tab-name{color:var(--ink)}
+.steps-panel{display:grid;grid-template-columns:1.45fr 1fr;gap:64px;align-items:center;min-height:460px}
+.steps-media{aspect-ratio:16/10;overflow:hidden;border-radius:8px;position:relative;background:var(--ink-06)}
+.steps-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.steps-media img.active{opacity:1;transform:scale(1)}
+.steps-media::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.35),transparent 50%);pointer-events:none;z-index:1}
+.steps-media-tag{position:absolute;bottom:20px;left:20px;background:var(--gold);color:#000;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:7px 14px;border-radius:4px;font-weight:600;z-index:2}
+.steps-text{position:relative}
+.steps-body{position:absolute;top:0;left:0;right:0;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .45s ease,transform .45s cubic-bezier(.16,1,.3,1)}
+.steps-body.active{position:relative;opacity:1;transform:none;pointer-events:auto}
+.steps-tag{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:14px;font-weight:600}
+.steps-text h4{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4vw,56px);line-height:.95;margin-bottom:18px;letter-spacing:-.01em}
+.steps-text p{font-size:15px;line-height:1.7;color:var(--ink-60);margin-bottom:24px;max-width:480px}
+.steps-bullets{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.steps-bullets li{display:flex;gap:12px;font-size:13px;color:var(--ink-60);line-height:1.55}
+.steps-bullets li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:7px;flex-shrink:0}
+.steps-arrows{display:flex;gap:8px}
+.steps-arrows button{width:44px;height:44px;border-radius:50%;border:1px solid var(--ink-12);background:transparent;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink-60);transition:background .25s,border-color .25s,color .25s,transform .2s;cursor:pointer}
+.steps-arrows button:hover:not(:disabled){background:var(--ink);border-color:var(--ink);color:#fff;transform:scale(1.05)}
+.steps-arrows button:disabled{opacity:.35;cursor:not-allowed}
+@media(max-width:880px){
+  .steps-tabs{grid-template-columns:repeat(4,1fr)}
+  .steps-tab{border-bottom:var(--rule)}
+  .steps-tab:nth-child(4n){border-right:0}
+  .steps-tab:nth-child(n+5){border-bottom:0}
+  .steps-tab-num{font-size:28px}
+  .steps-panel{grid-template-columns:1fr;gap:32px}
+}
+
+/* ─── 10. TIMELINE — DATA STRIP + COMPACT LIST ─── */
+.tl{padding:clamp(80px,10vw,140px) 0;background:#fff;border-top:var(--rule)}
+.tl-head{text-align:center;max-width:760px;margin:0 auto 64px}
+.tl-head .eyebrow{justify-content:center}
+.tl-track{position:relative;margin:0 auto 56px;max-width:1280px;padding:32px 0}
+.tl-line{height:1px;background:var(--ink-12);position:relative;width:100%;margin-top:6px}
+.tl-line::after{content:'';position:absolute;top:0;left:0;height:100%;background:var(--gold);width:0;transition:width 1.8s cubic-bezier(.7,0,.3,1)}
+.tl-track.in .tl-line::after{width:100%}
+.tl-ticks{position:absolute;left:0;right:0;top:32px;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
+.tl-tick{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;opacity:0;transform:translateY(8px) scale(.6);transition:opacity .5s ease,transform .55s cubic-bezier(.34,1.6,.64,1)}
+.tl-track.in .tl-tick{opacity:1;transform:none}
+.tl-track.in .tl-tick:nth-child(1){transition-delay:.15s}
+.tl-track.in .tl-tick:nth-child(2){transition-delay:.45s}
+.tl-track.in .tl-tick:nth-child(3){transition-delay:.75s}
+.tl-track.in .tl-tick:nth-child(4){transition-delay:1.05s}
+.tl-track.in .tl-tick:nth-child(5){transition-delay:1.35s}
+.tl-track.in .tl-tick:nth-child(6){transition-delay:1.65s}
+.tl-dot{width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #fff,0 0 0 5px var(--gold)}
+.tl-year{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;letter-spacing:-.01em;color:var(--ink-60)}
+.tl-tick:first-child .tl-year,.tl-tick:last-child .tl-year{color:var(--ink);font-size:22px}
+.tl-list{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:0;border-top:var(--rule)}
+.tl-row{display:grid;grid-template-columns:140px 220px 1fr;gap:32px;align-items:baseline;padding:24px 0;border-bottom:var(--rule);transition:background .25s,padding .3s}
+.tl-row:hover{background:rgba(15,15,13,.025);padding-left:12px;padding-right:12px}
+.tl-row-year{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:40px;color:var(--blue);line-height:1;letter-spacing:-.02em;display:flex;align-items:center;gap:14px;position:relative}
+.tl-row-year::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.tl-row-title{font-size:17px;font-weight:600;color:var(--ink)}
+.tl-row-desc{font-size:14px;line-height:1.6;color:var(--ink-60)}
+@media(max-width:760px){.tl-row{grid-template-columns:100px 1fr;gap:16px}.tl-row-title{grid-column:2}.tl-row-desc{grid-column:2;font-size:13px}.tl-row-year{font-size:30px}.tl-ticks .tl-tick:nth-child(2),.tl-ticks .tl-tick:nth-child(5){display:none}.tl-year{font-size:14px}}
+
+/* ─── 11. CTA — SPLIT + INLINE FORM ─── */
+.cta-split{display:grid;grid-template-columns:1fr 1fr;min-height:90vh;background:var(--ink);color:#fff}
+@media(max-width:880px){.cta-split{grid-template-columns:1fr}}
+.cta-left{padding:clamp(48px,7vw,100px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.cta-left::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at bottom right,rgba(232,180,0,.1),transparent 60%);z-index:0}
+.cta-left > *{position:relative;z-index:1}
+.cta-left .h2{color:#fff;margin-bottom:24px}
+.cta-left .h2 .gold{color:var(--gold)}
+.cta-left p{color:rgba(255,255,255,.7);font-size:16px;line-height:1.65;max-width:440px;margin-bottom:40px}
+.cta-contact{display:flex;flex-direction:column;gap:14px}
+.cta-cl-item{display:flex;align-items:center;gap:14px;color:rgba(255,255,255,.85);font-size:14px;transition:color .25s}
+.cta-cl-item:hover{color:var(--gold)}
+.cta-cl-item i{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px}
+.cta-form{padding:clamp(48px,7vw,100px);background:#fff;color:var(--ink);display:flex;flex-direction:column;justify-content:center}
+.cta-form-head{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:24px;font-weight:600}
+.cta-form h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;line-height:1;margin-bottom:32px;letter-spacing:-.01em}
+.cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cf-field{display:flex;flex-direction:column;gap:6px}
+.cf-field.full{grid-column:1/-1}
+.cf-field label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-60);font-weight:500}
+.cf-field input,.cf-field select,.cf-field textarea{font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink-12);padding:10px 0;outline:none;transition:border-color .25s}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{border-color:var(--blue)}
+.cf-field textarea{resize:none;min-height:60px}
+.cf-submit{margin-top:28px;background:var(--ink);color:#fff;padding:18px 28px;border-radius:8px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;display:flex;align-items:center;justify-content:space-between;transition:background .25s,transform .25s}
+.cf-submit:hover{background:var(--blue);transform:translateY(-2px)}
+.cf-submit i{color:var(--gold)}
+
+/* ─── FOOTER (same as v1) ─── */
+.footer{background:#0d0d11;color:rgba(255,255,255,.55);position:relative;overflow:hidden;padding:80px 0 0}
+.footer::before{content:'HUGER';position:absolute;bottom:-.22em;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(160px,22vw,320px);letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,180,0,.18);white-space:nowrap;pointer-events:none;user-select:none}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:96px;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:32px}}
+.ft-logo{margin-bottom:20px}
+.ft-logo img{height:26px;filter:brightness(0) invert(1);opacity:.9}
+.ft-tagline{font-size:13px;line-height:1.65;color:rgba(255,255,255,.52);max-width:260px;margin-bottom:28px}
+.ft-stats{display:flex;gap:28px;flex-wrap:wrap}
+.ft-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em;line-height:1;color:#fff}
+.ft-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:4px}
+.ft-col-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,.7);transition:color .2s}
+.ft-links a:hover{color:#fff}
+.ft-contact-item{display:flex;flex-direction:column;gap:3px;margin-bottom:16px}
+.ft-contact-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.ft-contact-val{font-size:13px;color:rgba(255,255,255,.75);transition:color .2s}
+a.ft-contact-val:hover{color:#fff}
+.ft-brand-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ft-brand-logo{height:22px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.75;transition:opacity .2s;flex:1;object-fit:contain;object-position:left center}
+.ft-brand-row:hover .ft-brand-logo{opacity:1}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:24px 0 32px;position:relative;z-index:1}
+.ft-copy{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.ft-certs{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
+.ft-cert-logo:hover{opacity:.8}
+@media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="component component--header header" data-component="header" id="header">
+  <div class="container">
+    <div class="group">
+      <a href="index-v2.html" class="logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <div class="mask"></div>
+      <ul id="menu-main" class="menu">
+        <li class="menu-item"><a href="index-v2.html">Home</a></li>
+        <li class="menu-item"><a href="products/collection-v2.html">Products</a></li>
+        <li class="menu-item is-active"><a href="#">Why HUGER</a></li>
+        <li class="menu-item"><a href="index-v2.html#certs">Certifications</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- 1. HERO — SPLIT 50/50 -->
+<section class="hero-split" id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Shandong Hugerubber · v2</div>
+    <h1 class="hero-h1">Built for<br>the <span class="gold">long</span><br><span class="outline">haul.</span></h1>
+    <p class="hero-desc">Three brands, one factory floor, 70+ countries. The all-steel radial truck & bus tyres trusted by fleets from Lima to Lagos.</p>
+    <div class="hero-mini-stats">
+      <div class="hero-mini-stat"><div class="hms-num">1988</div><div class="hms-lbl">Founded</div></div>
+      <div class="hero-mini-stat"><div class="hms-num">2M</div><div class="hms-lbl">Tyres / yr</div></div>
+      <div class="hero-mini-stat"><div class="hms-num">70+</div><div class="hms-lbl">Countries</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <span class="hero-corner-tag">Why HUGER</span>
+    <img src="img/why/hero-highway.jpg" alt="" class="hero-img">
+  </div>
+</section>
+
+<!-- 2. STATS — ONE GIANT ANCHOR + CARD CLUSTER -->
+<section class="anchor-stats">
+  <div class="w">
+    <div class="anchor-grid">
+      <div class="reveal">
+        <div class="eyebrow" style="margin-bottom:24px">01 · By the Numbers</div>
+        <div class="anchor-num"><span class="count-num" data-count="2000000" data-format="comma">0</span><small>All-steel radial truck & bus tyres rolled out of our Guangrao lines every year — and counting.</small></div>
+      </div>
+      <div class="anchor-sub reveal reveal-d1">
+        <div class="anchor-card"><div class="ac-num"><span class="count-num" data-count="1988">0</span></div><div class="ac-lbl">Founded</div><div class="ac-desc">In China's Tire Capital.</div></div>
+        <div class="anchor-card"><div class="ac-num"><small>¥</small><span class="count-num" data-count="1.8" data-decimals="1">0</span><small>B</small></div><div class="ac-lbl">Total Assets</div><div class="ac-desc">Reinvested into R&D & capex.</div></div>
+        <div class="anchor-card"><div class="ac-num"><span class="count-num" data-count="70">0</span><small>+</small></div><div class="ac-lbl">Countries</div><div class="ac-desc">5 continents covered.</div></div>
+        <div class="anchor-card"><div class="ac-num"><span class="count-num" data-count="10">0</span><small>+</small></div><div class="ac-lbl">Certifications</div><div class="ac-desc">CCC · DOT · ECE · INMETRO…</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ORIGIN — MAGAZINE EDITORIAL -->
+<section class="editorial" id="story">
+  <div class="ed-wrap">
+    <div>
+      <div class="ed-eyebrow ed-motion">02 · The Origin</div>
+      <h2 class="ed-h2 ed-motion" data-split>From <em>Guangrao</em> to the world's roads.</h2>
+    </div>
+    <div class="ed-body ed-motion-body">
+      <p>When Shandong Hugerubber was founded in 1988, Guangrao was already known as the "Tire Capital of China". Four decades later we still build every tyre here — in one of the most concentrated rubber-industry ecosystems on the planet. Three management generations have come through the same factory district. The line we run today isn't the line we ran in 2010 — capex never stopped — but the people walking it have, in many cases, been here twenty years.</p>
+      <p>That continuity matters. It's why our casings hold up to two and three retreads, why our compound recipes evolve quietly between batches rather than swinging on consultant trends, and why a fleet manager in Lagos can call our Hangzhou office and reach someone who personally signed off on the spec sheet.</p>
+    </div>
+    <blockquote class="ed-pull ed-motion">
+      "We build tyres the way Guangrao has built tyres for forty years. Same district, same chemistry roots, slightly better instruments each season."
+      <cite>HUGER Engineering Team</cite>
+    </blockquote>
+    <div class="ed-body ed-motion-body">
+      <p>Total assets of ¥1.8 billion sound like a number, but it shows up in concrete places: a Banbury mixer commissioned in 2019, an X-ray non-destructive testing rig that scans every single casing, a steel-cord laboratory that rejects reels other plants would accept. None of that is visible from the road — but it's why 70+ national regulators trust our stamps and 5 continents of fleets keep re-ordering.</p>
+    </div>
+    <div class="ed-photos ed-motion-photos">
+      <figure class="ed-photo ed-motion">
+        <img src="img/why/factory.jpg" alt="">
+        <figcaption>Banbury mixing hall · Guangrao plant, 2024</figcaption>
+      </figure>
+      <figure class="ed-photo ed-motion">
+        <img src="img/equipment/xray.jpg" alt="">
+        <figcaption>X-ray non-destructive testing · 100% scan rate</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PILLARS — VERTICAL ACCORDION WITH IMG SWAP -->
+<section class="acc-wrap" id="philosophy">
+  <div class="w">
+    <div class="acc-head reveal">
+      <div class="eyebrow" style="margin-bottom:20px">03 · Our Philosophy</div>
+      <h2 class="h2">Five principles.<br>One <em>mindset</em>.</h2>
+      <p class="lede" style="margin-top:18px">Tap any to expand. The photo on the right will tell you which life it lives.</p>
+    </div>
+    <div class="acc-layout reveal reveal-d1">
+      <div class="acc-list" id="acc-list">
+        <div class="acc-item open" data-img="hero-highway"><div class="acc-trigger"><div class="acc-num">01 / Spirit</div><div class="acc-title">Integrity</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">行德恒一 共存共赢</div><p class="acc-desc">Act with virtue. Coexist and win together. Trust is built tire by tire — and quietly destroyed by one bad batch.</p></div></div></div>
+        <div class="acc-item" data-img="nature"><div class="acc-trigger"><div class="acc-num">02 / Vision</div><div class="acc-title">Sustainable</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">多元价值 可持续</div><p class="acc-desc">Economic, social and ecological value — the only path that lasts a century. Casing reuse, lower rolling resistance, cleaner mixing.</p></div></div></div>
+        <div class="acc-item" data-img="city-truck"><div class="acc-trigger"><div class="acc-num">03 / Mission</div><div class="acc-title">Safer Roads</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">安全 舒适 绿色</div><p class="acc-desc">Build a safer, more comfortable, greener automotive society. One contact patch at a time. Every tyre we ship gets a person home.</p></div></div></div>
+        <div class="acc-item" data-img="engineer"><div class="acc-trigger"><div class="acc-num">04 / Philosophy</div><div class="acc-title">Customer-led</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">市场导向 客户为中心</div><p class="acc-desc">Market-oriented, customer-centric, technology-driven. Every R&D dollar starts with a fleet manager's spreadsheet, not a sales target.</p></div></div></div>
+        <div class="acc-item" data-img="worker"><div class="acc-trigger"><div class="acc-num">05 / Team</div><div class="acc-title">United Craft</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">专心 用心 齐心</div><p class="acc-desc">Focus, care, together. The mindset of every operator on the line — and the reason QC catches what spec sheets miss.</p></div></div></div>
+      </div>
+      <div class="acc-image" id="acc-image">
+        <img src="img/why/hero-highway-p.jpg" data-key="hero-highway" class="active" alt="">
+        <img src="img/why/nature-p.jpg" data-key="nature" alt="">
+        <img src="img/why/city-truck-p.jpg" data-key="city-truck" alt="">
+        <img src="img/why/engineer-p.jpg" data-key="engineer" alt="">
+        <img src="img/why/worker-p.jpg" data-key="worker" alt="">
+        <div class="acc-image-cap" id="acc-cap">Integrity · 行德恒一</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BRANDS — STICKY FULL-SCREEN SCROLL -->
+<div class="bs-container">
+  <section class="bs-section t-premium">
+    <div class="bs-text">
+      <div class="bs-counter">Brand <b>01</b> / 03</div>
+      <span class="bs-tier">Premium Tier</span>
+      <img src="logo1.png" alt="FRIDERIC" class="bs-logo">
+      <h2 class="bs-h">FRIDERIC</h2>
+      <div class="bs-zh">弗迪瑞轮胎 · 高端长途</div>
+      <p class="bs-desc">Premium long-haul. Low rolling resistance compounds, optimized casing strain, multiple retreads. Engineered for fleets that count cost-per-kilometre over years, not months.</p>
+      <div class="bs-meta">
+        <div class="bs-meta-item"><div class="bs-meta-l">Prefix</div><div class="bs-meta-v">FA · FD · FS</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Application</div><div class="bs-meta-v">Long-haul</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Markets</div><div class="bs-meta-v">EU · NA · AU</div></div>
+      </div>
+    </div>
+    <div class="bs-img"><img src="img/why/truck-cab.jpg" alt=""></div>
+  </section>
+  <section class="bs-section t-mid">
+    <div class="bs-text">
+      <div class="bs-counter">Brand <b>02</b> / 03</div>
+      <span class="bs-tier">Mid Tier</span>
+      <img src="logo3.png" alt="CHILONG" class="bs-logo">
+      <h2 class="bs-h">CHILONG</h2>
+      <div class="bs-zh">驰龙轮胎 · 全路况</div>
+      <p class="bs-desc">The workhorse. Balanced wear, traction and price for mixed-road regional haulers and dump-trucks. The tyre your operations manager picks twice.</p>
+      <div class="bs-meta">
+        <div class="bs-meta-item"><div class="bs-meta-l">Prefix</div><div class="bs-meta-v">CA · CD · CS</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Application</div><div class="bs-meta-v">All-road</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Markets</div><div class="bs-meta-v">LATAM · MEA</div></div>
+      </div>
+    </div>
+    <div class="bs-img"><img src="img/why/long-haul.jpg" alt=""></div>
+  </section>
+  <section class="bs-section t-entry">
+    <div class="bs-text">
+      <div class="bs-counter">Brand <b>03</b> / 03</div>
+      <span class="bs-tier">Value Tier</span>
+      <img src="logo2.png" alt="JOSEBEN" class="bs-logo">
+      <h2 class="bs-h">JOSEBEN</h2>
+      <div class="bs-zh">桥圣本轮胎 · 高性价比</div>
+      <p class="bs-desc">Tier-one quality at value pricing. Built for cost-sensitive emerging markets without compromising the casing. Because cheap shouldn't mean unsafe.</p>
+      <div class="bs-meta">
+        <div class="bs-meta-item"><div class="bs-meta-l">Series</div><div class="bs-meta-v">Numeric</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Application</div><div class="bs-meta-v">Emerging</div></div>
+        <div class="bs-meta-item"><div class="bs-meta-l">Markets</div><div class="bs-meta-v">SEA · Africa</div></div>
+      </div>
+    </div>
+    <div class="bs-img"><img src="img/why/freight.jpg" alt=""></div>
+  </section>
+</div>
+
+<!-- 6. R&D — HORIZONTAL FLOW DIAGRAM + PARTNERS -->
+<section class="flow-wrap" id="rd">
+  <div class="w">
+    <div class="flow-head reveal">
+      <div class="eyebrow light" style="margin-bottom:20px">04 · Research & Development</div>
+      <h2 class="h2">From market<br>to <span class="gold">contact patch</span>.</h2>
+      <p class="lede">A complete in-house R&D pipeline. No outsourcing. No black boxes.</p>
+    </div>
+    <div class="flow-track reveal reveal-d1">
+      <div class="flow-step"><div class="flow-num">Step 01</div><div class="flow-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div><div class="flow-title">Market<br>Research</div><div class="flow-desc">Field interviews with fleet operators in 20+ countries.</div></div>
+      <div class="flow-step"><div class="flow-num">Step 02</div><div class="flow-icon"><i class="fa-solid fa-clipboard-list"></i></div><div class="flow-title">Product<br>Planning</div><div class="flow-desc">Target spec sheets — load, speed, retread cycles defined.</div></div>
+      <div class="flow-step"><div class="flow-num">Step 03</div><div class="flow-icon"><i class="fa-solid fa-flask"></i></div><div class="flow-title">Compound<br>Formulation</div><div class="flow-desc">Silica, carbon black, polymer blends tuned per application.</div></div>
+      <div class="flow-step"><div class="flow-num">Step 04</div><div class="flow-icon"><i class="fa-solid fa-diagram-project"></i></div><div class="flow-title">Structural<br>Design</div><div class="flow-desc">FEA-driven casing, belt and bead geometry optimisation.</div></div>
+      <div class="flow-step"><div class="flow-num">Step 05</div><div class="flow-icon"><i class="fa-solid fa-shield-halved"></i></div><div class="flow-title">Validation<br>& Test</div><div class="flow-desc">In-house lab + TÜV-aligned third-party verification.</div></div>
+    </div>
+    <div class="flow-partners reveal reveal-d2">
+      <div>
+        <div class="fp-label">Academic Partnerships</div>
+        <div class="fp-list">
+          <div class="fp-item">Shandong Univ. of Science & Technology<small>Structural mechanics & casing durability</small></div>
+          <div class="fp-item">Qingdao Univ. of Science & Technology<small>Rubber chemistry & low rolling resistance</small></div>
+        </div>
+      </div>
+      <div>
+        <div class="fp-label">Management Systems</div>
+        <p class="fp-quote">"Three integrated certifications — quality, environment, occupational health — audited <span style="color:var(--gold);font-style:normal;font-weight:600;font-family:Inter">together</span>, never in isolation."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CHEMISTRY — TIRE CROSS-SECTION DIAGRAM -->
+<section class="tire-section" id="compound">
+  <div class="w">
+    <div class="tire-head reveal">
+      <div class="eyebrow" style="margin-bottom:20px">05 · The Anatomy</div>
+      <h2 class="h2">It starts with<br>the <em>chemistry</em>.</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">A tyre that lasts isn't built — it's mixed. Every layer is engineered.</p>
+    </div>
+    <div class="tire-diagram reveal reveal-d1">
+      <div class="cs-left">
+        <div class="cs-label"><div class="cs-label-num">01</div><div class="cs-label-text"><h5>Tread Compound</h5><p>Silica-loaded for low rolling resistance · cut & chip resistant blocks for mining.</p></div></div>
+        <div class="cs-label"><div class="cs-label-num">02</div><div class="cs-label-text"><h5>Belt Edge Cushion</h5><p>Manages strain at belt edges — extends casing fatigue life by 18–25%.</p></div></div>
+        <div class="cs-label"><div class="cs-label-num">03</div><div class="cs-label-text"><h5>Steel Belt Package</h5><p>4-belt construction with stone-ejector geometry. Tensile-tested every reel.</p></div></div>
+      </div>
+      <div class="tire-svg-wrap">
+        <svg class="tire-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Tire cross section">
+          <!-- outer tread -->
+          <circle cx="200" cy="200" r="180" fill="#0f0f0d"/>
+          <!-- tread pattern rings -->
+          <circle cx="200" cy="200" r="178" fill="none" stroke="#e8b400" stroke-width="2" stroke-dasharray="6,4"/>
+          <!-- sidewall area -->
+          <circle cx="200" cy="200" r="155" fill="#1a1a1a"/>
+          <!-- belt package (gold) -->
+          <circle cx="200" cy="200" r="148" fill="none" stroke="#e8b400" stroke-width="3" opacity=".7"/>
+          <circle cx="200" cy="200" r="143" fill="none" stroke="#e8b400" stroke-width="2" opacity=".55"/>
+          <circle cx="200" cy="200" r="138" fill="none" stroke="#e8b400" stroke-width="2" opacity=".4"/>
+          <!-- carcass / ply (blue) -->
+          <circle cx="200" cy="200" r="130" fill="none" stroke="#1244b0" stroke-width="3" opacity=".7"/>
+          <!-- inner cavity -->
+          <circle cx="200" cy="200" r="120" fill="#f0ede8"/>
+          <!-- inner liner -->
+          <circle cx="200" cy="200" r="120" fill="none" stroke="#1244b0" stroke-width="1.5" stroke-dasharray="2,2" opacity=".5"/>
+          <!-- bead bundle (gold dots top + bottom) -->
+          <circle cx="200" cy="50" r="9" fill="#e8b400"/>
+          <circle cx="200" cy="350" r="9" fill="#e8b400"/>
+          <!-- center label -->
+          <text x="200" y="195" text-anchor="middle" font-family="Barlow Condensed" font-weight="900" font-size="48" fill="#0f0f0d" letter-spacing="-2">HUGER</text>
+          <text x="200" y="220" text-anchor="middle" font-family="DM Mono" font-size="9" fill="#0f0f0d" letter-spacing="2" opacity=".5">ALL-STEEL RADIAL</text>
+
+        </svg>
+      </div>
+      <div class="cs-right">
+        <div class="cs-label"><div class="cs-label-num">04</div><div class="cs-label-text"><h5>Body Ply (Carcass)</h5><p>High-tensile steel cord — maintains inflation pressure and resists road shock.</p></div></div>
+        <div class="cs-label"><div class="cs-label-num">05</div><div class="cs-label-text"><h5>Inner Liner</h5><p>Butyl-rich compound · industry-best air retention, prevents internal oxidation.</p></div></div>
+        <div class="cs-label"><div class="cs-label-num">06</div><div class="cs-label-text"><h5>Bead Bundle</h5><p>Hexagonal high-tensile steel wires + nylon chafer · zero-leak seal against rim.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. MANUFACTURING — ZIGZAG NUMBERED LIST -->
+<section class="steps" id="manufacturing">
+  <div class="w">
+    <div class="steps-head reveal">
+      <div class="eyebrow" style="margin-bottom:20px">06 · Manufacturing</div>
+      <h2 class="h2">Seven processes.<br><span class="gold">Zero shortcuts.</span></h2>
+      <p class="lede" style="margin:18px auto 0">Click any step to see the floor.</p>
+    </div>
+    <div class="steps-tabs" id="steps-tabs">
+      <div class="steps-tab active" data-step="1"><div class="steps-tab-num">01</div><div class="steps-tab-name">Mixing</div></div>
+      <div class="steps-tab" data-step="2"><div class="steps-tab-num">02</div><div class="steps-tab-name">Calender</div></div>
+      <div class="steps-tab" data-step="3"><div class="steps-tab-num">03</div><div class="steps-tab-name">Building</div></div>
+      <div class="steps-tab" data-step="4"><div class="steps-tab-num">04</div><div class="steps-tab-name">Cure</div></div>
+      <div class="steps-tab" data-step="5"><div class="steps-tab-num">05</div><div class="steps-tab-name">X-Ray</div></div>
+      <div class="steps-tab" data-step="6"><div class="steps-tab-num">06</div><div class="steps-tab-name">Strength</div></div>
+      <div class="steps-tab" data-step="7"><div class="steps-tab-num">07</div><div class="steps-tab-name">Lab</div></div>
+    </div>
+    <div class="steps-panel">
+      <div class="steps-media">
+        <img src="img/equipment/mixing.jpg" data-step="1" class="active" alt="">
+        <img src="img/equipment/calendering.jpg" data-step="2" alt="">
+        <img src="img/equipment/forming.jpg" data-step="3" alt="">
+        <img src="img/equipment/vulcanizing.jpg" data-step="4" alt="">
+        <img src="img/equipment/xray.jpg" data-step="5" alt="">
+        <img src="img/equipment/strength.jpg" data-step="6" alt="">
+        <img src="img/equipment/steelcord.jpg" data-step="7" alt="">
+        <span class="steps-media-tag" id="steps-tag">Step 01 / 07</span>
+      </div>
+      <div class="steps-text">
+        <div class="steps-body active" data-step="1">
+          <div class="steps-tag">Production · Step 01</div>
+          <h4>Banbury Compound Mixing</h4>
+          <p>Computer-controlled batching ensures every block of compound has identical filler dispersion, density and Mooney viscosity.</p>
+          <ul class="steps-bullets">
+            <li>Computer-controlled batching by recipe</li>
+            <li>Identical filler dispersion across batches</li>
+            <li>Mooney viscosity logged per batch</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="2">
+          <div class="steps-tag">Production · Step 02</div>
+          <h4>Four-Roll Calendering</h4>
+          <p>Precision sheeting for ply and inner-liner consistency. Sensors monitor thickness to ±0.05 mm across the full web.</p>
+          <ul class="steps-bullets">
+            <li>±0.05 mm thickness uniformity</li>
+            <li>Steel cord ply &amp; inner liner production</li>
+            <li>Continuous thickness sensors</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="3">
+          <div class="steps-tag">Production · Step 03</div>
+          <h4>Tire Building</h4>
+          <p>Automated single-stage building machines with sensor-aligned belts and CCD-inspected ply placement.</p>
+          <ul class="steps-bullets">
+            <li>Single-stage automated assembly</li>
+            <li>CCD-inspected ply placement</li>
+            <li>Belt alignment within ±0.3 mm</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="4">
+          <div class="steps-tag">Production · Step 04</div>
+          <h4>Vulcanisation</h4>
+          <p>Curing presses with sensor-logged temperature &amp; pressure profiles recorded for every individual cycle.</p>
+          <ul class="steps-bullets">
+            <li>Per-cycle T &amp; P logging</li>
+            <li>Sensor-controlled curing profile</li>
+            <li>Full traceability by serial number</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="5">
+          <div class="steps-tag">Inspection · Step 05</div>
+          <h4>X-Ray Non-Destructive Scan</h4>
+          <p>100% scan rate — every tyre checked for cord placement and internal defects before leaving the line.</p>
+          <ul class="steps-bullets">
+            <li>100% non-destructive inspection</li>
+            <li>Cord placement &amp; bead seating verified</li>
+            <li>Reject rate logged per shift</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="6">
+          <div class="steps-tag">Inspection · Step 06</div>
+          <h4>Strength &amp; Uniformity</h4>
+          <p>Plunger and burst tests against TRA / ETRTO standards. Dynamic balance &amp; radial run-out within 1.5 g.</p>
+          <ul class="steps-bullets">
+            <li>TRA / ETRTO plunger &amp; burst</li>
+            <li>Dynamic balance ≤ 1.5 g</li>
+            <li>Radial run-out within spec</li>
+          </ul>
+        </div>
+        <div class="steps-body" data-step="7">
+          <div class="steps-tag">Lab · Step 07</div>
+          <h4>Steel Cord &amp; Compound Lab</h4>
+          <p>Tensile, adhesion and corrosion testing on every incoming reel. Compound Mooney viscosity logged batch-by-batch.</p>
+          <ul class="steps-bullets">
+            <li>Tensile &amp; adhesion every reel</li>
+            <li>Compound Mooney viscosity logging</li>
+            <li>Corrosion test every batch</li>
+          </ul>
+        </div>
+        <div class="steps-arrows">
+          <button id="step-prev" aria-label="Previous step"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="step-next" aria-label="Next step"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. TIMELINE — CLASSIC VERTICAL -->
+<section class="tl" id="milestones">
+  <div class="w">
+    <div class="tl-head reveal">
+      <div class="eyebrow" style="margin-bottom:20px">08 · Milestones</div>
+      <h2 class="h2">Three decades.<br>One <em>direction</em>.</h2>
+    </div>
+    <div class="tl-track" id="tl-track">
+      <div class="tl-line"></div>
+      <div class="tl-ticks">
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">1988</div></div>
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">2005</div></div>
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">2012</div></div>
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">2018</div></div>
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">2023</div></div>
+        <div class="tl-tick"><div class="tl-dot"></div><div class="tl-year">2026</div></div>
+      </div>
+    </div>
+    <div class="tl-list">
+      <div class="tl-row"><div class="tl-row-year">1988</div><div class="tl-row-title">Foundation</div><div class="tl-row-desc">Founded in Guangrao, Dongying — China's "Tire Capital".</div></div>
+      <div class="tl-row"><div class="tl-row-year">2005</div><div class="tl-row-title">Radial Pivot</div><div class="tl-row-desc">All-steel radial production line commissioned. Pivot from bias-ply to modern radial.</div></div>
+      <div class="tl-row"><div class="tl-row-year">2012</div><div class="tl-row-title">Going Global</div><div class="tl-row-desc">DOT (USA), ECE (EU), GCC (Gulf) certifications cleared. Export business takes off.</div></div>
+      <div class="tl-row"><div class="tl-row-year">2018</div><div class="tl-row-title">Three Brands</div><div class="tl-row-desc">Annual capacity 1.8M tyres. FRIDERIC · CHILONG · JOSEBEN formalised.</div></div>
+      <div class="tl-row"><div class="tl-row-year">2023</div><div class="tl-row-title">Capacity to 2M</div><div class="tl-row-desc">University R&D partnerships deepen. Sustainability program launched.</div></div>
+      <div class="tl-row"><div class="tl-row-year">2026</div><div class="tl-row-title">Today</div><div class="tl-row-desc">70+ countries · ¥1.8B assets · 10+ international certifications.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. CTA — SPLIT + INLINE FORM -->
+<section class="cta-split" id="contact">
+  <div class="cta-left">
+    <div class="eyebrow light" style="margin-bottom:20px">09 · Get in Touch</div>
+    <h2 class="h2">Talk specs.<br>Or just <span class="gold">say hi.</span></h2>
+    <p>Wholesale, OEM or single-container test orders — wherever you are, we'll route you to the right team within 24 hours.</p>
+    <div class="cta-contact">
+      <a href="tel:+8654677268888" class="cta-cl-item"><i class="fa-solid fa-phone"></i><span>+86 0546 7726888</span></a>
+      <a href="mailto:info@hugerubber.com" class="cta-cl-item"><i class="fa-solid fa-envelope"></i><span>info@hugerubber.com</span></a>
+      <a href="tel:4008808961" class="cta-cl-item"><i class="fa-solid fa-headset"></i><span>400-880-8961 · Hotline</span></a>
+      <span class="cta-cl-item" style="cursor:default"><i class="fa-solid fa-location-dot"></i><span>Xishui Industrial Zone, Guangrao, Dongying, China</span></span>
+    </div>
+  </div>
+  <form class="cta-form" onsubmit="event.preventDefault();alert('Demo only — form not wired.');">
+    <div class="cta-form-head">Request a Quote</div>
+    <h3>Tell us about your fleet.</h3>
+    <div class="cf-grid">
+      <div class="cf-field"><label>First name</label><input type="text" required></div>
+      <div class="cf-field"><label>Last name</label><input type="text" required></div>
+      <div class="cf-field"><label>Email</label><input type="email" required></div>
+      <div class="cf-field"><label>Country</label><input type="text" required></div>
+      <div class="cf-field full"><label>Application</label>
+        <select><option>Long-haul highway</option><option>Regional / mixed</option><option>Mining / off-road</option><option>OEM truck/bus</option><option>Other</option></select>
+      </div>
+      <div class="cf-field full"><label>Message</label><textarea placeholder="Sizes, quantities, target ETA…"></textarea></div>
+    </div>
+    <button type="submit" class="cf-submit">Send Inquiry <i class="fa-solid fa-arrow-right"></i></button>
+  </form>
+</section>
+
+<!-- FOOTER (same as v1) -->
+<footer class="footer">
+  <div class="w">
+    <div class="footer-top">
+      <div>
+        <div class="ft-logo"><a href="index-v2.html"><img src="logo.png" alt="HUGER"></a></div>
+        <p class="ft-tagline">All-steel radial truck & bus tyres. Three brands. One uncompromising standard. Since 1988.</p>
+        <div class="ft-stats">
+          <div><div class="ft-stat-num">1988</div><div class="ft-stat-label">Founded</div></div>
+          <div><div class="ft-stat-num">70+</div><div class="ft-stat-label">Countries</div></div>
+          <div><div class="ft-stat-num">2M</div><div class="ft-stat-label">Annual Tires</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-head">Navigation</div>
+        <ul class="ft-links">
+          <li><a href="index-v2.html">Home</a></li>
+          <li><a href="products/collection-v2.html">Products</a></li>
+          <li><a href="why-huger.html">Why HUGER</a></li>
+          <li><a href="index-v2.html#certs">Certifications</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-head">Contact</div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Office</span><a href="tel:05467726888" class="ft-contact-val">0546-7726888</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Email</span><a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Address</span><span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span></div>
+      </div>
+      <div>
+        <div class="ft-col-head">Our Brands</div>
+        <div class="ft-brand-row"><img src="logo.png" alt="HUGER" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo1.png" alt="FRIDERIC" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo3.png" alt="CHILONG" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo2.png" alt="JOSEBEN" class="ft-brand-logo"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="ft-copy">© 2026 Shandong Hugerubber Co., Ltd. · All rights reserved · v2</span>
+      <div class="ft-certs">
+        <img src="img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+        <img src="img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+        <img src="img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header light switch
+(function(){
+  var hdr=document.getElementById('header'),hero=document.getElementById('hero');
+  function u(){if(window.scrollY>hero.offsetHeight-80)hdr.classList.add('hdr-light');else hdr.classList.remove('hdr-light');}
+  window.addEventListener('scroll',u,{passive:true});u();
+})();
+
+// Scroll reveal
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});return;}
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+})();
+
+// Accordion (section 4) — exclusive open + image swap
+(function(){
+  var items=document.querySelectorAll('#acc-list .acc-item');
+  var imgs=document.querySelectorAll('#acc-image img');
+  var cap=document.getElementById('acc-cap');
+  var captions={'hero-highway':'Integrity · 行德恒一','nature':'Sustainable · 多元价值','city-truck':'Safer Roads · 安全舒适','engineer':'Customer-led · 客户为中心','worker':'United Craft · 专心齐心'};
+  items.forEach(function(it){
+    it.querySelector('.acc-trigger').addEventListener('click',function(){
+      var wasOpen=it.classList.contains('open');
+      items.forEach(function(x){x.classList.remove('open');});
+      if(!wasOpen){
+        it.classList.add('open');
+        var k=it.getAttribute('data-img');
+        imgs.forEach(function(im){im.classList.toggle('active', im.getAttribute('data-key')===k);});
+        cap.textContent=captions[k]||'';
+      }
+    });
+  });
+})();
+
+// Count-up animation for [data-count] (decimal + comma formats)
+(function(){
+  function animate(el, target, decimals, format){
+    var dur = 1800, t0 = performance.now();
+    function fmt(v){
+      if(decimals>0) v = v.toFixed(decimals);
+      else v = Math.round(v);
+      if(format==='comma') return Number(v).toLocaleString('en-US');
+      return String(v);
+    }
+    function step(now){
+      var p = Math.min(1, (now-t0)/dur);
+      p = 1 - Math.pow(1-p, 3);
+      var v = target * p;
+      el.textContent = fmt(v);
+      if(p<1) requestAnimationFrame(step);
+      else el.textContent = fmt(target);
+    }
+    requestAnimationFrame(step);
+  }
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.count-num').forEach(function(el){
+      el.textContent = el.getAttribute('data-count');
+    });
+    return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var el = e.target;
+      var target = parseFloat(el.getAttribute('data-count'));
+      var decimals = parseInt(el.getAttribute('data-decimals')||'0', 10);
+      var format = el.getAttribute('data-format') || '';
+      animate(el, target, decimals, format);
+      io.unobserve(el);
+    });
+  }, {threshold: 0.35});
+  document.querySelectorAll('.count-num').forEach(function(el){ io.observe(el); });
+})();
+
+
+// Editorial motion: word split + observer
+(function(){
+  function splitWords(el){
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    var nodes = []; while(walker.nextNode()) nodes.push(walker.currentNode);
+    var i = 0;
+    nodes.forEach(function(n){
+      if(!n.textContent.trim()) return;
+      var parts = n.textContent.split(/(\s+)/);
+      var frag = document.createDocumentFragment();
+      parts.forEach(function(p){
+        if(/^\s+$/.test(p)){ frag.appendChild(document.createTextNode(p)); return; }
+        if(!p) return;
+        var sp = document.createElement('span'); sp.className='word';
+        sp.style.setProperty('--i', i++); sp.textContent=p;
+        frag.appendChild(sp);
+      });
+      n.parentNode.replaceChild(frag, n);
+    });
+  }
+  document.querySelectorAll('[data-split]').forEach(splitWords);
+  document.querySelectorAll('.ed-motion-body').forEach(function(body){
+    body.querySelectorAll('p').forEach(function(p, idx){ p.style.transitionDelay=(idx*0.12)+'s'; });
+  });
+  var els = document.querySelectorAll('.ed-motion, .ed-motion-body p');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(el){el.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in'); io.unobserve(e.target);
+    });
+  }, {threshold:0.15});
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+
+
+
+// Manufacturing steps tab switcher
+(function(){
+  var tabs = document.querySelectorAll('#steps-tabs .steps-tab');
+  if(!tabs.length) return;
+  var imgs = document.querySelectorAll('.steps-media img');
+  var bodies = document.querySelectorAll('.steps-body');
+  var tag = document.getElementById('steps-tag');
+  var prev = document.getElementById('step-prev');
+  var next = document.getElementById('step-next');
+  var current = 1, total = tabs.length;
+  function setStep(n){
+    current = n;
+    tabs.forEach(function(t){ t.classList.toggle('active', +t.getAttribute('data-step') === n); });
+    imgs.forEach(function(im){ im.classList.toggle('active', +im.getAttribute('data-step') === n); });
+    bodies.forEach(function(b){ b.classList.toggle('active', +b.getAttribute('data-step') === n); });
+    if(tag) tag.textContent = 'Step ' + String(n).padStart(2,'0') + ' / 07';
+    if(prev) prev.disabled = n === 1;
+    if(next) next.disabled = n === total;
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ setStep(+t.getAttribute('data-step')); }); });
+  if(prev) prev.addEventListener('click', function(){ if(current>1) setStep(current-1); });
+  if(next) next.addEventListener('click', function(){ if(current<total) setStep(current+1); });
+  setStep(1);
+})();
+
+
+// Timeline track motion
+(function(){
+  var t = document.getElementById('tl-track');
+  if(!t) return;
+  if(!('IntersectionObserver' in window)){ t.classList.add('in'); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: 0.3});
+  io.observe(t);
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<title>Why HUGER — Shandong Hugerubber Co., Ltd.</title>
+<meta name="description" content="Why HUGER: founded 1988, 2M tyres/year, 70+ countries, 10+ certifications. Three brands — FRIDERIC · CHILONG · JOSEBEN.">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ─────── Reset & tokens (v2 system) ─────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;background:none;border:none}
+
+:root{
+  --cream:#f0ede8;
+  --ink:#0f0f0d;
+  --ink-60:rgba(15,15,13,.6);
+  --ink-30:rgba(15,15,13,.3);
+  --ink-12:rgba(15,15,13,.12);
+  --ink-06:rgba(15,15,13,.06);
+  --blue:#1244b0;
+  --navy:#0c1a3a;
+  --gold:#e8b400;
+  --green:#3fa832;
+  --rule:1px solid rgba(15,15,13,.12);
+}
+
+body{
+  font-family:'Inter',-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* film grain overlay */
+body::after{
+  content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px;
+}
+
+.w{max-width:1320px;margin:0 auto;padding:0 48px}
+@media(max-width:960px){.w{padding:0 24px}}
+@media(max-width:600px){.w{padding:0 16px}}
+
+/* Typography */
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-60);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--ink-30)}
+.eyebrow.light{color:rgba(255,255,255,.55)}
+.eyebrow.light::before{background:rgba(255,255,255,.45)}
+
+.h-display{font-family:'Barlow Condensed',sans-serif;font-weight:900;line-height:.88;letter-spacing:-.025em}
+.h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(44px,5.6vw,82px);line-height:.95;letter-spacing:-.02em;color:var(--ink)}
+.h2 em{font-style:normal;color:var(--blue)}
+.h2 .gold{color:var(--gold)}
+.lede{font-size:16px;line-height:1.65;color:var(--ink-60);max-width:620px}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.18s}
+.reveal-d3{transition-delay:.28s}
+.reveal-d4{transition-delay:.38s}
+
+/* clip reveal */
+.clip-reveal{clip-path:inset(0 0 0 0);transition:clip-path 1.2s cubic-bezier(.7,0,.3,1)}
+.clip-reveal.in{clip-path:inset(0 0 0 0)}
+
+/* ─────── HEADER (same as v2) ─────── */
+#header{color:#fff;height:auto;padding:clamp(10px,.9vw,16px) 0;pointer-events:none;position:fixed;top:0;left:0;width:100%;will-change:transform;z-index:80;transition:color .4s}
+#header.hdr-light{color:#0f0f0d}
+#header .container{align-items:center;display:flex;height:100%;justify-content:center}
+#header .group{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background-color:hsla(0,0%,100%,.12);border-radius:clamp(15px,1.389vw,26.6px);border:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:center;padding:clamp(5px,.417vw,7.98px);pointer-events:all;width:min(92vw,1240px);transition:background .4s,border-color .4s}
+#header.hdr-light .group{background-color:hsla(0,0%,100%,.72);border-color:rgba(0,0,0,.06)}
+#header .group .logo{display:flex;align-items:center;margin-left:clamp(14px,1.25vw,23.94px);flex-shrink:0}
+#header .group .logo img{height:28px;width:auto;display:block;filter:brightness(0) invert(1);transition:filter .4s}
+#header.hdr-light .group .logo img{filter:none}
+@media(max-width:1240px){#header .group .logo img{height:24px}}
+#header .group .menu{display:flex;gap:clamp(4px,.556vw,10.64px);list-style:none;padding:0;margin:0}
+#header .group .menu li{display:inline-block}
+#header .group .menu li a{background-color:transparent;border:1px solid transparent;border-radius:clamp(14px,1.042vw,19.95px);color:inherit;display:block;font-size:clamp(13px,1.042vw,19.95px);height:clamp(38px,2.778vw,53.2px);line-height:clamp(38px,2.778vw,53.2px);opacity:.65;padding:0 clamp(18px,2.222vw,42.56px);transition:all .6s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+#header .group .menu li a:hover{opacity:1}
+#header .group .menu li.is-active a{opacity:1}
+@media(max-width:720px){#header .group .menu li:nth-child(4){display:none}#header .group .menu li a{padding:0 14px;font-size:12px}}
+
+/* ─────── HERO — full bleed video/image w/ parallax ─────── */
+.hero{position:relative;width:100%;height:100vh;min-height:680px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;background:#000}
+.hero-bg{position:absolute;inset:-10% 0;background:url('img/why/hero-highway.jpg') center/cover no-repeat;will-change:transform;filter:contrast(1.05) brightness(.85)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(0,0,0,.45) 55%,rgba(0,0,0,.92) 100%)}
+.hero-overlay::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 80%,rgba(232,180,0,.12),transparent 60%)}
+.hero-content{position:relative;z-index:2;width:100%;padding:0 clamp(24px,4vw,80px) 80px;max-width:1320px;margin:0 auto}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--gold)}
+.hero-h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(72px,11vw,200px);line-height:.82;letter-spacing:-.03em;color:#fff;margin:0}
+.hero-h1 .gold{color:var(--gold)}
+.hero-h1 .outline{-webkit-text-stroke:2px #fff;color:transparent}
+.hero-desc{font-size:15px;line-height:1.65;color:rgba(255,255,255,.7);max-width:520px;margin-top:24px}
+.hero-foot{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:10px;animation:bounce 2.4s ease-in-out infinite;z-index:3}
+.hero-foot i{animation:bounce 2.4s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+/* ─────── MEGA STATS ROW (after hero) ─────── */
+.megastats{background:var(--ink);color:#fff;padding:0;border-bottom:1px solid rgba(255,255,255,.06)}
+.megastats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+@media(max-width:900px){.megastats-grid{grid-template-columns:repeat(2,1fr)}}
+.megastats-cell{padding:56px 32px;border-right:1px solid rgba(255,255,255,.08);position:relative;overflow:hidden;transition:background .3s}
+.megastats-cell:last-child{border-right:0}
+@media(max-width:900px){.megastats-cell:nth-child(2n){border-right:0}.megastats-cell{border-bottom:1px solid rgba(255,255,255,.08)}.megastats-cell:nth-child(5){grid-column:span 2;text-align:center}}
+.megastats-cell:hover{background:rgba(232,180,0,.06)}
+.megastats-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(56px,5.6vw,88px);line-height:.95;letter-spacing:-.025em;color:var(--gold);display:flex;align-items:baseline;gap:6px}
+.megastats-num small{font-size:.45em;color:rgba(232,180,0,.6);font-weight:700}
+.megastats-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:14px}
+.megastats-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:8px;line-height:1.5}
+
+/* ─────── BIG IMAGE+TEXT ALTERNATING BLOCK ─────── */
+section.bigblock{padding:clamp(100px,12vw,160px) 0;position:relative}
+.bigblock-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.bigblock-grid.reverse{direction:rtl}
+.bigblock-grid.reverse > *{direction:ltr}
+@media(max-width:900px){.bigblock-grid{grid-template-columns:1fr;gap:48px}.bigblock-grid.reverse{direction:ltr}}
+.bigblock-media{aspect-ratio:4/5;overflow:hidden;border-radius:8px;position:relative}
+.bigblock-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.6s cubic-bezier(.16,1,.3,1)}
+.bigblock-media:hover img{transform:scale(1.05)}
+.bigblock-media::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.4),transparent 40%);pointer-events:none}
+.bigblock-badge{position:absolute;top:20px;left:20px;background:var(--gold);color:#000;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border-radius:4px;font-weight:600;z-index:2}
+.bigblock-cap{position:absolute;bottom:20px;left:20px;right:20px;color:#fff;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;z-index:2}
+.bigblock-body .h2{margin-top:18px;margin-bottom:24px}
+.bigblock-points{margin-top:36px;display:flex;flex-direction:column;gap:24px;border-top:var(--rule);padding-top:32px}
+.bigblock-point{display:flex;gap:24px}
+.bigblock-point-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:40px;line-height:1;color:var(--blue);min-width:64px}
+.bigblock-point-body h5{font-size:17px;font-weight:600;margin-bottom:6px}
+.bigblock-point-body p{font-size:14px;color:var(--ink-60);line-height:1.6}
+
+/* ─────── 5 PILLARS — interactive horizontal flex ─────── */
+.pillars{display:flex;gap:0;border-top:1px solid var(--ink-12);border-bottom:1px solid var(--ink-12)}
+.pillar{flex:1;min-height:560px;border-right:1px solid var(--ink-12);padding:48px 28px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;position:relative;overflow:hidden;transition:flex .8s cubic-bezier(.4,0,.2,1);background-color:var(--cream);background-size:cover;background-position:center;background-repeat:no-repeat}
+.pillar:last-child{border-right:0}
+.pillar::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(240,237,232,.55) 0%,rgba(240,237,232,.78) 60%,rgba(240,237,232,.92) 100%);z-index:1;transition:background .6s;pointer-events:none}
+.pillar:hover{flex:2.3;background-size:115% auto}
+.pillar:hover::after{background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.75) 60%,rgba(0,0,0,.95) 100%)}
+.pillar > *{position:relative;z-index:2}
+.pillar-num{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-30);transition:color .4s}
+.pillar:hover .pillar-num{color:var(--gold)}
+.pillar-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:34px;line-height:1;margin-top:auto;margin-bottom:14px;transition:font-size .4s,color .4s;color:var(--ink)}
+.pillar:hover .pillar-title{font-size:48px;color:#fff}
+.pillar-cn{font-size:13px;color:var(--blue);margin-bottom:14px;font-weight:500;transition:color .4s}
+.pillar:hover .pillar-cn{color:var(--gold)}
+.pillar-desc{font-size:13px;line-height:1.6;color:var(--ink-60);max-height:0;overflow:hidden;opacity:0;transition:max-height .5s,opacity .4s,color .4s;transition-delay:.1s}
+.pillar:hover .pillar-desc{max-height:200px;opacity:1;color:rgba(255,255,255,.85)}
+@media(max-width:880px){.pillars{flex-direction:column}.pillar{border-right:0;border-bottom:1px solid var(--ink-12);min-height:240px;flex:none}.pillar:hover{flex:none}.pillar:hover .pillar-desc{max-height:200px}}
+
+/* ─────── BRAND FAMILY — big vertical bars ─────── */
+.brand-stage{background:var(--ink);color:#fff;padding:clamp(80px,10vw,140px) 0 0}
+.brand-stage .h2{color:#fff}
+.brand-stage .lede{color:rgba(255,255,255,.6)}
+.brand-bars{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:80px;min-height:600px}
+@media(max-width:880px){.brand-bars{grid-template-columns:1fr}}
+.brand-bar{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;color:#fff;cursor:pointer;transition:flex .6s;min-height:600px}
+.brand-bar-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.brand-bar:hover .brand-bar-bg{transform:scale(1.06)}
+.brand-bar-overlay{position:absolute;inset:0;z-index:1;transition:background .4s}
+.brand-bar.t-premium .brand-bar-overlay{background:linear-gradient(to top,rgba(0,30,80,.94) 0%,rgba(0,30,80,.6) 50%,rgba(0,0,0,.2) 100%)}
+.brand-bar.t-mid .brand-bar-overlay{background:linear-gradient(to top,rgba(0,40,30,.94) 0%,rgba(0,40,30,.6) 50%,rgba(0,0,0,.2) 100%)}
+.brand-bar.t-entry .brand-bar-overlay{background:linear-gradient(to top,rgba(20,20,20,.94) 0%,rgba(20,20,20,.6) 50%,rgba(0,0,0,.2) 100%)}
+.brand-bar:hover .brand-bar-overlay{filter:brightness(1.1)}
+.brand-bar > .b-body{position:relative;z-index:2}
+.brand-tier{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:6px 12px;border-radius:4px;display:inline-block;margin-bottom:24px;font-weight:600}
+.brand-bar.t-premium .brand-tier{background:var(--gold);color:#000}
+.brand-bar.t-mid .brand-tier{background:var(--green);color:#fff}
+.brand-bar.t-entry .brand-tier{background:#fff;color:#000}
+.brand-logo{height:42px;width:auto;margin-bottom:24px;filter:brightness(0) invert(1)}
+.brand-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(40px,4.6vw,68px);line-height:.95;margin-bottom:10px;letter-spacing:-.01em}
+.brand-zh{font-size:14px;color:rgba(255,255,255,.7);margin-bottom:24px}
+.brand-desc{font-size:14px;line-height:1.6;color:rgba(255,255,255,.8);max-width:380px;margin-bottom:28px}
+.brand-meta{display:flex;gap:24px;flex-wrap:wrap;padding-top:22px;border-top:1px solid rgba(255,255,255,.15)}
+.brand-meta-item{}
+.brand-meta-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px}
+.brand-meta-val{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;color:#fff;line-height:1}
+
+/* ─────── MANUFACTURING — BENTO GRID ─────── */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
+@media(max-width:520px){.bento{grid-template-columns:1fr;grid-auto-rows:200px}}
+.bento-tile{position:relative;overflow:hidden;border-radius:8px;background:var(--ink);cursor:pointer}
+.bento-tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1);filter:saturate(1.05)}
+.bento-tile:hover img{transform:scale(1.08)}
+.bento-tile-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.3) 50%,rgba(0,0,0,0) 100%);transition:background .35s}
+.bento-tile:hover .bento-tile-overlay{background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.5) 60%,rgba(18,68,176,.25) 100%)}
+.bento-tile-content{position:absolute;inset:0;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;z-index:2}
+.bento-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.bento-tile h5{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;line-height:1;margin-bottom:8px}
+.bento-tile p{font-size:13px;color:rgba(255,255,255,.7);line-height:1.5;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .3s,margin-top .4s}
+.bento-tile:hover p{max-height:80px;opacity:1;margin-top:4px}
+.bento-tile.tile-wide{grid-column:span 2;grid-row:span 2}
+.bento-tile.tile-wide h5{font-size:48px}
+.bento-tile.tile-tall{grid-row:span 2}
+@media(max-width:900px){.bento-tile.tile-wide{grid-column:span 2;grid-row:span 2}.bento-tile.tile-tall{grid-row:span 1}.bento-tile.tile-wide h5{font-size:32px}}
+@media(max-width:520px){.bento-tile.tile-wide{grid-column:span 1}}
+
+/* ─────── R&D split with stat overlay ─────── */
+.rd-split{position:relative;padding:0;overflow:hidden;background:var(--navy);color:#fff;min-height:80vh;display:flex;align-items:center}
+.rd-split-bg{position:absolute;inset:0;background:url('img/why/engineer.jpg') center/cover no-repeat;opacity:.35;z-index:0}
+.rd-split-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(12,26,58,.95) 0%,rgba(12,26,58,.7) 60%,rgba(12,26,58,.5) 100%)}
+.rd-split-inner{position:relative;z-index:1;padding:clamp(80px,10vw,140px) 0}
+.rd-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
+@media(max-width:880px){.rd-grid{grid-template-columns:1fr;gap:40px}}
+.rd-mega{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(80px,11vw,160px);line-height:.85;color:var(--gold);letter-spacing:-.03em}
+.rd-mega small{display:block;font-size:.22em;color:#fff;letter-spacing:3px;text-transform:uppercase;margin-top:14px;line-height:1.4;font-weight:500;font-family:'DM Mono',monospace}
+.rd-points{display:flex;flex-direction:column;gap:20px}
+.rd-point{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.15);display:flex;gap:24px;cursor:pointer;transition:border-color .3s}
+.rd-point:hover{border-color:var(--gold)}
+.rd-point-icon{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;color:var(--gold)}
+.rd-point-body h5{font-size:17px;font-weight:600;margin-bottom:6px;color:#fff}
+.rd-point-body p{font-size:14px;color:rgba(255,255,255,.65);line-height:1.55}
+
+/* ─────── MARQUEE: cert / partner row ─────── */
+.marquee{background:var(--cream);padding:48px 0;border-top:var(--rule);border-bottom:var(--rule);overflow:hidden;position:relative}
+.marquee-track{display:flex;gap:64px;animation:scroll-x 32s linear infinite;width:max-content}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-item{display:flex;align-items:center;gap:14px;flex-shrink:0;padding:0 24px}
+.marquee-code{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:42px;color:var(--ink);line-height:1;letter-spacing:-.01em;transition:color .3s}
+.marquee-item:hover .marquee-code{color:var(--blue)}
+.marquee-region{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-30)}
+.marquee::before,.marquee::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(to right,var(--cream),transparent)}
+.marquee::after{right:0;background:linear-gradient(to left,var(--cream),transparent)}
+@keyframes scroll-x{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ─────── HORIZONTAL TIMELINE ─────── */
+.timeline-wrap{padding:clamp(80px,10vw,140px) 0 0;overflow:hidden}
+.timeline-head{padding:0 clamp(24px,4vw,80px);max-width:1320px;margin:0 auto 64px}
+.timeline-track{display:flex;gap:24px;padding:0 clamp(24px,4vw,80px) 80px;overflow-x:auto;scroll-snap-type:x mandatory;cursor:grab;scrollbar-width:none}
+.timeline-track::-webkit-scrollbar{display:none}
+.timeline-track:active{cursor:grabbing}
+.ms-card{flex:0 0 360px;scroll-snap-align:start;background:#fff;border:1px solid var(--ink-12);border-radius:12px;overflow:hidden;transition:transform .35s,box-shadow .35s}
+.ms-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.08)}
+.ms-card-media{aspect-ratio:4/3;overflow:hidden}
+.ms-card-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.ms-card:hover .ms-card-media img{transform:scale(1.06)}
+.ms-card-body{padding:24px}
+.ms-year{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:64px;line-height:1;color:var(--blue);margin-bottom:14px;letter-spacing:-.02em}
+.ms-card h4{font-size:18px;font-weight:600;margin-bottom:8px}
+.ms-card p{font-size:14px;line-height:1.6;color:var(--ink-60)}
+@media(max-width:520px){.ms-card{flex-basis:280px}.ms-year{font-size:48px}}
+
+/* ─────── FINAL CTA ─────── */
+.finale{position:relative;padding:clamp(100px,14vw,180px) 0;overflow:hidden;background:#000;color:#fff}
+.finale-bg{position:absolute;inset:0;background:transparent center/cover no-repeat;opacity:.5;z-index:0;animation:slowzoom 30s ease-in-out infinite alternate}
+@keyframes slowzoom{0%{transform:scale(1)}100%{transform:scale(1.12)}}
+.finale-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.6) 0%,rgba(18,68,176,.4) 100%);z-index:1}
+.finale-inner{position:relative;z-index:2;text-align:center;max-width:920px;margin:0 auto;padding:0 24px}
+.finale h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(64px,9vw,156px);line-height:.88;color:#fff;letter-spacing:-.03em;margin-bottom:32px}
+.finale h2 .outline{-webkit-text-stroke:2px var(--gold);color:transparent}
+.finale p{font-size:17px;line-height:1.6;color:rgba(255,255,255,.75);max-width:580px;margin:0 auto 48px}
+.finale-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:20px 32px;border-radius:8px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;transition:transform .25s,background .25s,color .25s,box-shadow .25s;border:1px solid transparent}
+.btn-primary{background:var(--gold);color:#000;box-shadow:0 10px 40px rgba(232,180,0,.3)}
+.btn-primary:hover{background:#fff;transform:translateY(-2px);box-shadow:0 14px 50px rgba(255,255,255,.35)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-2px)}
+
+/* downloads strip */
+.dl-strip{background:var(--cream);padding:64px 0;border-top:var(--rule)}
+.dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.dl-grid{grid-template-columns:1fr}}
+.dl-card{background:#fff;border:1px solid var(--ink-12);border-radius:10px;padding:24px 24px 24px 28px;display:flex;align-items:center;gap:18px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.dl-card:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.06);border-color:var(--gold)}
+.dl-icon{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;transition:background .3s}
+.dl-card:hover .dl-icon{background:var(--gold);color:#000}
+.dl-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-30);margin-bottom:4px}
+.dl-title{font-size:15px;font-weight:600;color:var(--ink)}
+.dl-card i.arr{margin-left:auto;color:var(--ink-30);font-size:14px;transition:transform .3s,color .3s}
+.dl-card:hover i.arr{color:var(--blue);transform:translateX(4px)}
+
+/* ─────── FOOTER (same as v2) ─────── */
+.footer{background:#0d0d11;color:rgba(255,255,255,.55);position:relative;overflow:hidden;padding:80px 0 0}
+.footer::before{content:'HUGER';position:absolute;bottom:-.22em;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(160px,22vw,320px);letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,180,0,.18);white-space:nowrap;pointer-events:none;user-select:none}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:96px;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:32px}}
+.ft-logo{margin-bottom:20px}
+.ft-logo img{height:26px;filter:brightness(0) invert(1);opacity:.9}
+.ft-tagline{font-size:13px;line-height:1.65;color:rgba(255,255,255,.52);max-width:260px;margin-bottom:28px}
+.ft-stats{display:flex;gap:28px;flex-wrap:wrap}
+.ft-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em;line-height:1;color:#fff}
+.ft-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:4px}
+.ft-col-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,.7);transition:color .2s}
+.ft-links a:hover{color:#fff}
+.ft-contact-item{display:flex;flex-direction:column;gap:3px;margin-bottom:16px}
+.ft-contact-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.ft-contact-val{font-size:13px;color:rgba(255,255,255,.75);transition:color .2s}
+a.ft-contact-val:hover{color:#fff}
+.ft-brand-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ft-brand-logo{height:22px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.75;transition:opacity .2s;flex:1;object-fit:contain;object-position:left center}
+.ft-brand-row:hover .ft-brand-logo{opacity:1}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:24px 0 32px;position:relative;z-index:1}
+.ft-copy{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.ft-certs{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
+.ft-cert-logo:hover{opacity:.8}
+@media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="component component--header header" data-component="header" id="header">
+  <div class="container">
+    <div class="group">
+      <a href="index-v2.html" class="logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <div class="mask"></div>
+      <ul id="menu-main" class="menu">
+        <li class="menu-item"><a href="index-v2.html">Home</a></li>
+        <li class="menu-item"><a href="products/collection-v2.html">Products</a></li>
+        <li class="menu-item is-active"><a href="#">Why HUGER</a></li>
+        <li class="menu-item"><a href="index-v2.html#certs">Certifications</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" data-parallax></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Shandong Hugerubber · since 1988</div>
+    <h1 class="hero-h1">Built for<br>the <span class="gold">long</span> <span class="outline">haul</span>.</h1>
+    <p class="hero-desc">Three brands, one factory floor, 70+ countries. The all-steel radial truck & bus tyres trusted by fleets from Lima to Lagos.</p>
+  </div>
+  <div class="hero-foot"><span>Scroll</span> <i class="fa-solid fa-arrow-down"></i></div>
+</section>
+
+<!-- MEGA STATS -->
+<section class="megastats">
+  <div class="megastats-grid">
+    <div class="megastats-cell"><div class="megastats-num" data-count="1988">1988</div><div class="megastats-label">Founded</div><div class="megastats-sub">In China's "Tire Capital", Guangrao.</div></div>
+    <div class="megastats-cell"><div class="megastats-num"><small>¥</small><span data-count="1.8">1.8</span><small>B</small></div><div class="megastats-label">Total Assets</div><div class="megastats-sub">Reinvested into R&D, capacity, lab.</div></div>
+    <div class="megastats-cell"><div class="megastats-num"><span data-count="2">2</span><small>M</small></div><div class="megastats-label">Tyres / Year</div><div class="megastats-sub">All-steel radial truck & bus capacity.</div></div>
+    <div class="megastats-cell"><div class="megastats-num"><span data-count="70">70</span><small>+</small></div><div class="megastats-label">Countries</div><div class="megastats-sub">Asia, EU, Americas, Africa, Oceania.</div></div>
+    <div class="megastats-cell"><div class="megastats-num"><span data-count="10">10</span><small>+</small></div><div class="megastats-label">Certifications</div><div class="megastats-sub">CCC · DOT · ECE · R117 · INMETRO…</div></div>
+  </div>
+</section>
+
+<!-- BLOCK 1 — Story / Origin -->
+<section class="bigblock" id="story">
+  <div class="w">
+    <div class="bigblock-grid">
+      <div class="bigblock-media reveal clip-reveal">
+        <span class="bigblock-badge">Est. 1988</span>
+        <img src="img/why/factory.jpg" alt="HUGER factory line">
+        <div class="bigblock-cap">Guangrao, Shandong · China's Tire Capital</div>
+      </div>
+      <div class="bigblock-body reveal reveal-d1">
+        <div class="eyebrow">01 · The Origin</div>
+        <h2 class="h2">From <em>Guangrao</em><br>to the world's<br>roads.</h2>
+        <p class="lede">When Shandong Hugerubber was founded in 1988, Guangrao was already known as the "Tire Capital of China". Four decades later we still build every tyre here — in one of the most concentrated rubber-industry ecosystems on the planet.</p>
+        <div class="bigblock-points">
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">38</div>
+            <div class="bigblock-point-body"><h5>Years of continuous production</h5><p>Three management generations. Same factory district. Zero outsourced production.</p></div>
+          </div>
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">¥1.8<small style="font-size:.5em;letter-spacing:.05em">B</small></div>
+            <div class="bigblock-point-body"><h5>Total assets reinvested</h5><p>Continuous capex in mixing, calendering, and the X-ray lab. The line we run today isn't the line we ran in 2010.</p></div>
+          </div>
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">3</div>
+            <div class="bigblock-point-body"><h5>Integrated management systems</h5><p>ISO 9001 Quality · ISO 14001 Environment · OHSAS Occupational Health — certified together, audited together.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS — 5 culture pillars (interactive expand) -->
+<section style="background:var(--cream)">
+  <div class="w" style="padding-top:clamp(80px,10vw,140px);padding-bottom:48px">
+    <div class="reveal">
+      <div class="eyebrow">02 · Our Philosophy</div>
+      <h2 class="h2" style="margin-top:18px">Five principles.<br>One mindset.</h2>
+      <p class="lede" style="margin-top:18px">Hover any pillar to expand. These aren't slogans — they're how we decide what gets shipped.</p>
+    </div>
+  </div>
+  <div class="pillars reveal reveal-d1">
+    <div class="pillar" style="background-image:url('img/why/hero-highway-p.jpg')">
+      <div class="pillar-num">01 / Spirit</div>
+      <div>
+        <div class="pillar-title">Integrity</div>
+        <div class="pillar-cn">行德恒一 共存共赢</div>
+        <p class="pillar-desc">Act with virtue. Coexist and win together. Trust is built tire by tire.</p>
+      </div>
+    </div>
+    <div class="pillar" style="background-image:url('img/why/nature-p.jpg')">
+      <div class="pillar-num">02 / Vision</div>
+      <div>
+        <div class="pillar-title">Sustainable</div>
+        <div class="pillar-cn">多元价值 可持续</div>
+        <p class="pillar-desc">Economic, social and ecological value — the only path that lasts a century.</p>
+      </div>
+    </div>
+    <div class="pillar" style="background-image:url('img/why/city-truck-p.jpg')">
+      <div class="pillar-num">03 / Mission</div>
+      <div>
+        <div class="pillar-title">Safer Roads</div>
+        <div class="pillar-cn">安全 舒适 绿色</div>
+        <p class="pillar-desc">Build a safer, more comfortable, greener automotive society. One contact patch at a time.</p>
+      </div>
+    </div>
+    <div class="pillar" style="background-image:url('img/why/engineer-p.jpg')">
+      <div class="pillar-num">04 / Philosophy</div>
+      <div>
+        <div class="pillar-title">Customer-led</div>
+        <div class="pillar-cn">市场导向 客户为中心</div>
+        <p class="pillar-desc">Market-oriented, customer-centric, technology-driven. Every R&D dollar starts there.</p>
+      </div>
+    </div>
+    <div class="pillar" style="background-image:url('img/why/worker-p.jpg')">
+      <div class="pillar-num">05 / Team</div>
+      <div>
+        <div class="pillar-title">United Craft</div>
+        <div class="pillar-cn">专心 用心 齐心</div>
+        <p class="pillar-desc">Focus, care, together. The mindset of every operator on the line.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCK 2 — Brand family stage -->
+<section class="brand-stage" id="brands">
+  <div class="w">
+    <div class="reveal">
+      <div class="eyebrow light">03 · Brand Family</div>
+      <h2 class="h2" style="margin-top:18px">Three brands.<br>One factory floor.</h2>
+      <p class="lede" style="margin-top:18px">Same ISO-certified line. Different positions on the value curve. Pick the brand that matches your fleet's economics.</p>
+    </div>
+  </div>
+  <div class="brand-bars">
+    <a href="products/collection-v2.html?brand=FRIDERIC" class="brand-bar t-premium">
+      <div class="brand-bar-bg" style="background-image:url('img/why/truck-cab.jpg')"></div>
+      <div class="brand-bar-overlay"></div>
+      <div class="b-body">
+        <span class="brand-tier">Premium Tier</span>
+        <img src="logo1.png" alt="FRIDERIC" class="brand-logo">
+        <div class="brand-title">FRIDERIC</div>
+        <div class="brand-zh">弗迪瑞轮胎</div>
+        <p class="brand-desc">Premium long-haul. Low rolling resistance compounds, optimized casing strain, multiple retreads.</p>
+        <div class="brand-meta">
+          <div class="brand-meta-item"><div class="brand-meta-label">Prefix</div><div class="brand-meta-val">FA · FD · FS</div></div>
+          <div class="brand-meta-item"><div class="brand-meta-label">Application</div><div class="brand-meta-val">Long-haul</div></div>
+        </div>
+      </div>
+    </a>
+    <a href="products/collection-v2.html?brand=CHILONG" class="brand-bar t-mid">
+      <div class="brand-bar-bg" style="background-image:url('img/why/long-haul.jpg')"></div>
+      <div class="brand-bar-overlay"></div>
+      <div class="b-body">
+        <span class="brand-tier">Mid Tier</span>
+        <img src="logo3.png" alt="CHILONG" class="brand-logo">
+        <div class="brand-title">CHILONG</div>
+        <div class="brand-zh">驰龙轮胎</div>
+        <p class="brand-desc">The workhorse. Balanced wear, traction and price for mixed-road regional haulers and dump-trucks.</p>
+        <div class="brand-meta">
+          <div class="brand-meta-item"><div class="brand-meta-label">Prefix</div><div class="brand-meta-val">CA · CD · CS</div></div>
+          <div class="brand-meta-item"><div class="brand-meta-label">Application</div><div class="brand-meta-val">All-road</div></div>
+        </div>
+      </div>
+    </a>
+    <a href="products/collection-v2.html?brand=JOSEBEN" class="brand-bar t-entry">
+      <div class="brand-bar-bg" style="background-image:url('img/why/freight.jpg')"></div>
+      <div class="brand-bar-overlay"></div>
+      <div class="b-body">
+        <span class="brand-tier">Value Tier</span>
+        <img src="logo2.png" alt="JOSEBEN" class="brand-logo">
+        <div class="brand-title">JOSEBEN</div>
+        <div class="brand-zh">桥圣本轮胎</div>
+        <p class="brand-desc">Tier-one quality at value pricing. Built for cost-sensitive emerging markets without compromising the casing.</p>
+        <div class="brand-meta">
+          <div class="brand-meta-item"><div class="brand-meta-label">Series</div><div class="brand-meta-val">Numeric</div></div>
+          <div class="brand-meta-item"><div class="brand-meta-label">Application</div><div class="brand-meta-val">Emerging</div></div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- R&D split with mega stat -->
+<section class="rd-split" id="rd">
+  <div class="rd-split-bg"></div>
+  <div class="rd-split-inner">
+    <div class="w">
+      <div class="reveal">
+        <div class="eyebrow light">04 · Research & Development</div>
+        <h2 class="h2" style="color:#fff;margin-top:18px">University-grade<br>tire science.</h2>
+      </div>
+      <div class="rd-grid" style="margin-top:64px">
+        <div class="reveal">
+          <div class="rd-mega" data-count="2">2<small>Joint laboratories with national universities</small></div>
+        </div>
+        <div class="rd-points reveal reveal-d1">
+          <div class="rd-point">
+            <div class="rd-point-icon"><i class="fa-solid fa-flask"></i></div>
+            <div class="rd-point-body"><h5>Shandong Univ. of Science & Technology</h5><p>Structural mechanics & compound durability for heavy-load applications.</p></div>
+          </div>
+          <div class="rd-point">
+            <div class="rd-point-icon"><i class="fa-solid fa-atom"></i></div>
+            <div class="rd-point-body"><h5>Qingdao Univ. of Science & Technology</h5><p>Rubber chemistry, low rolling resistance compounds and tread science.</p></div>
+          </div>
+          <div class="rd-point">
+            <div class="rd-point-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="rd-point-body"><h5>Full R&D pipeline in-house</h5><p>Market research → product planning → compound formulation → structural design → product validation.</p></div>
+          </div>
+          <div class="rd-point">
+            <div class="rd-point-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="rd-point-body"><h5>Three integrated management systems</h5><p>Quality · Environment · Occupational H&S — certified together, audited together.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCK 3 — Materials & compound (image right) -->
+<section class="bigblock" id="compound" style="background:var(--cream)">
+  <div class="w">
+    <div class="bigblock-grid reverse">
+      <div class="bigblock-media reveal clip-reveal">
+        <span class="bigblock-badge">In-House Lab</span>
+        <img src="img/why/lab.jpg" alt="Rubber compound lab">
+        <div class="bigblock-cap">Banbury internal mixers · Computer-controlled batching</div>
+      </div>
+      <div class="bigblock-body reveal reveal-d1">
+        <div class="eyebrow">05 · The Compound</div>
+        <h2 class="h2">It starts with<br>the <em>chemistry</em>.</h2>
+        <p class="lede">A tyre that lasts isn't built — it's mixed. Our chemistry team formulates compound recipes for every application: low rolling resistance for highway, tear-resistant blocks for mining, cold-flex for European winters.</p>
+        <div class="bigblock-points">
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">01</div>
+            <div class="bigblock-point-body"><h5>Low-rolling-resistance series</h5><p>Silica-loaded tread compounds engineered for fuel-economy fleets. Pairs with our FRIDERIC long-haul casings.</p></div>
+          </div>
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">02</div>
+            <div class="bigblock-point-body"><h5>Cut & chip resistant series</h5><p>Reinforced shoulder compounds for mining and construction. Multi-block patterns with stone-ejector geometry.</p></div>
+          </div>
+          <div class="bigblock-point">
+            <div class="bigblock-point-num">03</div>
+            <div class="bigblock-point-body"><h5>Retreadable casings</h5><p>Casing designs optimized for 2–3 retreads — independently tested under European labelling law.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO MANUFACTURING -->
+<section class="bigblock" id="manufacturing" style="background:var(--ink);color:#fff">
+  <div class="w">
+    <div class="reveal" style="margin-bottom:64px">
+      <div class="eyebrow light">06 · Manufacturing</div>
+      <h2 class="h2" style="color:#fff;margin-top:18px">Seven processes.<br><span class="gold">Zero shortcuts.</span></h2>
+      <p class="lede" style="margin-top:18px;color:rgba(255,255,255,.6)">From rubber mixing to the final X-ray scan — every tyre passes through a fully-instrumented production line and an in-house laboratory. Hover any tile.</p>
+    </div>
+    <div class="bento reveal reveal-d1">
+      <div class="bento-tile tile-wide">
+        <img src="img/why/factory.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">Stage 01 · Mixing</div>
+          <h5>Banbury Compound Mixing</h5>
+          <p>Computer-controlled batching ensures every block of compound has identical filler dispersion, density and Mooney viscosity.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/calendering.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">Stage 02</div>
+          <h5>Calendering</h5>
+          <p>Four-roll precision sheeting for ply and inner-liner consistency.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/forming.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">Stage 03</div>
+          <h5>Building</h5>
+          <p>Automated single-stage building, sensor-aligned belts.</p>
+        </div>
+      </div>
+      <div class="bento-tile tile-tall">
+        <img src="img/equipment/vulcanizing.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">Stage 04 · Cure</div>
+          <h5>Vulcanization</h5>
+          <p>Curing presses with sensor-logged T & P profiles for every cycle.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/xray.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">QC · 01</div>
+          <h5>X-Ray</h5>
+          <p>100% non-destructive scan for cord placement.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/strength.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">QC · 02</div>
+          <h5>Strength Test</h5>
+          <p>Plunger & burst tests · TRA / ETRTO standards.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/steelcord.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">QC · 03</div>
+          <h5>Steel Cord Lab</h5>
+          <p>Tensile, adhesion & corrosion testing every reel.</p>
+        </div>
+      </div>
+      <div class="bento-tile">
+        <img src="img/equipment/mixing.jpg" alt="">
+        <div class="bento-tile-overlay"></div>
+        <div class="bento-tile-content">
+          <div class="bento-tag">QC · 04</div>
+          <h5>Uniformity</h5>
+          <p>Dynamic balance & radial run-out checks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS MARQUEE -->
+<section class="bigblock" id="certs" style="padding:80px 0 0">
+  <div class="w">
+    <div class="reveal" style="text-align:center;max-width:760px;margin:0 auto">
+      <div class="eyebrow" style="justify-content:center">07 · Certifications</div>
+      <h2 class="h2" style="margin-top:18px">Ten+ stamps.<br>One <em>promise</em>.</h2>
+      <p class="lede" style="margin-top:18px;margin-left:auto;margin-right:auto">From China's CCC to Saudi Arabia's SASO — every regulatory framework you'll need.</p>
+    </div>
+  </div>
+</section>
+<div class="marquee">
+  <div class="marquee-track">
+    <div class="marquee-item"><div class="marquee-code">CCC</div><div class="marquee-region">China</div></div>
+    <div class="marquee-item"><div class="marquee-code">DOT</div><div class="marquee-region">United States</div></div>
+    <div class="marquee-item"><div class="marquee-code">ECE</div><div class="marquee-region">European Union</div></div>
+    <div class="marquee-item"><div class="marquee-code">R117</div><div class="marquee-region">EU Label</div></div>
+    <div class="marquee-item"><div class="marquee-code">INMETRO</div><div class="marquee-region">Brazil</div></div>
+    <div class="marquee-item"><div class="marquee-code">GCC</div><div class="marquee-region">Gulf States</div></div>
+    <div class="marquee-item"><div class="marquee-code">SNI</div><div class="marquee-region">Indonesia</div></div>
+    <div class="marquee-item"><div class="marquee-code">BIS</div><div class="marquee-region">India</div></div>
+    <div class="marquee-item"><div class="marquee-code">SASO</div><div class="marquee-region">Saudi Arabia</div></div>
+    <div class="marquee-item"><div class="marquee-code">TISI</div><div class="marquee-region">Thailand</div></div>
+    <!-- dup for seamless loop -->
+    <div class="marquee-item"><div class="marquee-code">CCC</div><div class="marquee-region">China</div></div>
+    <div class="marquee-item"><div class="marquee-code">DOT</div><div class="marquee-region">United States</div></div>
+    <div class="marquee-item"><div class="marquee-code">ECE</div><div class="marquee-region">European Union</div></div>
+    <div class="marquee-item"><div class="marquee-code">R117</div><div class="marquee-region">EU Label</div></div>
+    <div class="marquee-item"><div class="marquee-code">INMETRO</div><div class="marquee-region">Brazil</div></div>
+    <div class="marquee-item"><div class="marquee-code">GCC</div><div class="marquee-region">Gulf States</div></div>
+    <div class="marquee-item"><div class="marquee-code">SNI</div><div class="marquee-region">Indonesia</div></div>
+    <div class="marquee-item"><div class="marquee-code">BIS</div><div class="marquee-region">India</div></div>
+    <div class="marquee-item"><div class="marquee-code">SASO</div><div class="marquee-region">Saudi Arabia</div></div>
+    <div class="marquee-item"><div class="marquee-code">TISI</div><div class="marquee-region">Thailand</div></div>
+  </div>
+</div>
+
+<!-- HORIZONTAL TIMELINE -->
+<section class="timeline-wrap" style="background:var(--cream)">
+  <div class="timeline-head">
+    <div class="reveal">
+      <div class="eyebrow">08 · Milestones</div>
+      <h2 class="h2" style="margin-top:18px">Three decades.<br>One <em>direction</em>.</h2>
+      <p class="lede" style="margin-top:18px">Drag to scroll →</p>
+    </div>
+  </div>
+  <div class="timeline-track" id="tl">
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/factory.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">1988</div><h4>Foundation</h4><p>Founded in Guangrao, Dongying — China's "Tire Capital". Rubber industry roots from day one.</p></div>
+    </div>
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/worker.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">2005</div><h4>Radial Pivot</h4><p>All-steel radial production line commissioned. Pivot from bias-ply to modern radial.</p></div>
+    </div>
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/freight.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">2012</div><h4>Going Global</h4><p>DOT (USA), ECE (EU), GCC (Gulf) certifications cleared. Export business takes off.</p></div>
+    </div>
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/truck-cab.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">2018</div><h4>Three Brands</h4><p>Annual capacity 1.8M tyres. Three-brand strategy formalized: FRIDERIC · CHILONG · JOSEBEN.</p></div>
+    </div>
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/engineer.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">2023</div><h4>Capacity to 2M</h4><p>Capacity expansion. University R&D partnerships deepen. Sustainability program launched.</p></div>
+    </div>
+    <div class="ms-card">
+      <div class="ms-card-media"><img src="img/why/long-haul.jpg" alt=""></div>
+      <div class="ms-card-body"><div class="ms-year">2026</div><h4>Today</h4><p>70+ countries · ¥1.8B assets · 10+ international certifications. Onward.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="finale">
+  <div class="finale-bg" style="background-image:url('img/why/logistics.jpg')"></div>
+  <div class="finale-overlay"></div>
+  <div class="finale-inner reveal">
+    <h2>Ready to <span class="outline">move</span><br>a fleet?</h2>
+    <p>Wholesale, OEM or single-container test orders — talk to the team that builds the tyres, not a middleman.</p>
+    <div class="finale-actions">
+      <a href="#" class="btn btn-primary">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="products/collection-v2.html" class="btn btn-ghost">Browse Products <i class="fa-solid fa-grip"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD STRIP -->
+<section class="dl-strip">
+  <div class="w">
+    <div class="dl-grid reveal">
+      <a href="../资料/外贸画册.pdf" target="_blank" class="dl-card">
+        <div class="dl-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div><div class="dl-label">English · PDF</div><div class="dl-title">Export Catalogue 2025</div></div>
+        <i class="fa-solid fa-arrow-right arr"></i>
+      </a>
+      <a href="../资料/弗迪瑞2025版画册.pdf" target="_blank" class="dl-card">
+        <div class="dl-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div><div class="dl-label">中文 · PDF</div><div class="dl-title">FRIDERIC 2025 Catalogue</div></div>
+        <i class="fa-solid fa-arrow-right arr"></i>
+      </a>
+      <a href="../资料/驰龙2025版画册.pdf" target="_blank" class="dl-card">
+        <div class="dl-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <div><div class="dl-label">中文 · PDF</div><div class="dl-title">CHILONG 2025 Catalogue</div></div>
+        <i class="fa-solid fa-arrow-right arr"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="w">
+    <div class="footer-top">
+      <div>
+        <div class="ft-logo"><a href="index-v2.html"><img src="logo.png" alt="HUGER"></a></div>
+        <p class="ft-tagline">All-steel radial truck & bus tyres. Three brands. One uncompromising standard. Since 1988.</p>
+        <div class="ft-stats">
+          <div><div class="ft-stat-num">1988</div><div class="ft-stat-label">Founded</div></div>
+          <div><div class="ft-stat-num">70+</div><div class="ft-stat-label">Countries</div></div>
+          <div><div class="ft-stat-num">2M</div><div class="ft-stat-label">Annual Tires</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-head">Navigation</div>
+        <ul class="ft-links">
+          <li><a href="index-v2.html">Home</a></li>
+          <li><a href="products/collection-v2.html">Products</a></li>
+          <li><a href="why-huger.html">Why HUGER</a></li>
+          <li><a href="index-v2.html#certs">Certifications</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-head">Contact</div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Office</span><a href="tel:05467726888" class="ft-contact-val">0546-7726888</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Email</span><a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Address</span><span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span></div>
+      </div>
+      <div>
+        <div class="ft-col-head">Our Brands</div>
+        <div class="ft-brand-row"><img src="logo.png" alt="HUGER" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo1.png" alt="FRIDERIC" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo3.png" alt="CHILONG" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo2.png" alt="JOSEBEN" class="ft-brand-logo"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="ft-copy">© 2026 Shandong Hugerubber Co., Ltd. · All rights reserved</span>
+      <div class="ft-certs">
+        <img src="img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+        <img src="img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+        <img src="img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header light switch
+(function(){
+  var hdr=document.getElementById('header'),hero=document.getElementById('hero');
+  function u(){if(window.scrollY>hero.offsetHeight-80)hdr.classList.add('hdr-light');else hdr.classList.remove('hdr-light');}
+  window.addEventListener('scroll',u,{passive:true});u();
+})();
+
+// Hero parallax
+(function(){
+  var bg=document.querySelector('.hero-bg');
+  if(!bg)return;
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(y<window.innerHeight*1.1) bg.style.transform='translateY('+(y*.35)+'px) scale(1.05)';
+  },{passive:true});
+})();
+
+// Scroll reveal
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal,.clip-reveal').forEach(function(el){el.classList.add('in');});return;}
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal,.clip-reveal').forEach(function(el){ro.observe(el);});
+})();
+
+// Count-up animation for stats
+(function(){
+  function animate(el,target,decimals){
+    var start=0,dur=1400,t0=performance.now();
+    function step(now){
+      var p=Math.min(1,(now-t0)/dur);
+      p=1-Math.pow(1-p,3);
+      var v=start+(target-start)*p;
+      el.textContent=decimals?v.toFixed(decimals):Math.round(v);
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,raw=el.getAttribute('data-count'),dec=raw.indexOf('.')>=0?1:0;
+      animate(el,parseFloat(raw),dec);
+      io.unobserve(el);
+    });
+  },{threshold:.4});
+  document.querySelectorAll('[data-count]').forEach(function(el){io.observe(el);});
+})();
+
+// Drag-to-scroll timeline
+(function(){
+  var t=document.getElementById('tl');if(!t)return;
+  var down=false,startX,sl;
+  t.addEventListener('mousedown',function(e){down=true;startX=e.pageX-t.offsetLeft;sl=t.scrollLeft;});
+  t.addEventListener('mouseleave',function(){down=false;});
+  t.addEventListener('mouseup',function(){down=false;});
+  t.addEventListener('mousemove',function(e){if(!down)return;e.preventDefault();var x=e.pageX-t.offsetLeft;t.scrollLeft=sl-(x-startX)*1.4;});
+})();
+</script>
+</body>
+</html>
