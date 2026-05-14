@@ -384,6 +384,133 @@ a.ft-contact-val:hover{color:#fff}
 .ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
 .ft-cert-logo:hover{opacity:.8}
 @media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start}}
+
+/* ─── MOBILE COMPREHENSIVE (≤640px) ─── */
+@media(max-width:640px){
+  /* universal: tap targets, prevent iOS zoom on focus */
+  a,button{min-height:44px}
+  .acc-toggle,.steps-arrows button{min-width:44px;min-height:44px}
+  input,select,textarea{font-size:16px!important}
+
+  /* 1. Hero — image as full background, text overlay */
+  .hero-split{grid-template-columns:1fr;grid-template-rows:1fr;height:100svh;min-height:600px;position:relative}
+  .hero-right{position:absolute;inset:0;z-index:0}
+  .hero-right::after{background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.88) 100%)}
+  .hero-left{position:relative;z-index:1;justify-content:flex-end;padding:32px 24px 48px;background:transparent}
+  .hero-h1{font-size:clamp(48px,13vw,68px)}
+  .hero-desc{font-size:13px;margin-top:18px}
+  .hero-mini-stats{gap:20px;margin-top:32px;padding-top:24px}
+  .hms-num{font-size:28px}
+  .hms-lbl{font-size:8px;letter-spacing:1.5px}
+  .hero-corner-tag{top:20px;right:20px;font-size:9px;padding:6px 10px}
+
+  /* 2. Anchor stats */
+  .anchor-stats{padding:60px 0}
+  .anchor-num{font-size:88px}
+  .anchor-num small{font-size:11px;letter-spacing:2px;margin-top:16px}
+  .anchor-card{padding:18px 16px 22px}
+  .ac-num{font-size:38px}
+
+  /* 3. Editorial */
+  .editorial{padding:64px 0}
+  .ed-h2{font-size:42px;margin-bottom:36px}
+  .ed-body{font-size:15px;line-height:1.7}
+  .ed-body p::first-letter{font-size:4em;margin:4px 10px -4px 0}
+  .ed-pull{font-size:22px;margin:40px 0;padding:20px 20px 20px 22px}
+  .ed-pull.ed-motion{padding-left:22px}
+  .ed-photos{gap:16px;margin-top:40px}
+
+  /* 4. Pillars accordion */
+  .acc-wrap{padding:60px 0}
+  .acc-head{margin-bottom:36px}
+  .acc-image{display:none}
+  .acc-layout{grid-template-columns:1fr;gap:0}
+  .acc-trigger{grid-template-columns:auto 1fr auto;gap:14px;padding:20px 0}
+  .acc-num{font-size:10px;letter-spacing:1.5px;white-space:nowrap}
+  .acc-title{font-size:24px}
+  .acc-item.open .acc-title{font-size:28px}
+  .acc-item.open .acc-body{max-height:280px}
+  .acc-content{padding-left:0;padding-bottom:20px}
+  .acc-cn{font-size:13px;margin-bottom:8px}
+  .acc-desc{font-size:14px}
+
+  /* 5. Brands — keep sticky, stack image above text */
+  .bs-section{position:sticky;top:0;height:100svh;min-height:600px;grid-template-columns:1fr;grid-template-rows:42% 58%}
+  .bs-img{order:-1;height:100%}
+  .bs-img::after{background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.5) 100%)}
+  .bs-text{padding:28px 24px 36px;justify-content:flex-start;overflow:hidden}
+  .bs-logo{height:36px;margin-bottom:20px}
+  .bs-h{font-size:54px;margin-bottom:14px}
+  .bs-zh{font-size:13px;margin-bottom:20px}
+  .bs-desc{font-size:14px;margin-bottom:28px}
+  .bs-meta{gap:24px;padding-top:24px}
+  .bs-meta-v{font-size:18px}
+  .bs-meta-l{font-size:8px}
+
+  /* 6. R&D flow — horizontal swipe */
+  .flow-wrap{padding:60px 0}
+  .flow-head{margin-bottom:40px}
+  .flow-track{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px;margin:0 -16px;padding:4px 16px 16px;scrollbar-width:none}
+  .flow-track::-webkit-scrollbar{display:none}
+  .flow-step{flex:0 0 78%;max-width:280px;scroll-snap-align:start;padding:24px 20px}
+  .flow-step::after{display:none}
+  .flow-title{font-size:20px}
+  .flow-partners{margin-top:40px;padding-top:32px}
+  .fp-quote{font-size:18px}
+
+  /* 7. Tire chemistry */
+  .tire-section{padding:60px 0}
+  .tire-head{margin-bottom:48px}
+  .tire-svg{max-width:280px}
+  .tire-diagram{gap:8px}
+  .cs-label{padding:12px 0}
+  .cs-label-text h5{font-size:18px}
+  .cs-label-text p{font-size:12px;max-width:none}
+
+  /* 8. Manufacturing — horizontal scroll tabs */
+  .steps{padding:60px 0}
+  .steps-head{margin-bottom:36px}
+  .steps-tabs{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;border-top:var(--rule);border-bottom:var(--rule);margin:0 -16px 36px;padding:0 16px;scrollbar-width:none}
+  .steps-tabs::-webkit-scrollbar{display:none}
+  .steps-tab{flex:0 0 96px;scroll-snap-align:start;padding:18px 8px;border-right:var(--rule);border-bottom:0}
+  .steps-tab:nth-child(4n){border-right:var(--rule)}
+  .steps-tab:nth-child(n+5){border-bottom:0}
+  .steps-tab:last-child{border-right:0}
+  .steps-tab-num{font-size:26px;margin-bottom:6px}
+  .steps-tab-name{font-size:10px;letter-spacing:1px;white-space:nowrap}
+  .steps-panel{gap:24px}
+  .steps-text h4{font-size:30px}
+  .steps-text p{font-size:14px}
+  .steps-bullets li{font-size:12px}
+
+  /* 10. Timeline */
+  .tl{padding:60px 0}
+  .tl-head{margin-bottom:40px}
+  .tl-track{margin-bottom:36px;padding:24px 0}
+  .tl-row{grid-template-columns:80px 1fr;gap:12px;padding:18px 0}
+  .tl-row-year{font-size:26px;gap:8px}
+  .tl-row-year::before{width:6px;height:6px}
+  .tl-row-title{font-size:15px}
+
+  /* 11. CTA + form */
+  .cta-split{min-height:0}
+  .cta-left{padding:48px 24px 40px}
+  .cta-left .h2{font-size:42px}
+  .cta-left p{font-size:14px;margin-bottom:28px}
+  .cta-cl-item{font-size:13px;gap:12px}
+  .cta-cl-item i{width:32px;height:32px;font-size:12px;flex-shrink:0}
+  .cta-form{padding:40px 24px 56px}
+  .cta-form h3{font-size:28px;margin-bottom:24px}
+  .cf-grid{grid-template-columns:1fr;gap:16px}
+  .cf-field.full{grid-column:auto}
+  .cf-submit{padding:16px 22px;font-size:10px}
+
+  /* Footer polish */
+  .footer{padding:56px 0 0}
+  .footer-top{padding-bottom:56px}
+  .ft-stats{gap:20px}
+  .ft-stat-num{font-size:26px}
+}
 </style>
 </head>
 <body>
@@ -481,11 +608,11 @@ a.ft-contact-val:hover{color:#fff}
     </div>
     <div class="acc-layout reveal reveal-d1">
       <div class="acc-list" id="acc-list">
-        <div class="acc-item open" data-img="hero-highway"><div class="acc-trigger"><div class="acc-num">01 / Spirit</div><div class="acc-title">Integrity</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">行德恒一 共存共赢</div><p class="acc-desc">Act with virtue. Coexist and win together. Trust is built tire by tire — and quietly destroyed by one bad batch.</p></div></div></div>
-        <div class="acc-item" data-img="nature"><div class="acc-trigger"><div class="acc-num">02 / Vision</div><div class="acc-title">Sustainable</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">多元价值 可持续</div><p class="acc-desc">Economic, social and ecological value — the only path that lasts a century. Casing reuse, lower rolling resistance, cleaner mixing.</p></div></div></div>
-        <div class="acc-item" data-img="city-truck"><div class="acc-trigger"><div class="acc-num">03 / Mission</div><div class="acc-title">Safer Roads</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">安全 舒适 绿色</div><p class="acc-desc">Build a safer, more comfortable, greener automotive society. One contact patch at a time. Every tyre we ship gets a person home.</p></div></div></div>
-        <div class="acc-item" data-img="engineer"><div class="acc-trigger"><div class="acc-num">04 / Philosophy</div><div class="acc-title">Customer-led</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">市场导向 客户为中心</div><p class="acc-desc">Market-oriented, customer-centric, technology-driven. Every R&D dollar starts with a fleet manager's spreadsheet, not a sales target.</p></div></div></div>
-        <div class="acc-item" data-img="worker"><div class="acc-trigger"><div class="acc-num">05 / Team</div><div class="acc-title">United Craft</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">专心 用心 齐心</div><p class="acc-desc">Focus, care, together. The mindset of every operator on the line — and the reason QC catches what spec sheets miss.</p></div></div></div>
+        <div class="acc-item open" data-img="hero-highway"><div class="acc-trigger"><div class="acc-num">01 / Spirit</div><div class="acc-title">Integrity</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">Act with Virtue · Win Together</div><p class="acc-desc">Act with virtue. Coexist and win together. Trust is built tire by tire — and quietly destroyed by one bad batch.</p></div></div></div>
+        <div class="acc-item" data-img="nature"><div class="acc-trigger"><div class="acc-num">02 / Vision</div><div class="acc-title">Sustainable</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">Plural Value · Sustainable</div><p class="acc-desc">Economic, social and ecological value — the only path that lasts a century. Casing reuse, lower rolling resistance, cleaner mixing.</p></div></div></div>
+        <div class="acc-item" data-img="city-truck"><div class="acc-trigger"><div class="acc-num">03 / Mission</div><div class="acc-title">Safer Roads</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">Safe · Comfortable · Green</div><p class="acc-desc">Build a safer, more comfortable, greener automotive society. One contact patch at a time. Every tyre we ship gets a person home.</p></div></div></div>
+        <div class="acc-item" data-img="engineer"><div class="acc-trigger"><div class="acc-num">04 / Philosophy</div><div class="acc-title">Customer-led</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">Market-Oriented · Customer-Centric</div><p class="acc-desc">Market-oriented, customer-centric, technology-driven. Every R&D dollar starts with a fleet manager's spreadsheet, not a sales target.</p></div></div></div>
+        <div class="acc-item" data-img="worker"><div class="acc-trigger"><div class="acc-num">05 / Team</div><div class="acc-title">United Craft</div><div class="acc-toggle">+</div></div><div class="acc-body"><div class="acc-content"><div class="acc-cn">Focus · Care · Together</div><p class="acc-desc">Focus, care, together. The mindset of every operator on the line — and the reason QC catches what spec sheets miss.</p></div></div></div>
       </div>
       <div class="acc-image" id="acc-image">
         <img src="img/why/hero-highway-p.jpg" data-key="hero-highway" class="active" alt="">
@@ -493,7 +620,7 @@ a.ft-contact-val:hover{color:#fff}
         <img src="img/why/city-truck-p.jpg" data-key="city-truck" alt="">
         <img src="img/why/engineer-p.jpg" data-key="engineer" alt="">
         <img src="img/why/worker-p.jpg" data-key="worker" alt="">
-        <div class="acc-image-cap" id="acc-cap">Integrity · 行德恒一</div>
+        <div class="acc-image-cap" id="acc-cap">Integrity · Act with Virtue</div>
       </div>
     </div>
   </div>
@@ -507,7 +634,7 @@ a.ft-contact-val:hover{color:#fff}
       <span class="bs-tier">Premium Tier</span>
       <img src="logo1.png" alt="FRIDERIC" class="bs-logo">
       <h2 class="bs-h">FRIDERIC</h2>
-      <div class="bs-zh">弗迪瑞轮胎 · 高端长途</div>
+      <div class="bs-zh">FRIDERIC Tyres · Premium Long Haul</div>
       <p class="bs-desc">Premium long-haul. Low rolling resistance compounds, optimized casing strain, multiple retreads. Engineered for fleets that count cost-per-kilometre over years, not months.</p>
       <div class="bs-meta">
         <div class="bs-meta-item"><div class="bs-meta-l">Prefix</div><div class="bs-meta-v">FA · FD · FS</div></div>
@@ -523,7 +650,7 @@ a.ft-contact-val:hover{color:#fff}
       <span class="bs-tier">Mid Tier</span>
       <img src="logo3.png" alt="CHILONG" class="bs-logo">
       <h2 class="bs-h">CHILONG</h2>
-      <div class="bs-zh">驰龙轮胎 · 全路况</div>
+      <div class="bs-zh">CHILONG Tyres · All-Road</div>
       <p class="bs-desc">The workhorse. Balanced wear, traction and price for mixed-road regional haulers and dump-trucks. The tyre your operations manager picks twice.</p>
       <div class="bs-meta">
         <div class="bs-meta-item"><div class="bs-meta-l">Prefix</div><div class="bs-meta-v">CA · CD · CS</div></div>
@@ -539,7 +666,7 @@ a.ft-contact-val:hover{color:#fff}
       <span class="bs-tier">Value Tier</span>
       <img src="logo2.png" alt="JOSEBEN" class="bs-logo">
       <h2 class="bs-h">JOSEBEN</h2>
-      <div class="bs-zh">桥圣本轮胎 · 高性价比</div>
+      <div class="bs-zh">JOSEBEN Tyres · Best Value</div>
       <p class="bs-desc">Tier-one quality at value pricing. Built for cost-sensitive emerging markets without compromising the casing. Because cheap shouldn't mean unsafe.</p>
       <div class="bs-meta">
         <div class="bs-meta-item"><div class="bs-meta-l">Series</div><div class="bs-meta-v">Numeric</div></div>
@@ -776,7 +903,7 @@ a.ft-contact-val:hover{color:#fff}
     <h2 class="h2">Talk specs.<br>Or just <span class="gold">say hi.</span></h2>
     <p>Wholesale, OEM or single-container test orders — wherever you are, we'll route you to the right team within 24 hours.</p>
     <div class="cta-contact">
-      <a href="tel:+8654677268888" class="cta-cl-item"><i class="fa-solid fa-phone"></i><span>+86 0546 7726888</span></a>
+      <a href="tel:05467726888" class="cta-cl-item"><i class="fa-solid fa-phone"></i><span>0546-7726888</span></a>
       <a href="mailto:info@hugerubber.com" class="cta-cl-item"><i class="fa-solid fa-envelope"></i><span>info@hugerubber.com</span></a>
       <a href="tel:4008808961" class="cta-cl-item"><i class="fa-solid fa-headset"></i><span>400-880-8961 · Hotline</span></a>
       <span class="cta-cl-item" style="cursor:default"><i class="fa-solid fa-location-dot"></i><span>Xishui Industrial Zone, Guangrao, Dongying, China</span></span>
@@ -866,7 +993,7 @@ a.ft-contact-val:hover{color:#fff}
   var items=document.querySelectorAll('#acc-list .acc-item');
   var imgs=document.querySelectorAll('#acc-image img');
   var cap=document.getElementById('acc-cap');
-  var captions={'hero-highway':'Integrity · 行德恒一','nature':'Sustainable · 多元价值','city-truck':'Safer Roads · 安全舒适','engineer':'Customer-led · 客户为中心','worker':'United Craft · 专心齐心'};
+  var captions={'hero-highway':'Integrity · Act with Virtue','nature':'Sustainable · Plural Value','city-truck':'Safer Roads · Safe & Comfortable','engineer':'Customer-led · Customer-Centric','worker':'United Craft · Focus Together'};
   items.forEach(function(it){
     it.querySelector('.acc-trigger').addEventListener('click',function(){
       var wasOpen=it.classList.contains('open');

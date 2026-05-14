@@ -311,6 +311,118 @@ a.ft-contact-val:hover{color:#fff}
 .ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
 .ft-cert-logo:hover{opacity:.8}
 @media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start}}
+
+/* ─── MOBILE COMPREHENSIVE (≤640px) ─── */
+@media(max-width:640px){
+  /* universal */
+  a,button{min-height:44px}
+  input,select,textarea{font-size:16px!important}
+
+  /* HERO — full-bleed */
+  .hero{height:100svh;min-height:560px}
+  .hero-content{padding:0 24px 64px}
+  .hero-h1{font-size:clamp(56px,15vw,84px)}
+  .hero-desc{font-size:13px;margin-top:18px}
+  .hero-foot{bottom:20px;font-size:9px;letter-spacing:2px}
+
+  /* MEGA STATS — tighten 2×2+1 grid */
+  .megastats-cell{padding:32px 20px}
+  .megastats-num{font-size:46px}
+  .megastats-label{font-size:9px;letter-spacing:2px;margin-top:10px}
+  .megastats-sub{font-size:11px;margin-top:6px}
+
+  /* BIGBLOCK story / compound */
+  section.bigblock{padding:64px 0}
+  .bigblock-grid{gap:32px}
+  .bigblock-points{margin-top:24px;padding-top:24px;gap:18px}
+  .bigblock-point{gap:16px}
+  .bigblock-point-num{font-size:30px;min-width:48px}
+  .bigblock-point-body h5{font-size:15px}
+  .bigblock-point-body p{font-size:13px}
+
+  /* PILLARS — vertical, always-show desc on mobile (no hover) */
+  .pillar{padding:28px 24px;min-height:0}
+  .pillar::after{background:linear-gradient(180deg,rgba(240,237,232,.4) 0%,rgba(240,237,232,.7) 60%,rgba(240,237,232,.85) 100%)}
+  .pillar-title{font-size:28px;margin-top:18px}
+  .pillar-cn{font-size:12px;margin-bottom:10px}
+  .pillar-desc{max-height:200px;opacity:1;color:var(--ink-60);font-size:13px}
+  .pillar:hover .pillar-title{font-size:32px;color:var(--ink)}
+  .pillar:hover::after{background:linear-gradient(180deg,rgba(240,237,232,.4) 0%,rgba(240,237,232,.7) 60%,rgba(240,237,232,.85) 100%)}
+  .pillar:hover .pillar-cn{color:var(--blue)}
+  .pillar:hover .pillar-desc{color:var(--ink-60)}
+
+  /* BRAND BARS — horizontal swipe */
+  .brand-stage{padding:64px 0 0}
+  .brand-bars{display:flex;grid-template-columns:none;margin:48px -16px 0;padding:0 16px 16px;min-height:0;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px;scrollbar-width:none}
+  .brand-bars::-webkit-scrollbar{display:none}
+  .brand-bar{flex:0 0 82vw;max-width:340px;scroll-snap-align:start;min-height:520px;padding:32px 24px;border-radius:10px}
+  .brand-logo{height:34px;margin-bottom:18px}
+  .brand-tier{margin-bottom:18px}
+  .brand-title{font-size:44px}
+  .brand-zh{font-size:13px;margin-bottom:18px}
+  .brand-desc{font-size:13px;margin-bottom:22px}
+  .brand-meta{gap:18px;padding-top:18px}
+  .brand-meta-val{font-size:18px}
+
+  /* R&D split */
+  .rd-split{min-height:0}
+  .rd-split-inner{padding:64px 0}
+  .rd-mega{font-size:80px}
+  .rd-mega small{font-size:.18em;margin-top:10px}
+  .rd-points{gap:14px}
+  .rd-point{padding:16px 0;gap:16px}
+  .rd-point-icon{width:40px;height:40px;font-size:15px}
+  .rd-point-body h5{font-size:15px}
+  .rd-point-body p{font-size:13px}
+
+  /* MANUFACTURING bento — horizontal swipe */
+  .bento{display:flex;grid-template-columns:none;grid-auto-rows:auto;gap:14px;margin:0 -16px;padding:4px 16px 16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .bento::-webkit-scrollbar{display:none}
+  .bento-tile{flex:0 0 78vw;max-width:320px;height:340px;scroll-snap-align:start;cursor:default}
+  .bento-tile.tile-wide,.bento-tile.tile-tall{grid-column:auto;grid-row:auto;flex:0 0 78vw;height:340px}
+  .bento-tile-content{padding:18px}
+  .bento-tile h5{font-size:22px}
+  .bento-tile.tile-wide h5{font-size:26px}
+  .bento-tile p{max-height:80px;opacity:1;margin-top:4px;font-size:12px}
+  .bento-tile-overlay{background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 55%,rgba(0,0,0,.1) 100%)}
+
+  /* MARQUEE — slow down + smaller code */
+  .marquee{padding:32px 0}
+  .marquee-track{gap:32px;animation-duration:24s}
+  .marquee-item{padding:0 12px;gap:10px}
+  .marquee-code{font-size:30px}
+  .marquee::before,.marquee::after{width:48px}
+
+  /* TIMELINE cards */
+  .timeline-wrap{padding:64px 0 0}
+  .timeline-head{margin-bottom:40px}
+  .timeline-track{gap:14px;padding-bottom:56px}
+  .ms-card{flex-basis:78vw;max-width:300px;border-radius:10px}
+  .ms-card-body{padding:18px}
+  .ms-year{font-size:42px;margin-bottom:10px}
+  .ms-card h4{font-size:16px}
+  .ms-card p{font-size:13px}
+
+  /* FINAL CTA */
+  .finale{padding:80px 0}
+  .finale-inner{padding:0 20px}
+  .finale h2{font-size:clamp(54px,14vw,80px);margin-bottom:24px}
+  .finale p{font-size:14px;margin-bottom:32px}
+  .finale-actions{gap:12px;flex-direction:column;align-items:stretch}
+  .btn{justify-content:center;padding:16px 22px;font-size:10px;letter-spacing:1.5px}
+
+  /* DOWNLOAD STRIP */
+  .dl-strip{padding:48px 0}
+  .dl-card{padding:18px 18px 18px 20px;gap:14px}
+  .dl-icon{width:38px;height:38px;font-size:13px}
+  .dl-title{font-size:14px}
+
+  /* FOOTER polish */
+  .footer{padding:56px 0 0}
+  .footer-top{padding-bottom:56px}
+  .ft-stats{gap:20px}
+  .ft-stat-num{font-size:26px}
+}
 </style>
 </head>
 <body>
@@ -400,7 +512,7 @@ a.ft-contact-val:hover{color:#fff}
       <div class="pillar-num">01 / Spirit</div>
       <div>
         <div class="pillar-title">Integrity</div>
-        <div class="pillar-cn">行德恒一 共存共赢</div>
+        <div class="pillar-cn">Act with Virtue · Win Together</div>
         <p class="pillar-desc">Act with virtue. Coexist and win together. Trust is built tire by tire.</p>
       </div>
     </div>
@@ -408,7 +520,7 @@ a.ft-contact-val:hover{color:#fff}
       <div class="pillar-num">02 / Vision</div>
       <div>
         <div class="pillar-title">Sustainable</div>
-        <div class="pillar-cn">多元价值 可持续</div>
+        <div class="pillar-cn">Plural Value · Sustainable</div>
         <p class="pillar-desc">Economic, social and ecological value — the only path that lasts a century.</p>
       </div>
     </div>
@@ -416,7 +528,7 @@ a.ft-contact-val:hover{color:#fff}
       <div class="pillar-num">03 / Mission</div>
       <div>
         <div class="pillar-title">Safer Roads</div>
-        <div class="pillar-cn">安全 舒适 绿色</div>
+        <div class="pillar-cn">Safe · Comfortable · Green</div>
         <p class="pillar-desc">Build a safer, more comfortable, greener automotive society. One contact patch at a time.</p>
       </div>
     </div>
@@ -424,7 +536,7 @@ a.ft-contact-val:hover{color:#fff}
       <div class="pillar-num">04 / Philosophy</div>
       <div>
         <div class="pillar-title">Customer-led</div>
-        <div class="pillar-cn">市场导向 客户为中心</div>
+        <div class="pillar-cn">Market-Oriented · Customer-Centric</div>
         <p class="pillar-desc">Market-oriented, customer-centric, technology-driven. Every R&D dollar starts there.</p>
       </div>
     </div>
@@ -432,7 +544,7 @@ a.ft-contact-val:hover{color:#fff}
       <div class="pillar-num">05 / Team</div>
       <div>
         <div class="pillar-title">United Craft</div>
-        <div class="pillar-cn">专心 用心 齐心</div>
+        <div class="pillar-cn">Focus · Care · Together</div>
         <p class="pillar-desc">Focus, care, together. The mindset of every operator on the line.</p>
       </div>
     </div>
@@ -456,7 +568,7 @@ a.ft-contact-val:hover{color:#fff}
         <span class="brand-tier">Premium Tier</span>
         <img src="logo1.png" alt="FRIDERIC" class="brand-logo">
         <div class="brand-title">FRIDERIC</div>
-        <div class="brand-zh">弗迪瑞轮胎</div>
+        <div class="brand-zh">FRIDERIC Tyres</div>
         <p class="brand-desc">Premium long-haul. Low rolling resistance compounds, optimized casing strain, multiple retreads.</p>
         <div class="brand-meta">
           <div class="brand-meta-item"><div class="brand-meta-label">Prefix</div><div class="brand-meta-val">FA · FD · FS</div></div>
@@ -471,7 +583,7 @@ a.ft-contact-val:hover{color:#fff}
         <span class="brand-tier">Mid Tier</span>
         <img src="logo3.png" alt="CHILONG" class="brand-logo">
         <div class="brand-title">CHILONG</div>
-        <div class="brand-zh">驰龙轮胎</div>
+        <div class="brand-zh">CHILONG Tyres</div>
         <p class="brand-desc">The workhorse. Balanced wear, traction and price for mixed-road regional haulers and dump-trucks.</p>
         <div class="brand-meta">
           <div class="brand-meta-item"><div class="brand-meta-label">Prefix</div><div class="brand-meta-val">CA · CD · CS</div></div>
@@ -486,7 +598,7 @@ a.ft-contact-val:hover{color:#fff}
         <span class="brand-tier">Value Tier</span>
         <img src="logo2.png" alt="JOSEBEN" class="brand-logo">
         <div class="brand-title">JOSEBEN</div>
-        <div class="brand-zh">桥圣本轮胎</div>
+        <div class="brand-zh">JOSEBEN Tyres</div>
         <p class="brand-desc">Tier-one quality at value pricing. Built for cost-sensitive emerging markets without compromising the casing.</p>
         <div class="brand-meta">
           <div class="brand-meta-item"><div class="brand-meta-label">Series</div><div class="brand-meta-val">Numeric</div></div>
@@ -748,12 +860,12 @@ a.ft-contact-val:hover{color:#fff}
       </a>
       <a href="../资料/弗迪瑞2025版画册.pdf" target="_blank" class="dl-card">
         <div class="dl-icon"><i class="fa-solid fa-file-pdf"></i></div>
-        <div><div class="dl-label">中文 · PDF</div><div class="dl-title">FRIDERIC 2025 Catalogue</div></div>
+        <div><div class="dl-label">Chinese · PDF</div><div class="dl-title">FRIDERIC 2025 Catalogue</div></div>
         <i class="fa-solid fa-arrow-right arr"></i>
       </a>
       <a href="../资料/驰龙2025版画册.pdf" target="_blank" class="dl-card">
         <div class="dl-icon"><i class="fa-solid fa-file-pdf"></i></div>
-        <div><div class="dl-label">中文 · PDF</div><div class="dl-title">CHILONG 2025 Catalogue</div></div>
+        <div><div class="dl-label">Chinese · PDF</div><div class="dl-title">CHILONG 2025 Catalogue</div></div>
         <i class="fa-solid fa-arrow-right arr"></i>
       </a>
     </div>
