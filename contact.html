@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>Contact Us — HUGER Shandong Hugerubber Co., Ltd.</title>
+    <meta name="description" content="Get in touch with HUGER. Sales, aftermarket support, press &amp; partnership enquiries. Offices in Guangrao, Hangzhou, Sao Paulo and Dubai. Response within 24h on business days.">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ─── Reset + Tokens (v2 system) ─── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;background:none;border:none}
+input,select,textarea{font-family:inherit;color:inherit}
+
+:root{
+  --cream:#f0ede8;
+  --ink:#0f0f0d;
+  --ink-80:rgba(15,15,13,.82);
+  --ink-60:rgba(15,15,13,.6);
+  --ink-40:rgba(15,15,13,.4);
+  --ink-30:rgba(15,15,13,.3);
+  --ink-12:rgba(15,15,13,.12);
+  --ink-06:rgba(15,15,13,.06);
+  --blue:#1244b0;
+  --blue-08:rgba(18,68,176,.08);
+  --green:#1a7a3e;
+  --green-08:rgba(26,122,62,.08);
+  --orange:#c96800;
+  --orange-08:rgba(201,104,0,.08);
+  --navy:#0c1a3a;
+  --gold:#e8b400;
+  --rule-lt:1px solid rgba(15,15,13,.12);
+}
+
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+
+.w{max-width:1280px;margin:0 auto;padding:0 48px}
+@media(max-width:960px){.w{padding:0 24px}}
+@media(max-width:600px){.w{padding:0 16px}}
+
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-60);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--ink-30)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.18s}
+.reveal-d3{transition-delay:.28s}
+
+/* ─── Header (v2) ─── */
+#header{color:#fff;height:auto;padding:clamp(10px,.9vw,16px) 0;pointer-events:none;position:fixed;top:0;left:0;width:100%;will-change:transform;z-index:80;transition:color .4s}
+#header.hdr-light{color:var(--ink)}
+#header .container{align-items:center;display:flex;height:100%;justify-content:center}
+#header .group{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background-color:hsla(0,0%,100%,.12);border-radius:clamp(15px,1.389vw,26.6px);border:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:center;padding:clamp(5px,.417vw,7.98px);pointer-events:all;width:min(92vw,1240px);transition:background .4s,border-color .4s}
+#header.hdr-light .group{background-color:hsla(0,0%,100%,.72);border-color:rgba(0,0,0,.06)}
+#header .group .logo{display:flex;align-items:center;margin-left:clamp(14px,1.25vw,23.94px);flex-shrink:0}
+#header .group .logo img{height:28px;width:auto;display:block;filter:brightness(0) invert(1);transition:filter .4s}
+#header.hdr-light .group .logo img{filter:none}
+@media(max-width:1240px){#header .group .logo img{height:24px}}
+#header .group .menu{display:flex;gap:clamp(2px,.4vw,8px);list-style:none;padding:0;margin:0}
+#header .group .menu li{display:inline-block}
+#header .group .menu li a{background-color:transparent;border:1px solid transparent;border-radius:clamp(14px,1.042vw,19.95px);color:inherit;display:block;font-size:clamp(12px,.95vw,16px);height:clamp(38px,2.778vw,53.2px);line-height:clamp(38px,2.778vw,53.2px);opacity:.65;padding:0 clamp(14px,1.7vw,28px);transition:all .6s cubic-bezier(.16,1,.3,1);white-space:nowrap}
+#header .group .menu li a:hover{opacity:1}
+#header .group .menu li.is-active a{opacity:1}
+#header.hdr-light .group .menu li.is-active a{color:var(--blue)}
+@media(max-width:720px){#header .group .menu{display:none}}
+
+/* Hamburger + drawer */
+.menu-toggle{display:none;background:transparent;border:0;padding:0}
+@media(max-width:720px){
+  .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;margin-right:8px;flex-shrink:0;color:inherit;-webkit-tap-highlight-color:transparent;cursor:pointer}
+  .menu-toggle span{display:block;width:18px;height:1.5px;background:currentColor;border-radius:1px;transition:transform .3s,opacity .25s}
+  .menu-toggle.is-open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menu-toggle.is-open span:nth-child(2){opacity:0}
+  .menu-toggle.is-open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+}
+.mobile-drawer{position:fixed;inset:0;z-index:90;pointer-events:none;visibility:hidden;transition:visibility .4s}
+.mobile-drawer.is-open{pointer-events:auto;visibility:visible}
+.md-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .4s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.mobile-drawer.is-open .md-backdrop{opacity:1}
+.md-panel{position:absolute;top:0;right:0;bottom:0;width:min(86vw,360px);background:var(--cream);color:var(--ink);transform:translateX(100%);transition:transform .45s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;padding:24px 28px env(safe-area-inset-bottom,28px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+.mobile-drawer.is-open .md-panel{transform:translateX(0)}
+.md-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid var(--ink-12);margin-bottom:18px}
+.md-head .md-logo img{height:24px;width:auto;display:block}
+.md-close{width:40px;height:40px;border-radius:50%;border:1px solid var(--ink-12);display:flex;align-items:center;justify-content:center;color:inherit;font-size:14px;background:transparent;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.md-menu{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;flex:1}
+.md-menu li{border-bottom:1px solid rgba(15,15,13,.08)}
+.md-menu li a{display:flex;align-items:center;justify-content:space-between;padding:20px 4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;letter-spacing:.005em;color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:color .2s}
+.md-menu li a::after{content:'';width:18px;height:1px;background:currentColor;opacity:.25;transition:width .25s,opacity .25s,background .25s}
+.md-menu li.is-active a{color:var(--blue)}
+.md-menu li.is-active a::after{width:32px;opacity:1;background:var(--blue)}
+.md-foot{padding-top:18px;border-top:1px solid var(--ink-12);display:flex;flex-direction:column;gap:6px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-60)}
+.md-foot a{color:inherit;opacity:.85;padding:6px 0;transition:opacity .2s,color .2s}
+.md-foot a:hover{opacity:1;color:var(--blue)}
+
+/* ============================================================
+   1. HERO (50vh, v2 style)
+   ============================================================ */
+.hero-full{position:relative;width:100%;height:50vh;min-height:380px;max-height:560px;overflow:hidden;display:flex;align-items:flex-end;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background:url('img/why/freight.jpg') center 50%/cover no-repeat;animation:heroZoom 16s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.32) 0%,rgba(0,0,0,.45) 50%,rgba(0,0,0,.85) 100%)}
+.hero-content{position:relative;z-index:2;width:100%;padding:max(96px,11vh) clamp(24px,4vw,80px) clamp(36px,4vw,56px);max-width:1280px;margin:0 auto;display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.hero-left{flex:1;min-width:0}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.hero-eyebrow::before{content:'';display:block;width:24px;height:1px;background:rgba(255,255,255,.5)}
+.hero-eyebrow b{color:#fff;font-weight:700}
+.hero-h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(44px,min(7.2vmin,7vw),96px);line-height:.9;letter-spacing:-.022em;color:#fff;margin:0}
+.hero-desc{font-size:14px;line-height:1.65;color:rgba(255,255,255,.62);max-width:520px;margin-top:18px}
+.hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:14px;padding-bottom:6px;flex-shrink:0}
+.hero-stat{display:flex;align-items:baseline;gap:10px}
+.hero-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:30px;color:var(--gold);line-height:1;letter-spacing:-.02em}
+.hero-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5)}
+@media(max-width:600px){.hero-right{display:none}}
+
+/* ============================================================
+   2. CHANNELS — 3 cards on cream (sales/support/press)
+   ============================================================ */
+.channels{padding:clamp(64px,7vw,96px) 0;background:var(--cream)}
+.ch-head{margin-bottom:48px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
+@media(max-width:720px){.ch-head{grid-template-columns:1fr}}
+.ch-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4.6vw,64px);line-height:.95;letter-spacing:-.02em}
+.ch-head h2 em{font-style:normal;color:var(--blue)}
+.ch-head .ch-note{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-60);text-align:right}
+.ch-head .ch-note b{color:var(--ink);font-weight:700}
+@media(max-width:720px){.ch-head .ch-note{text-align:left}}
+
+.ch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+@media(max-width:960px){.ch-grid{grid-template-columns:1fr;gap:18px}}
+
+.ch-card{background:#fff;border:var(--rule-lt);border-top:3px solid transparent;padding:32px 28px 28px;display:flex;flex-direction:column;gap:18px;transition:background .25s,box-shadow .25s,transform .25s;position:relative;overflow:hidden}
+.ch-card:hover{background:#fafaf8;box-shadow:0 12px 32px -16px rgba(0,0,0,.12);z-index:1;transform:translateY(-2px)}
+.ch-card[data-kind="sales"]{border-top-color:var(--blue)}
+.ch-card[data-kind="support"]{border-top-color:var(--green)}
+.ch-card[data-kind="press"]{border-top-color:var(--orange)}
+
+.ch-icon{width:48px;height:48px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ch-card[data-kind="sales"] .ch-icon{background:var(--blue-08);color:var(--blue)}
+.ch-card[data-kind="support"] .ch-icon{background:var(--green-08);color:var(--green)}
+.ch-card[data-kind="press"] .ch-icon{background:var(--orange-08);color:var(--orange)}
+
+.ch-kind{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700}
+.ch-card[data-kind="sales"] .ch-kind{color:var(--blue)}
+.ch-card[data-kind="support"] .ch-kind{color:var(--green)}
+.ch-card[data-kind="press"] .ch-kind{color:var(--orange)}
+
+.ch-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,3vw,38px);line-height:.98;letter-spacing:-.015em;color:var(--ink)}
+.ch-desc{font-size:14px;line-height:1.65;color:var(--ink-60);max-width:300px}
+
+.ch-lines{display:flex;flex-direction:column;gap:6px;margin-top:auto;padding-top:18px;border-top:var(--rule-lt)}
+.ch-lines a{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink);transition:color .2s;padding:4px 0}
+.ch-lines a i{width:14px;color:var(--ink-40);font-size:12px}
+.ch-lines a:hover{color:var(--blue)}
+.ch-lines a:hover i{color:var(--blue)}
+
+.ch-cta{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--ink);align-self:flex-start;padding:10px 16px;border:1px solid var(--ink);transition:background .2s,color .2s,gap .25s}
+.ch-cta:hover{background:var(--ink);color:#fff;gap:14px}
+
+/* ============================================================
+   3. FORM + INFO — 2-col on white panel
+   ============================================================ */
+.form-panel{background:#fff;border-top:var(--rule-lt);border-bottom:var(--rule-lt);padding:clamp(72px,8vw,120px) 0}
+.fp-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start}
+@media(max-width:1024px){.fp-grid{grid-template-columns:1fr;gap:56px}}
+
+/* Form left */
+.fp-form-head{margin-bottom:40px}
+.fp-form-head .eyebrow{margin-bottom:16px}
+.fp-form-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4.4vw,60px);line-height:.96;letter-spacing:-.02em;color:var(--ink)}
+.fp-form-head h2 em{font-style:normal;color:var(--blue)}
+.fp-form-head p{font-size:14px;line-height:1.7;color:var(--ink-60);max-width:480px;margin-top:14px}
+
+.fp-form{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.fp-field{display:flex;flex-direction:column;border-bottom:1px solid var(--ink-12);padding:18px 0 16px;position:relative;transition:border-color .2s}
+.fp-field:focus-within{border-bottom-color:var(--ink)}
+.fp-field-l{grid-column:span 2}
+.fp-field label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;color:var(--ink-60);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.fp-field label .req{color:var(--blue);font-weight:700}
+.fp-field input,.fp-field select,.fp-field textarea{width:100%;background:transparent;border:0;outline:0;font-family:'Inter',sans-serif;font-size:16px;font-weight:400;color:var(--ink);padding:6px 0;letter-spacing:-.005em}
+.fp-field input::placeholder,.fp-field textarea::placeholder{color:var(--ink-30);font-weight:400}
+.fp-field textarea{resize:vertical;min-height:96px;line-height:1.55;font-family:inherit}
+.fp-field select{appearance:none;-webkit-appearance:none;cursor:pointer;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230f0f0d' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") right 6px center no-repeat;padding-right:24px}
+.fp-field .helper{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-30);margin-top:6px;font-weight:500}
+
+.fp-field-pair{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.fp-field-pair .fp-field{grid-column:auto}
+@media(max-width:600px){.fp-form{grid-template-columns:1fr;gap:0}.fp-field,.fp-field-l{grid-column:auto}.fp-field-pair{grid-template-columns:1fr;gap:0}}
+
+.fp-foot{grid-column:span 2;margin-top:32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:space-between}
+.fp-consent{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-60);display:flex;align-items:center;gap:10px;cursor:pointer;flex:1;min-width:240px;font-weight:500}
+.fp-consent input{width:16px;height:16px;accent-color:var(--blue);cursor:pointer;margin:0}
+.fp-consent a{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.fp-submit{display:inline-flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:#fff;background:var(--ink);padding:18px 32px;border:0;cursor:pointer;transition:background .2s,gap .25s}
+.fp-submit:hover{background:var(--blue);gap:18px}
+.fp-submit i{color:var(--gold);font-size:11px}
+
+/* Info right */
+.fp-info{background:var(--cream);padding:36px 32px;border-top:3px solid var(--ink);position:sticky;top:96px}
+@media(max-width:1024px){.fp-info{position:static}}
+.fp-info-head{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ink);font-weight:700;margin-bottom:24px;padding-bottom:14px;border-bottom:1px solid var(--ink-12)}
+.fp-info-row{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--ink-12)}
+.fp-info-row:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.fp-info-row .lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-40);font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.fp-info-row .lbl i{color:var(--blue);font-size:10px}
+.fp-info-row .val{font-size:15px;line-height:1.55;color:var(--ink)}
+.fp-info-row .val.big{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;line-height:1.1;letter-spacing:-.005em}
+.fp-info-row .val a{transition:color .2s}
+.fp-info-row .val a:hover{color:var(--blue)}
+.fp-info-row .val.hours{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--ink-80)}
+
+/* ============================================================
+   4. OFFICES — 4-card grid on cream
+   ============================================================ */
+.offices{background:var(--cream);padding:clamp(72px,8vw,120px) 0}
+.of-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:48px}
+@media(max-width:720px){.of-head{grid-template-columns:1fr}}
+.of-head .eyebrow{margin-bottom:14px}
+.of-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4.6vw,64px);line-height:.95;letter-spacing:-.02em;color:var(--ink)}
+.of-head h2 em{font-style:normal;color:var(--blue)}
+.of-head .of-meta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-60);text-align:right}
+.of-head .of-meta b{color:var(--ink);font-weight:700}
+@media(max-width:720px){.of-head .of-meta{text-align:left}}
+
+.of-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+@media(max-width:960px){.of-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.of-grid{grid-template-columns:1fr}}
+
+.of-card{background:#fff;padding:28px 24px;border-right:1px solid var(--ink-12);border-bottom:1px solid var(--ink-12);display:flex;flex-direction:column;gap:14px;transition:background .2s;position:relative}
+@media(max-width:960px){.of-card:nth-child(2n){border-right:0}.of-card:nth-last-child(-n+2){border-bottom:1px solid var(--ink-12)}}
+@media(max-width:540px){.of-card{border-right:0}}
+.of-card:first-child{border-left:1px solid var(--ink-12)}
+@media(max-width:960px){.of-card:first-child,.of-card:nth-child(3){border-left:1px solid var(--ink-12)}}
+@media(max-width:540px){.of-card:first-child,.of-card:nth-child(3){border-left:0}.of-card{border-left:1px solid var(--ink-12);border-right:1px solid var(--ink-12)}}
+.of-card:hover{background:#fafaf8}
+.of-card .of-rank{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:700;display:flex;align-items:center;gap:8px}
+.of-card .of-rank::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.of-card[data-type="hq"] .of-rank{color:var(--ink)}
+.of-card[data-type="hq"] .of-rank::before{background:var(--ink)}
+.of-card[data-type="trade"] .of-rank{color:var(--blue)}
+.of-card[data-type="trade"] .of-rank::before{background:var(--blue)}
+.of-card[data-type="latam"] .of-rank{color:var(--green)}
+.of-card[data-type="latam"] .of-rank::before{background:var(--green)}
+.of-card[data-type="mena"] .of-rank{color:var(--orange)}
+.of-card[data-type="mena"] .of-rank::before{background:var(--orange)}
+
+.of-city{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;line-height:.95;letter-spacing:-.018em;color:var(--ink)}
+.of-country{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-40);margin-top:-8px;font-weight:600}
+.of-addr{font-size:13px;line-height:1.55;color:var(--ink-60);margin-top:6px}
+.of-lines{display:flex;flex-direction:column;gap:4px;margin-top:auto;padding-top:14px;border-top:1px solid var(--ink-12);font-size:13px;color:var(--ink-80)}
+.of-lines a{display:flex;align-items:center;gap:8px;transition:color .2s;padding:3px 0}
+.of-lines a i{color:var(--ink-40);font-size:11px;width:12px}
+.of-lines a:hover{color:var(--blue)}
+.of-lines a:hover i{color:var(--blue)}
+
+/* ============================================================
+   FOOTER (v2)
+   ============================================================ */
+.footer{background:#0d0d11;color:rgba(255,255,255,.55);position:relative;overflow:hidden;padding:80px 0 0}
+.footer::before{content:'HUGER';position:absolute;bottom:-.22em;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(160px,22vw,320px);letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,180,0,.18);white-space:nowrap;pointer-events:none;user-select:none}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:96px;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:32px}}
+.ft-logo{margin-bottom:20px}
+.ft-logo img{height:26px;filter:brightness(0) invert(1);opacity:.9}
+.ft-tagline{font-size:13px;line-height:1.65;color:rgba(255,255,255,.52);max-width:260px;margin-bottom:28px}
+.ft-stats{display:flex;gap:28px;flex-wrap:wrap}
+.ft-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em;line-height:1;color:#fff}
+.ft-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:4px}
+.ft-col-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,.7);transition:color .2s}
+.ft-links a:hover{color:#fff}
+.ft-contact-item{display:flex;flex-direction:column;gap:3px;margin-bottom:16px}
+.ft-contact-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.ft-contact-val{font-size:13px;color:rgba(255,255,255,.75);transition:color .2s}
+a.ft-contact-val:hover{color:#fff}
+.ft-brand-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ft-brand-logo{height:22px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.75;transition:opacity .2s;flex:1;object-fit:contain;object-position:left center}
+.ft-brand-row:hover .ft-brand-logo{opacity:1}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:24px 0 32px;position:relative;z-index:1}
+.ft-copy{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.ft-certs{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
+.ft-cert-logo:hover{opacity:.8}
+@media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start}}
+
+/* ─── Mobile (≤640px) polish ─── */
+@media(max-width:640px){
+  a,button{-webkit-tap-highlight-color:transparent}
+  input{font-size:16px!important}
+
+  .hero-full{min-height:320px}
+  .hero-h1{font-size:clamp(40px,11vw,60px)}
+  .hero-content{padding-bottom:32px}
+  .hero-desc{font-size:13px}
+
+  .channels{padding:48px 0 56px}
+  .ch-head{margin-bottom:32px}
+  .ch-head h2{font-size:34px}
+  .ch-card{padding:24px 22px}
+  .ch-name{font-size:26px}
+
+  .form-panel{padding:56px 0}
+  .fp-form-head h2{font-size:32px}
+  .fp-info{padding:28px 22px}
+
+  .offices{padding:56px 0}
+  .of-head h2{font-size:32px}
+  .of-city{font-size:28px}
+
+  .footer{padding:56px 0 0}
+  .footer-top{padding-bottom:56px}
+  .ft-stats{gap:20px}
+  .ft-stat-num{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="group">
+      <a href="index-v2.html" class="logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <ul class="menu">
+        <li><a href="index-v2.html">Home</a></li>
+        <li><a href="products/collection-v2.html">Products</a></li>
+        <li><a href="why-huger.html">Why HUGER</a></li>
+        <li><a href="blog-v2.html">Newsroom</a></li>
+        <li class="is-active"><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <div class="md-backdrop"></div>
+  <aside class="md-panel" role="dialog" aria-label="Site menu">
+    <div class="md-head">
+      <a href="index-v2.html" class="md-logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <button class="md-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="md-menu">
+      <li><a href="index-v2.html">Home</a></li>
+      <li><a href="products/collection-v2.html">Products</a></li>
+      <li><a href="why-huger.html">Why HUGER</a></li>
+      <li><a href="blog-v2.html">Newsroom</a></li>
+      <li class="is-active"><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="md-foot">
+      <a href="tel:05467726888">0546-7726888</a>
+      <a href="mailto:info@hugerubber.com">info@hugerubber.com</a>
+      <a href="#" style="cursor:default;opacity:.55">Xishui, Guangrao, Shandong</a>
+    </div>
+  </aside>
+</div>
+
+<!-- 1. HERO -->
+<section class="hero-full">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">06 &middot; <b>Contact HUGER</b> &middot; Guangrao, Shandong</div>
+      <h1 class="hero-h1">Let&rsquo;s talk<br>tyres.</h1>
+      <p class="hero-desc">Sales, aftermarket support, press &amp; partnership enquiries &mdash; routed to the right desk and answered within one working day, anywhere in the world.</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stat"><span class="hero-stat-num">&lt;24h</span><span class="hero-stat-label">Response time</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">70+</span><span class="hero-stat-label">Countries served</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">4</span><span class="hero-stat-label">Global offices</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CHANNELS -->
+<section class="channels">
+  <div class="w">
+    <div class="ch-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom:12px">01 &middot; Pick a channel</div>
+        <h2>Choose the <em>right desk</em>.</h2>
+      </div>
+      <div class="ch-note">Avg. reply <b>under 18h</b> on business days</div>
+    </div>
+
+    <div class="ch-grid">
+      <div class="ch-card reveal" data-kind="sales">
+        <div class="ch-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div class="ch-kind">Sales &middot; OEM &amp; Distribution</div>
+        <h3 class="ch-name">Talk to a sales engineer</h3>
+        <p class="ch-desc">Pricing, MOQ, sample units, container quotes, freight terms &amp; OEM private-label programmes.</p>
+        <div class="ch-lines">
+          <a href="mailto:sales@hugerubber.com"><i class="fa-regular fa-envelope"></i>sales@hugerubber.com</a>
+          <a href="tel:+8605467726888"><i class="fa-solid fa-phone"></i>+86 0546-7726-888</a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i>WhatsApp business line</a>
+        </div>
+        <a href="#inquiry" class="ch-cta">Request a quote <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="ch-card reveal reveal-d1" data-kind="support">
+        <div class="ch-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="ch-kind">Aftermarket &middot; Technical Support</div>
+        <h3 class="ch-name">Get warranty &amp; tech help</h3>
+        <p class="ch-desc">Warranty claims, fitment guidance, technical bulletins, retread &amp; failure analysis for in-service fleets.</p>
+        <div class="ch-lines">
+          <a href="mailto:support@hugerubber.com"><i class="fa-regular fa-envelope"></i>support@hugerubber.com</a>
+          <a href="tel:+8605467726899"><i class="fa-solid fa-phone"></i>+86 0546-7726-899</a>
+          <a href="#"><i class="fa-solid fa-circle-info"></i>Knowledge base</a>
+        </div>
+        <a href="#inquiry" class="ch-cta">Open a ticket <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="ch-card reveal reveal-d2" data-kind="press">
+        <div class="ch-icon"><i class="fa-solid fa-newspaper"></i></div>
+        <div class="ch-kind">Press &middot; Partnerships</div>
+        <h3 class="ch-name">Press &amp; media enquiries</h3>
+        <p class="ch-desc">Press releases, executive interviews, site visits, certification milestones &amp; partnership proposals.</p>
+        <div class="ch-lines">
+          <a href="mailto:press@hugerubber.com"><i class="fa-regular fa-envelope"></i>press@hugerubber.com</a>
+          <a href="tel:+8657187654321"><i class="fa-solid fa-phone"></i>+86 0571-8765-4321</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn HUGER official</a>
+        </div>
+        <a href="#inquiry" class="ch-cta">Send a brief <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. FORM + INFO -->
+<section class="form-panel" id="inquiry">
+  <div class="w">
+    <div class="fp-grid">
+
+      <!-- LEFT: FORM -->
+      <div>
+        <div class="fp-form-head reveal">
+          <div class="eyebrow">02 &middot; Send an enquiry</div>
+          <h2>Tell us what <em>you need</em>.</h2>
+          <p>One form, routed to the right team. Required fields marked with a blue dot. Files welcome via the message field (attach a link).</p>
+        </div>
+
+        <form class="fp-form" novalidate>
+          <div class="fp-field-pair">
+            <div class="fp-field">
+              <label>First name <span class="req">&bull;</span></label>
+              <input type="text" name="first" placeholder="Jane" required>
+            </div>
+            <div class="fp-field">
+              <label>Last name <span class="req">&bull;</span></label>
+              <input type="text" name="last" placeholder="Liu" required>
+            </div>
+          </div>
+
+          <div class="fp-field-pair">
+            <div class="fp-field">
+              <label>Email <span class="req">&bull;</span></label>
+              <input type="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="fp-field">
+              <label>Phone (with country code)</label>
+              <input type="tel" name="phone" placeholder="+55 11 99999 0000">
+            </div>
+          </div>
+
+          <div class="fp-field-pair">
+            <div class="fp-field">
+              <label>Company</label>
+              <input type="text" name="company" placeholder="Acme Fleet S.A.">
+            </div>
+            <div class="fp-field">
+              <label>Country / Market</label>
+              <input type="text" name="country" placeholder="Brazil">
+            </div>
+          </div>
+
+          <div class="fp-field-pair">
+            <div class="fp-field">
+              <label>Enquiry type <span class="req">&bull;</span></label>
+              <select name="type" required>
+                <option value="">— Select —</option>
+                <option>Sales &middot; Distributor / OEM</option>
+                <option>Sales &middot; Single quote</option>
+                <option>Aftermarket &middot; Warranty</option>
+                <option>Aftermarket &middot; Tech support</option>
+                <option>Press &middot; Media</option>
+                <option>Partnership / Other</option>
+              </select>
+            </div>
+            <div class="fp-field">
+              <label>Product interest</label>
+              <select name="product">
+                <option value="">— Optional —</option>
+                <option>FRIDERIC long-haul (FA series)</option>
+                <option>FRIDERIC regional (FD series)</option>
+                <option>FRIDERIC mining (FD165 / FD995)</option>
+                <option>CHILONG long-haul (RS series)</option>
+                <option>CHILONG regional (RD series)</option>
+                <option>JOSEBEN export grade</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fp-field-pair">
+            <div class="fp-field">
+              <label>Estimated annual volume</label>
+              <select name="volume">
+                <option value="">— Optional —</option>
+                <option>&lt; 200 units</option>
+                <option>200 &ndash; 1,000 units</option>
+                <option>1,000 &ndash; 5,000 units</option>
+                <option>5,000 &ndash; 20,000 units</option>
+                <option>20,000+ units</option>
+              </select>
+              <span class="helper">Helps us route to the right desk &middot; not a commitment</span>
+            </div>
+            <div class="fp-field">
+              <label>Preferred reply by</label>
+              <select name="reply_by">
+                <option>Email</option>
+                <option>Phone call</option>
+                <option>WhatsApp / WeChat</option>
+                <option>LinkedIn DM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fp-field fp-field-l">
+            <label>Tell us more <span class="req">&bull;</span></label>
+            <textarea name="message" rows="5" placeholder="Sizes you need, fleet profile, freight terms, attachments link (Drive / Dropbox), or any constraints we should know about." required></textarea>
+          </div>
+
+          <div class="fp-foot">
+            <label class="fp-consent">
+              <input type="checkbox" required>
+              <span>I agree to HUGER processing my details under their <a href="#">privacy policy</a>.</span>
+            </label>
+            <button type="submit" class="fp-submit">Send enquiry <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: INFO -->
+      <aside class="fp-info reveal reveal-d1">
+        <div class="fp-info-head">Headquarters</div>
+
+        <div class="fp-info-row">
+          <div class="lbl"><i class="fa-solid fa-location-dot"></i> Address</div>
+          <div class="val">
+            <b>Shandong Hugerubber Co., Ltd.</b><br>
+            Xishui Industrial Zone,<br>
+            Guangrao County, Dongying,<br>
+            Shandong Province, China 257335
+          </div>
+        </div>
+
+        <div class="fp-info-row">
+          <div class="lbl"><i class="fa-solid fa-phone"></i> Main switchboard</div>
+          <div class="val big"><a href="tel:+8605467726888">+86 0546-7726-888</a></div>
+          <div class="val" style="margin-top:6px;font-size:13px;color:var(--ink-60)">Hotline (toll-free CN) <a href="tel:4008808961">400-880-8961</a></div>
+        </div>
+
+        <div class="fp-info-row">
+          <div class="lbl"><i class="fa-regular fa-envelope"></i> General enquiries</div>
+          <div class="val big"><a href="mailto:info@hugerubber.com">info@hugerubber.com</a></div>
+        </div>
+
+        <div class="fp-info-row">
+          <div class="lbl"><i class="fa-regular fa-clock"></i> Working hours (UTC+8)</div>
+          <div class="val hours">
+            Mon &mdash; Fri &middot; 08:30 &ndash; 18:00<br>
+            Sat &middot; 08:30 &ndash; 12:30
+          </div>
+        </div>
+
+        <div class="fp-info-row">
+          <div class="lbl"><i class="fa-solid fa-share-nodes"></i> Find us online</div>
+          <div class="val" style="display:flex;gap:8px;margin-top:4px">
+            <a href="#" aria-label="LinkedIn" style="width:38px;height:38px;border:1px solid var(--ink-12);background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-60);transition:color .2s,border-color .2s"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube" style="width:38px;height:38px;border:1px solid var(--ink-12);background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-60);transition:color .2s,border-color .2s"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="WeChat" style="width:38px;height:38px;border:1px solid var(--ink-12);background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-60);transition:color .2s,border-color .2s"><i class="fa-brands fa-weixin"></i></a>
+            <a href="#" aria-label="WhatsApp" style="width:38px;height:38px;border:1px solid var(--ink-12);background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-60);transition:color .2s,border-color .2s"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. OFFICES -->
+<section class="offices">
+  <div class="w">
+    <div class="of-head reveal">
+      <div>
+        <div class="eyebrow">03 &middot; Our offices</div>
+        <h2>Four offices, <em>one standard</em>.</h2>
+      </div>
+      <div class="of-meta">Serving customers across <b>70+</b> countries &middot; 24h corridor coverage</div>
+    </div>
+
+    <div class="of-grid">
+
+      <div class="of-card reveal" data-type="hq">
+        <div class="of-rank">Headquarters &middot; Manufacturing</div>
+        <div class="of-city">Guangrao</div>
+        <div class="of-country">Shandong &middot; China</div>
+        <div class="of-addr">Xishui Industrial Zone, Guangrao County, Dongying, Shandong Province 257335.</div>
+        <div class="of-lines">
+          <a href="tel:+8605467726888"><i class="fa-solid fa-phone"></i>+86 0546-7726-888</a>
+          <a href="mailto:info@hugerubber.com"><i class="fa-regular fa-envelope"></i>info@hugerubber.com</a>
+        </div>
+      </div>
+
+      <div class="of-card reveal reveal-d1" data-type="trade">
+        <div class="of-rank">Trade Office &middot; Asia &amp; Europe</div>
+        <div class="of-city">Hangzhou</div>
+        <div class="of-country">Zhejiang &middot; China</div>
+        <div class="of-addr">物产中大欧泰有限公司, Qianjiang New City Financial District, Hangzhou 310020.</div>
+        <div class="of-lines">
+          <a href="tel:+8657187654321"><i class="fa-solid fa-phone"></i>+86 0571-8765-4321</a>
+          <a href="mailto:trade@hugerubber.com"><i class="fa-regular fa-envelope"></i>trade@hugerubber.com</a>
+        </div>
+      </div>
+
+      <div class="of-card reveal reveal-d2" data-type="latam">
+        <div class="of-rank">Regional Office &middot; LatAm</div>
+        <div class="of-city">São Paulo</div>
+        <div class="of-country">Brazil</div>
+        <div class="of-addr">Av. Paulista 1106, 7&deg; andar, Bela Vista, São Paulo &mdash; SP, CEP 01310-100.</div>
+        <div class="of-lines">
+          <a href="tel:+5511990001234"><i class="fa-solid fa-phone"></i>+55 11 9 9000-1234</a>
+          <a href="mailto:latam@hugerubber.com"><i class="fa-regular fa-envelope"></i>latam@hugerubber.com</a>
+        </div>
+      </div>
+
+      <div class="of-card reveal reveal-d3" data-type="mena">
+        <div class="of-rank">Regional Office &middot; MENA &amp; Gulf</div>
+        <div class="of-city">Dubai</div>
+        <div class="of-country">United Arab Emirates</div>
+        <div class="of-addr">Office 1208, Jumeirah Business Centre 5, Cluster W, Jumeirah Lake Towers, Dubai.</div>
+        <div class="of-lines">
+          <a href="tel:+97144000123"><i class="fa-solid fa-phone"></i>+971 4 400 0123</a>
+          <a href="mailto:mena@hugerubber.com"><i class="fa-regular fa-envelope"></i>mena@hugerubber.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="w">
+    <div class="footer-top">
+      <div>
+        <div class="ft-logo"><a href="index-v2.html"><img src="logo.png" alt="HUGER"></a></div>
+        <p class="ft-tagline">All-steel radial truck &amp; bus tyres. Three brands. One uncompromising standard. Since 1988.</p>
+        <div class="ft-stats">
+          <div><div class="ft-stat-num">1988</div><div class="ft-stat-label">Founded</div></div>
+          <div><div class="ft-stat-num">70+</div><div class="ft-stat-label">Countries</div></div>
+          <div><div class="ft-stat-num">2M</div><div class="ft-stat-label">Annual Tires</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-head">Navigation</div>
+        <ul class="ft-links">
+          <li><a href="index-v2.html">Home</a></li>
+          <li><a href="products/collection-v2.html">Products</a></li>
+          <li><a href="why-huger.html">Why HUGER</a></li>
+          <li><a href="blog-v2.html">Newsroom</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-head">Contact</div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Office</span><a href="tel:05467726888" class="ft-contact-val">0546-7726888</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Email</span><a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Address</span><span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span></div>
+      </div>
+      <div>
+        <div class="ft-col-head">Our Brands</div>
+        <div class="ft-brand-row"><img src="logo.png" alt="HUGER" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo1.png" alt="FRIDERIC" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo3.png" alt="CHILONG" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo2.png" alt="JOSEBEN" class="ft-brand-logo"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="ft-copy">&copy; 2026 Shandong Hugerubber Co., Ltd. &middot; All rights reserved</span>
+      <div class="ft-certs">
+        <img src="img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+        <img src="img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+        <img src="img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header switches to light mode after scrolling past hero
+(function(){
+  var hdr = document.getElementById('header');
+  var hero = document.querySelector('.hero-full');
+  if(!hdr || !hero) return;
+  function check(){
+    var threshold = hero.offsetHeight - 60;
+    hdr.classList.toggle('hdr-light', window.scrollY > threshold);
+  }
+  window.addEventListener('scroll', check, {passive:true});
+  check();
+})();
+
+// Scroll reveal
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});return;}
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+})();
+
+// Form submit demo (no backend — show confirmation)
+(function(){
+  var f = document.querySelector('.fp-form');
+  if(!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();return;}
+    var btn = f.querySelector('.fp-submit');
+    var orig = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> Sent — we&rsquo;ll reply within 24h';
+    btn.style.background = 'var(--green)';
+    setTimeout(function(){
+      f.reset();
+      btn.disabled = false;
+      btn.innerHTML = orig;
+      btn.style.background = '';
+    }, 4000);
+  });
+})();
+
+// Mobile drawer
+(function(){
+  var t = document.querySelector('.menu-toggle');
+  var d = document.getElementById('mobile-drawer');
+  if(!t || !d) return;
+  function open(){d.classList.add('is-open');t.classList.add('is-open');t.setAttribute('aria-expanded','true');d.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+  function close(){d.classList.remove('is-open');t.classList.remove('is-open');t.setAttribute('aria-expanded','false');d.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+  t.addEventListener('click',function(){d.classList.contains('is-open')?close():open();});
+  d.querySelector('.md-close').addEventListener('click',close);
+  d.querySelector('.md-backdrop').addEventListener('click',close);
+  d.querySelectorAll('.md-menu a').forEach(function(a){a.addEventListener('click',close);});
+  window.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>

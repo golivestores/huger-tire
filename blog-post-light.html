@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<title>Two million tyres a year — and counting. | HUGER Newsroom</title>
+<meta name="description" content="A new Building Line lifts annual all-steel radial capacity from 1.8M to 2M. First containers cleared customs in Manaus on 12 May 2026.">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ============================================================
+   RESET + TOKENS — aligned with blog.html
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit}
+
+:root{
+  --cream:#f0ede8;
+  --cream-d:#e6e1d7;
+  --cream-w:#f6f3ed;
+  --ink:#0f0f0d;
+  --ink-80:rgba(15,15,13,.82);
+  --ink-60:rgba(15,15,13,.6);
+  --ink-40:rgba(15,15,13,.4);
+  --ink-30:rgba(15,15,13,.3);
+  --ink-12:rgba(15,15,13,.12);
+  --ink-06:rgba(15,15,13,.06);
+  --blue:#1244b0;
+  --blue-deep:#0d3490;
+  --gold:#e8b400;
+}
+
+html{background:var(--cream)}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================================================
+   HEADER — same as blog.html (light by default, dark over banner)
+   ============================================================ */
+#header{color:#fff;height:auto;padding:clamp(10px,.9vw,16px) 0;pointer-events:none;position:fixed;top:0;left:0;width:100%;z-index:80;transition:color .35s ease}
+#header.is-light{color:#0f0f0d}
+#header .container{align-items:center;display:flex;height:100%;justify-content:center}
+#header .group{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);background-color:rgba(15,15,13,.18);border-radius:clamp(15px,1.389vw,26.6px);border:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:center;padding:clamp(5px,.417vw,7.98px);pointer-events:all;width:min(92vw,1240px);transition:background .35s,border-color .35s}
+#header.is-light .group{background-color:hsla(0,0%,100%,.72);border-color:rgba(0,0,0,.06)}
+#header .group .logo{display:flex;align-items:center;margin-left:clamp(14px,1.25vw,23.94px);flex-shrink:0}
+#header .group .logo img{height:28px;width:auto;display:block;filter:brightness(0) invert(1);transition:filter .35s}
+#header.is-light .group .logo img{filter:none}
+@media(max-width:1240px){#header .group .logo img{height:24px}}
+#header .group .menu{display:flex;gap:clamp(4px,.556vw,10.64px);list-style:none;padding:0;margin:0}
+#header .group .menu li{display:inline-block}
+#header .group .menu li a{background-color:transparent;border:1px solid transparent;border-radius:clamp(14px,1.042vw,19.95px);color:inherit;display:block;font-size:clamp(13px,1.042vw,19.95px);height:clamp(38px,2.778vw,53.2px);line-height:clamp(38px,2.778vw,53.2px);opacity:.7;padding:0 clamp(18px,2.222vw,42.56px);transition:opacity .35s,color .35s;white-space:nowrap}
+#header .group .menu li a:hover{opacity:1}
+#header .group .menu li.is-active a{opacity:1}
+#header.is-light .group .menu li.is-active a{color:var(--blue)}
+@media(max-width:720px){#header .group .menu{display:none}}
+
+/* HAMBURGER + DRAWER (cream theme) */
+.menu-toggle{display:none;background:transparent;border:0;padding:0}
+@media(max-width:720px){
+  .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;margin-right:8px;flex-shrink:0;color:inherit;-webkit-tap-highlight-color:transparent;cursor:pointer}
+  .menu-toggle span{display:block;width:18px;height:1.5px;background:currentColor;border-radius:1px;transition:transform .3s,opacity .25s}
+  .menu-toggle.is-open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menu-toggle.is-open span:nth-child(2){opacity:0}
+  .menu-toggle.is-open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+}
+.mobile-drawer{position:fixed;inset:0;z-index:90;pointer-events:none;visibility:hidden;transition:visibility .4s}
+.mobile-drawer.is-open{pointer-events:auto;visibility:visible}
+.md-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .4s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.mobile-drawer.is-open .md-backdrop{opacity:1}
+.md-panel{position:absolute;top:0;right:0;bottom:0;width:min(86vw,360px);background:var(--cream-w);color:var(--ink);transform:translateX(100%);transition:transform .45s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;padding:24px 28px env(safe-area-inset-bottom,28px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+.mobile-drawer.is-open .md-panel{transform:translateX(0)}
+.md-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid var(--ink-12);margin-bottom:18px}
+.md-head .md-logo img{height:24px;width:auto;display:block}
+.md-close{width:40px;height:40px;border-radius:50%;border:1px solid var(--ink-12);display:flex;align-items:center;justify-content:center;color:inherit;font-size:14px;background:transparent;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.md-close:active{background:var(--ink-06)}
+.md-menu{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;flex:1}
+.md-menu li{border-bottom:1px solid rgba(15,15,13,.08)}
+.md-menu li a{display:flex;align-items:center;justify-content:space-between;padding:22px 4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;letter-spacing:.005em;color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent;transition:color .2s}
+.md-menu li a::after{content:'';width:18px;height:1px;background:currentColor;opacity:.25;transition:width .25s,opacity .25s,background .25s}
+.md-menu li.is-active a{color:var(--blue)}
+.md-menu li.is-active a::after{width:32px;opacity:1;background:var(--blue)}
+.md-foot{padding-top:18px;border-top:1px solid var(--ink-12);display:flex;flex-direction:column;gap:6px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-60)}
+.md-foot a{color:inherit;opacity:.85;padding:6px 0;transition:opacity .2s,color .2s}
+.md-foot a:hover{opacity:1;color:var(--blue)}
+
+/* ============================================================
+   1. BANNER — full-bleed, capped at 40vh, header clearance fixed
+   ============================================================ */
+.banner{position:relative;height:clamp(300px,40vh,440px);width:100%;overflow:hidden;background:var(--ink)}
+.banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.92) brightness(.72);animation:bannerZoom 14s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes bannerZoom{from{transform:scale(1.07)}to{transform:scale(1.0)}}
+.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.12) 28%,rgba(0,0,0,0) 50%,rgba(15,15,13,.88) 100%);pointer-events:none;z-index:1}
+.banner-wrap{position:absolute;inset:0;z-index:2;padding:max(86px,10vh) 0 clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:flex-end}
+.banner-content{width:100%;max-width:1320px;margin:0 auto;padding:0 clamp(24px,5vw,72px);display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;color:#fff}
+.banner-main{flex:1;min-width:0;max-width:1080px}
+.banner-kicker{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:rgba(255,255,255,.8);margin-bottom:clamp(10px,1.5vh,18px);opacity:0;animation:fadeUp .9s cubic-bezier(.16,1,.3,1) .25s forwards}
+.banner-kicker .cat{color:#fff;font-weight:700;padding-bottom:2px;border-bottom:1px solid rgba(255,255,255,.45)}
+.banner-kicker .sep{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.45)}
+.banner h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(32px,min(5.5vmin,5.6vw),84px);line-height:.92;letter-spacing:-.022em;color:#fff;text-wrap:balance;opacity:0;animation:fadeUp 1s cubic-bezier(.16,1,.3,1) .4s forwards}
+.banner h1 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;color:#fff;letter-spacing:-.005em}
+.banner-iss{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:600;opacity:0;animation:fadeUp .9s cubic-bezier(.16,1,.3,1) .55s forwards;align-self:flex-end;white-space:nowrap}
+.banner-iss b{color:#fff;font-weight:700}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:720px){.banner-iss{display:none}.banner-content{padding:0 24px}}
+
+/* ============================================================
+   2. DECK — standfirst under banner
+   ============================================================ */
+.deck{padding:clamp(40px,5vw,72px) 24px clamp(28px,3vw,40px);text-align:center;max-width:900px;margin:0 auto}
+.deck p{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(20px,2.1vw,28px);line-height:1.42;color:var(--ink);letter-spacing:-.002em;text-wrap:balance}
+
+/* ============================================================
+   3. META BAR — byline + share, centered, hairlines
+   ============================================================ */
+.metabar{max-width:760px;margin:0 auto;padding:22px 24px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink-12);display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--ink-60)}
+.metabar .mi{display:flex;align-items:center;gap:8px}
+.metabar .mi b{color:var(--ink);font-weight:700}
+.metabar .mi .lbl{color:var(--ink-40)}
+.metabar .dot{width:3px;height:3px;border-radius:50%;background:var(--ink-30)}
+.metabar .share{display:flex;align-items:center;gap:6px}
+.metabar .share a{width:32px;height:32px;border-radius:50%;border:1px solid var(--ink-12);display:inline-flex;align-items:center;justify-content:center;color:var(--ink-60);transition:all .2s;font-size:11px;letter-spacing:0}
+.metabar .share a:hover{color:var(--blue);border-color:var(--blue);background:rgba(18,68,176,.06)}
+
+/* ============================================================
+   4. ARTICLE BODY — centered reading column
+   ============================================================ */
+.article{background:var(--cream);padding:clamp(40px,5vw,72px) 0 0;position:relative}
+.body{max-width:720px;margin:0 auto;padding:0 24px}
+
+.body .lede-p{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(20px,2vw,26px);line-height:1.42;color:var(--ink);margin-bottom:36px;text-indent:0;text-wrap:pretty}
+
+.body p:not(.lede-p){font-family:'Inter',sans-serif;font-size:17.5px;font-weight:400;line-height:1.74;color:var(--ink);margin:0;text-indent:1.5em}
+.body p.opener{text-indent:0;margin-top:0}
+.body p.opener::first-letter{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:5.6em;float:left;line-height:.82;padding:6px 12px 0 0;color:var(--blue);letter-spacing:-.03em}
+.body p + p:not(.opener){margin-top:0}
+.body h2 + p, .body .sec + p, .body figure + p, .body ol + p, .body .body-pull + p, .body h3 + p{text-indent:0;margin-top:24px}
+
+.body strong{font-weight:600;color:var(--ink)}
+.body em,.body i{font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.05em;letter-spacing:-.005em}
+.body a.in-link{color:var(--blue);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:color .15s}
+.body a.in-link:hover{color:var(--blue-deep)}
+
+/* Section divider with ornament */
+.body .sec{margin:60px auto 24px;text-align:center}
+.body .sec-rule{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:18px}
+.body .sec-rule::before,.body .sec-rule::after{content:'';flex:0 0 36px;height:1px;background:var(--ink)}
+.body .sec-rule .ornament{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--ink);font-weight:500;line-height:1}
+.body .sec .n{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--blue);font-weight:700;display:block;margin-bottom:12px}
+.body .sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(28px,3.4vw,46px);line-height:1.02;letter-spacing:-.018em;color:var(--ink);text-wrap:balance}
+.body .sec h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-.005em;font-size:1em}
+
+.body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-60);margin:36px 0 12px}
+
+/* Numbered editorial list */
+.body ol.ed{list-style:none;padding:0;margin:30px 0;counter-reset:ed}
+.body ol.ed li{position:relative;padding:16px 0 16px 64px;border-top:1px solid var(--ink-12);counter-increment:ed;text-indent:0;font-family:'Inter',sans-serif;font-size:16px;line-height:1.68;color:var(--ink)}
+.body ol.ed li:last-child{border-bottom:1px solid var(--ink-12)}
+.body ol.ed li::before{content:counter(ed,decimal-leading-zero);position:absolute;left:0;top:21px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--blue);font-weight:700}
+.body ol.ed li b{color:var(--ink);font-weight:600;margin-right:4px}
+
+/* Pull quote — FULL BLEED, darker cream */
+.body-pull{position:relative;margin:60px calc(50% - 50vw);padding:clamp(56px,6vw,84px) clamp(24px,4vw,56px) clamp(48px,5vw,72px);background:var(--cream-d);text-align:center;overflow:hidden}
+.body-pull::before{content:'\201C';display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(80px,9vw,140px);color:var(--blue);line-height:.7;margin-bottom:22px;height:.55em;letter-spacing:-.02em}
+.body-pull blockquote{max-width:760px;margin:0 auto}
+.body-pull blockquote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(24px,3vw,40px);line-height:1.26;color:var(--ink);margin:0 0 24px;text-indent:0;letter-spacing:-.008em;text-wrap:balance}
+.body-pull cite{font-family:'DM Mono',monospace;font-style:normal;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-60);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+.body-pull cite::before{content:'';display:inline-block;width:24px;height:1px;background:var(--ink-30)}
+.body-pull cite b{color:var(--blue);font-weight:700}
+
+/* Inline figure — FULL BLEED */
+.body-fig{margin:56px calc(50% - 50vw);position:relative}
+.body-fig img{width:100vw;max-width:100vw;height:clamp(280px,52vh,520px);object-fit:cover;display:block;filter:saturate(.94)}
+.body-fig figcaption{max-width:760px;margin:14px auto 0;padding:0 24px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:500;display:flex;align-items:baseline;gap:14px}
+.body-fig figcaption::before{content:'Fig.';color:var(--blue);font-weight:700;letter-spacing:.18em}
+
+/* ============================================================
+   5. POSTSCRIPT — signature
+   ============================================================ */
+.postscript{max-width:760px;margin:64px auto 0;padding:36px 24px 0;text-align:center;border-top:1px solid var(--ink-12)}
+.postscript-mark{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:42px;color:var(--blue);line-height:1;display:block;margin-bottom:14px;letter-spacing:-.04em}
+.postscript p{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-60);font-weight:500;line-height:1.8}
+.postscript p b{color:var(--ink);font-weight:700;letter-spacing:.22em}
+
+/* ============================================================
+   6. TAGS
+   ============================================================ */
+.body-tags{max-width:720px;margin:48px auto 0;padding:24px 24px 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+.body-tags .lbl{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-right:8px}
+.body-tags a{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);padding:6px 4px;border-bottom:1px solid var(--ink-12);transition:color .2s,border-color .2s;font-weight:500}
+.body-tags a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* ============================================================
+   7. CONTINUE READING — editorial grid
+   ============================================================ */
+.continue{background:var(--cream);padding:clamp(80px,9vw,120px) 0 clamp(96px,11vw,140px);margin-top:clamp(80px,9vw,120px);border-top:1px solid var(--ink);position:relative}
+.continue::before{content:'';position:absolute;top:-1px;left:50%;transform:translate(-50%,-50%);width:14px;height:14px;background:var(--cream);border:1px solid var(--ink);border-radius:50%;display:block}
+.continue::after{content:'';position:absolute;top:-1px;left:50%;transform:translate(-50%,-50%);width:6px;height:6px;background:var(--ink);border-radius:50%;display:block}
+.cont-w{max-width:1320px;margin:0 auto;padding:0 56px}
+@media(max-width:1100px){.cont-w{padding:0 40px}}
+@media(max-width:960px){.cont-w{padding:0 24px}}
+@media(max-width:600px){.cont-w{padding:0 16px}}
+.cont-head{text-align:center;margin-bottom:56px}
+.cont-head .kicker{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-40);display:block;margin-bottom:16px;font-weight:600}
+.cont-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(36px,4.6vw,64px);line-height:.98;letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
+.cont-head h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-.005em}
+.cont-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 32px}
+.cont-card{display:flex;flex-direction:column;gap:18px;cursor:pointer;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.cont-card:hover{transform:translateY(-6px)}
+.cont-card-img{aspect-ratio:3/2;overflow:hidden;background:var(--ink-06);position:relative}
+.cont-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1);filter:saturate(.92)}
+.cont-card:hover .cont-card-img img{transform:scale(1.05);filter:saturate(1)}
+.cont-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 75%,rgba(0,0,0,.15) 100%);pointer-events:none}
+.cont-card .meta{display:flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-40);font-weight:500}
+.cont-card .meta .cat{color:var(--blue);font-weight:700}
+.cont-card .meta .sep{width:14px;height:1px;background:var(--ink-30)}
+.cont-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(22px,2vw,26px);line-height:1.1;letter-spacing:-.005em;color:var(--ink);transition:color .25s;text-wrap:pretty}
+.cont-card:hover h3{color:var(--blue)}
+.cont-card .rm{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:600;display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px;border-top:1px solid var(--ink-12);transition:color .25s,gap .25s}
+.cont-card .rm i{font-size:10px;color:var(--gold);transition:transform .25s,color .25s}
+.cont-card:hover .rm{color:var(--blue);gap:14px}
+.cont-card:hover .rm i{transform:translateX(3px);color:var(--blue)}
+
+.cont-all{text-align:center;margin-top:56px;padding-top:36px;border-top:1px solid var(--ink-12)}
+.cont-all a{display:inline-flex;align-items:center;gap:12px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);font-weight:700;padding:14px 22px;border:1px solid var(--ink);transition:color .2s,background .2s,gap .25s}
+.cont-all a:hover{background:var(--ink);color:var(--cream);gap:18px}
+.cont-all a i{color:var(--gold);transition:color .2s}
+.cont-all a:hover i{color:var(--gold)}
+
+/* ============================================================
+   FOOTER — same as blog.html
+   ============================================================ */
+.footer{background:#0d0d11;color:rgba(255,255,255,.55);position:relative;overflow:hidden;padding:80px 0 0}
+.footer::before{content:'HUGER';position:absolute;bottom:-.22em;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(160px,22vw,320px);letter-spacing:-.04em;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,180,0,.18);white-space:nowrap;pointer-events:none;user-select:none}
+.footer-w{max-width:1320px;margin:0 auto;padding:0 56px}
+@media(max-width:1100px){.footer-w{padding:0 40px}}
+@media(max-width:960px){.footer-w{padding:0 24px}}
+@media(max-width:600px){.footer-w{padding:0 16px}}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:96px;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:1024px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;gap:32px}}
+.ft-logo{margin-bottom:20px}
+.ft-logo img{height:26px;filter:brightness(0) invert(1);opacity:.9}
+.ft-tagline{font-size:13px;line-height:1.65;color:rgba(255,255,255,.52);max-width:260px;margin-bottom:28px}
+.ft-stats{display:flex;gap:28px;flex-wrap:wrap}
+.ft-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em;line-height:1;color:#fff}
+.ft-stat-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:4px}
+.ft-col-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12)}
+.ft-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-links a{font-size:13px;color:rgba(255,255,255,.7);transition:color .2s}
+.ft-links a:hover{color:#fff}
+.ft-contact-item{display:flex;flex-direction:column;gap:3px;margin-bottom:16px}
+.ft-contact-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.ft-contact-val{font-size:13px;color:rgba(255,255,255,.75);transition:color .2s}
+a.ft-contact-val:hover{color:#fff}
+.ft-brand-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ft-brand-logo{height:22px;width:auto;display:block;filter:brightness(0) invert(1);opacity:.75;transition:opacity .2s;flex:1;object-fit:contain;object-position:left center}
+.ft-brand-row:hover .ft-brand-logo{opacity:1}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:24px 0 32px;position:relative;z-index:1}
+.ft-copy{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.2)}
+.ft-certs{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.ft-cert-logo{height:28px;width:auto;filter:brightness(0) invert(1);opacity:.45;transition:opacity .2s}
+.ft-cert-logo:hover{opacity:.8}
+
+/* ============================================================
+   TABLET ≤1024
+   ============================================================ */
+@media(max-width:1024px){
+  .cont-grid{grid-template-columns:1fr 1fr;gap:40px 28px}
+  .cont-grid > a:nth-child(3){display:none}
+}
+
+/* ============================================================
+   MOBILE ≤640
+   ============================================================ */
+@media(max-width:640px){
+  a,button{-webkit-tap-highlight-color:transparent}
+  input{font-size:16px!important}
+
+  .deck{padding:32px 20px 24px}
+  .deck p{font-size:18px;line-height:1.4}
+
+  .metabar{padding:18px 20px;gap:14px;font-size:9px;letter-spacing:.18em}
+  .metabar .mi{gap:6px}
+  .metabar .share{width:100%;justify-content:center;padding-top:12px;border-top:1px solid var(--ink-06)}
+
+  .article{padding-top:36px}
+  .body{padding:0 20px}
+  .body .lede-p{font-size:18px;margin-bottom:32px}
+  .body p:not(.lede-p){font-size:16.5px;line-height:1.72;text-indent:1.4em}
+  .body p.opener::first-letter{font-size:4.6em;padding:6px 10px 0 0}
+
+  .body .sec{margin:48px auto 22px}
+  .body .sec h2{font-size:26px}
+  .body h3{font-size:15px}
+
+  .body ol.ed li{padding:14px 0 14px 44px;font-size:15px}
+  .body ol.ed li::before{top:18px}
+
+  .body-pull{margin:48px calc(50% - 50vw);padding:44px 20px 36px}
+  .body-pull::before{font-size:72px;margin-bottom:16px}
+  .body-pull blockquote p{font-size:22px;line-height:1.28;margin-bottom:18px}
+  .body-pull cite{font-size:9px}
+
+  .body-fig img{height:240px}
+  .body-fig figcaption{padding:0 20px;font-size:9px;gap:10px}
+
+  .postscript{margin-top:48px;padding:28px 20px 0}
+  .postscript-mark{font-size:34px}
+  .postscript p{font-size:10px;letter-spacing:.22em}
+
+  .body-tags{padding:20px 20px 0;margin-top:36px}
+
+  .continue{padding:64px 0 80px;margin-top:64px}
+  .cont-head{margin-bottom:36px}
+  .cont-head h2{font-size:34px}
+  .cont-grid{grid-template-columns:1fr;gap:36px}
+  .cont-grid > a:nth-child(3){display:flex}
+  .cont-card h3{font-size:22px}
+
+  .cont-all{margin-top:48px;padding-top:28px}
+  .cont-all a{padding:12px 18px;font-size:10px}
+
+  .footer{padding:56px 0 0}
+  .footer-top{padding-bottom:56px}
+  .ft-stats{gap:20px}
+  .ft-stat-num{font-size:28px}
+}
+
+@media(max-width:400px){
+  .body p:not(.lede-p){font-size:16px;text-indent:1.2em}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="group">
+      <a href="index-v2.html" class="logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <ul class="menu">
+        <li><a href="index-v2.html">Home</a></li>
+        <li><a href="products/collection-v2.html">Products</a></li>
+        <li><a href="why-huger.html">Why HUGER</a></li>
+        <li class="is-active"><a href="blog.html">Newsroom</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <div class="md-backdrop"></div>
+  <aside class="md-panel" role="dialog" aria-label="Site menu">
+    <div class="md-head">
+      <a href="index-v2.html" class="md-logo" aria-label="Home"><img src="logo.png" alt="HUGER"></a>
+      <button class="md-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="md-menu">
+      <li><a href="index-v2.html">Home</a></li>
+      <li><a href="products/collection-v2.html">Products</a></li>
+      <li><a href="why-huger.html">Why HUGER</a></li>
+      <li class="is-active"><a href="blog.html">Newsroom</a></li>
+    </ul>
+    <div class="md-foot">
+      <a href="tel:05467726888">0546-7726888</a>
+      <a href="mailto:info@hugerubber.com">info@hugerubber.com</a>
+      <a href="#" style="cursor:default;opacity:.55">Xishui, Guangrao, Shandong</a>
+    </div>
+  </aside>
+</div>
+
+<!-- 1. BANNER (≤40vh, with header clearance) -->
+<section class="banner">
+  <img class="banner-img" src="img/why/factory.jpg" alt="HUGER Guangrao plant" onerror="this.src='img/products/tire-1.jpg'">
+  <div class="banner-wrap">
+    <div class="banner-content">
+      <div class="banner-main">
+        <div class="banner-kicker">
+          <span class="cat">Press · Featured</span>
+          <span class="sep"></span>
+          <span>13 May 2026</span>
+          <span class="sep"></span>
+          <span>Guangrao, Shandong</span>
+        </div>
+        <h1>Two million tyres a year &mdash; <em>and counting.</em></h1>
+      </div>
+      <div class="banner-iss">Issue <b>№ 047</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DECK -->
+<section class="deck">
+  <p>A new Building Line lifts annual all-steel radial capacity from 1.8M to 2M. First containers cleared customs in Manaus on 12 May 2026.</p>
+</section>
+
+<!-- 3. META BAR -->
+<div class="metabar">
+  <div class="mi"><span class="lbl">By</span><b>HUGER Press Desk</b></div>
+  <span class="dot"></span>
+  <div class="mi"><span class="lbl">Read</span><b>5 min</b></div>
+  <span class="dot"></span>
+  <div class="mi"><span class="lbl">Filed</span><b>13.05.26</b></div>
+  <span class="dot"></span>
+  <div class="share">
+    <a href="#" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Share on X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#" aria-label="Copy link" id="copy-link"><i class="fa-solid fa-link"></i></a>
+  </div>
+</div>
+
+<!-- 4. ARTICLE BODY -->
+<article class="article">
+  <div class="body">
+
+    <p class="lede-p reveal">By sundown on 12 May 2026, the first containers from a new Building Line had cleared customs in Manaus &mdash; the visible end of a three-year, RMB 1.8 billion programme that takes HUGER's annual all-steel radial capacity to a firm two million tyres.</p>
+
+    <p class="opener">On the morning of 12 May 2026, the first containers of all-steel radial truck tyres rolled out of the brand-new Building Line 6 at HUGER's Guangrao plant &mdash; pushing the company's annual capacity from 1.8 million to a firm <strong>2 million tyres</strong>. By sundown, those same containers had cleared customs in the port of Manaus, opening a new chapter in HUGER's Latin American programme that began only eighteen months ago.</p>
+
+    <p>The expansion is the culmination of a three-year capital programme totalling RMB 1.8 billion &mdash; covering a new mixing centre, two additional building lines, a re-equipped curing bay, and a fully automated X-ray inspection cell that brings 100% non-destructive testing in-house for the first time. None of it required a new factory: every piece of equipment was sited within the existing footprint of the Xishui Industrial Zone facility.</p>
+
+    <div class="sec reveal">
+      <div class="sec-rule"><span class="ornament">&sect;</span></div>
+      <span class="n">I &middot; The Line</span>
+      <h2>What the new line <em>actually</em> means</h2>
+    </div>
+
+    <p>Capacity numbers are easy to publish and hard to read. To make the expansion concrete, here is what changed at line level.</p>
+
+    <ol class="ed reveal">
+      <li><b>+200,000 tyres per year.</b> Building Line 6 alone contributes a sustained 555 tyres per shift, three shifts a day, six days a week &mdash; net after planned maintenance.</li>
+      <li><b>Same SKU mix, faster cadence.</b> The line is dedicated to the FRIDERIC long-haul series (FA808, FA818, FA999) &mdash; the three sizes that hit a six-week order backlog in Q1.</li>
+      <li><b>Casing-grade steel cord.</b> All new output uses 4+9&times;0.22+0.15 high-tensile cord from our Liaocheng partner mill, the same specification that earned ECE R117 wet-grip class B in April.</li>
+      <li><b>Zero net headcount.</b> 38 operator and inspection roles were created; 41 manual handling roles were re-skilled into them. Total plant headcount is unchanged at 1,920.</li>
+    </ol>
+
+    <div class="sec reveal">
+      <div class="sec-rule"><span class="ornament">&sect;</span></div>
+      <span class="n">II &middot; The Corridor</span>
+      <h2>Latin America is now the <em>fourth-largest</em> export region</h2>
+    </div>
+
+    <p>The first 240 containers from the new line were pre-allocated to three distributors across Brazil, Peru, and Colombia. The opening shipment &mdash; 84 containers, FRIDERIC FA808 and FA999 in 12R22.5 &mdash; cleared customs in Manaus on the morning of 12 May. By tradition, our Latin American partner <strong>Transportes Continental</strong> photographed the first stack on the dock at 9:42 local time; that photograph is now the homepage of their fleet portal.</p>
+
+    <p>This makes Latin America HUGER's <a class="in-link" href="#">fourth-largest export region by volume</a>, behind Southeast Asia, the Gulf, and West Africa. The corridor is now served by twenty-four-hour technical support from Sao Paulo and a parts depot in Lima that opened in February.</p>
+
+    <!-- FULL-BLEED FIGURE -->
+    <figure class="body-fig reveal">
+      <img src="img/why/lab.jpg" alt="X-ray inspection cell" onerror="this.src='img/products/tire-2.jpg'">
+      <figcaption>The new X-ray cell brings 100% non-destructive inspection in-house &mdash; every casing, no sampling.</figcaption>
+    </figure>
+
+    <div class="sec reveal">
+      <div class="sec-rule"><span class="ornament">&sect;</span></div>
+      <span class="n">III &middot; The Why</span>
+      <h2>The <em>honest</em> reason for the expansion</h2>
+    </div>
+
+    <p>Across 2025, the FRIDERIC long-haul book stayed sold-out for six consecutive months &mdash; partners in the Gulf and Latin America were quoting our regional dealers' inventory rather than ours. Building Line 6 is the first physical answer to that demand.</p>
+
+    <p>The capital was signed off in October 2024 by the parent group, <strong>物产中大欧泰有限公司</strong>, on three conditions: no new land, no new headcount, no compromise on the in-line inspection regime that has earned the brand its CCC, GSO, SNI, DOT, ECE R117, INMETRO and SASO certifications. The plant team &mdash; led by deputy GM <strong>Liu Yang</strong> and chief engineer <strong>Wang Jianhua</strong> &mdash; delivered on all three.</p>
+
+    <!-- FULL-BLEED PULL QUOTE -->
+    <div class="body-pull reveal">
+      <blockquote>
+        <p>Forty years of Guangrao tyres &mdash; but the only year that matters is the one in our X-ray lab.</p>
+        <cite><b>Wang Jianhua</b> &middot; Head of Quality &middot; HUGER Guangrao</cite>
+      </blockquote>
+    </div>
+
+    <div class="sec reveal">
+      <div class="sec-rule"><span class="ornament">&sect;</span></div>
+      <span class="n">IV &middot; What's Next</span>
+      <h2>Two follow-on projects, already in <em>motion</em></h2>
+    </div>
+
+    <p>A second X-ray cell, scheduled to come online in Q3, will let the plant inspect both shifts in parallel rather than sequentially. And the regional pattern line &mdash; pattern moulds 678 and 758 &mdash; receives a re-tooling round in August that will lift regional capacity by a further 90,000 tyres per year without further investment.</p>
+
+    <p>The longer arc remains unchanged: HUGER is &mdash; and intends to remain &mdash; an all-steel radial specialist. Two million tyres a year is not a destination. It is the new baseline.</p>
+
+    <h3>Press contact</h3>
+    <p>For interviews with the plant team or to schedule a Guangrao site visit, please contact the Press Desk at <a class="in-link" href="mailto:press@hugerubber.com">press@hugerubber.com</a> or <a class="in-link" href="tel:05467726888">+86 0546-7726888</a>.</p>
+
+  </div>
+
+  <!-- 5. POSTSCRIPT -->
+  <div class="postscript reveal">
+    <span class="postscript-mark">&infin;</span>
+    <p><b>HUGER Press Desk</b><br>Guangrao &middot; 13 May 2026</p>
+  </div>
+
+  <!-- 6. TAGS -->
+  <div class="body-tags reveal">
+    <span class="lbl">Filed under</span>
+    <a href="#">Press</a>
+    <a href="#">Capacity</a>
+    <a href="#">FRIDERIC</a>
+    <a href="#">Latin America</a>
+    <a href="#">Manufacturing</a>
+  </div>
+</article>
+
+<!-- 7. CONTINUE READING -->
+<section class="continue">
+  <div class="cont-w">
+    <div class="cont-head reveal">
+      <span class="kicker">More from the Newsroom</span>
+      <h2>Continue <em>reading</em>.</h2>
+    </div>
+    <div class="cont-grid">
+      <a class="cont-card reveal" href="#">
+        <div class="cont-card-img"><img src="img/why/lab.jpg" alt="" onerror="this.src='img/products/tire-1.jpg'"></div>
+        <div class="meta"><span class="cat">Certifications</span><span class="sep"></span><span>28 Apr 2026</span></div>
+        <h3>FRIDERIC long-haul series clears ECE R117 wet-grip class B.</h3>
+        <span class="rm">Read story <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="cont-card reveal" href="#">
+        <div class="cont-card-img"><img src="img/why/engineer.jpg" alt="" onerror="this.src='img/products/tire-2.jpg'"></div>
+        <div class="meta"><span class="cat">Exhibitions</span><span class="sep"></span><span>22 Apr 2026</span></div>
+        <h3>HUGER at Bauma 2026: FD995 mining tire makes its debut.</h3>
+        <span class="rm">Read story <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a class="cont-card reveal" href="#">
+        <div class="cont-card-img"><img src="img/why/nature.jpg" alt="" onerror="this.src='img/products/tire-3.jpg'"></div>
+        <div class="meta"><span class="cat">Partnerships</span><span class="sep"></span><span>14 Apr 2026</span></div>
+        <h3>Shandong University R&amp;D agreement extended through 2030.</h3>
+        <span class="rm">Read story <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+    <div class="cont-all">
+      <a href="blog.html">Browse all 48 stories <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-w">
+    <div class="footer-top">
+      <div>
+        <div class="ft-logo"><a href="index-v2.html"><img src="logo.png" alt="HUGER"></a></div>
+        <p class="ft-tagline">All-steel radial truck &amp; bus tyres. Three brands. One uncompromising standard. Since 1988.</p>
+        <div class="ft-stats">
+          <div><div class="ft-stat-num">1988</div><div class="ft-stat-label">Founded</div></div>
+          <div><div class="ft-stat-num">70+</div><div class="ft-stat-label">Countries</div></div>
+          <div><div class="ft-stat-num">2M</div><div class="ft-stat-label">Annual Tires</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-head">Navigation</div>
+        <ul class="ft-links">
+          <li><a href="index-v2.html">Home</a></li>
+          <li><a href="products/collection-v2.html">Products</a></li>
+          <li><a href="why-huger.html">Why HUGER</a></li>
+          <li><a href="blog.html">Newsroom</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-head">Contact</div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Office</span><a href="tel:05467726888" class="ft-contact-val">0546-7726888</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Email</span><a href="mailto:info@hugerubber.com" class="ft-contact-val">info@hugerubber.com</a></div>
+        <div class="ft-contact-item"><span class="ft-contact-label">Address</span><span class="ft-contact-val" style="cursor:default;">Xishui Industrial Zone,<br>Guangrao, Dongying,<br>Shandong, China</span></div>
+      </div>
+      <div>
+        <div class="ft-col-head">Our Brands</div>
+        <div class="ft-brand-row"><img src="logo.png" alt="HUGER" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo1.png" alt="FRIDERIC" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo3.png" alt="CHILONG" class="ft-brand-logo"></div>
+        <div class="ft-brand-row"><img src="logo2.png" alt="JOSEBEN" class="ft-brand-logo"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="ft-copy">&copy; 2026 Shandong Hugerubber Co., Ltd. &middot; All rights reserved &middot; Newsroom</span>
+      <div class="ft-certs">
+        <img src="img/certs/ccc.png" alt="CCC" class="ft-cert-logo">
+        <img src="img/certs/gso.png" alt="GSO" class="ft-cert-logo">
+        <img src="img/certs/sni.png" alt="SNI" class="ft-cert-logo">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header light/dark — switch to light when scrolled past banner
+(function(){
+  var hdr = document.getElementById('header');
+  var banner = document.querySelector('.banner');
+  if(!hdr || !banner) return;
+  function check(){
+    var threshold = banner.offsetHeight - 60;
+    hdr.classList.toggle('is-light', window.scrollY > threshold);
+  }
+  window.addEventListener('scroll', check, {passive:true});
+  check();
+})();
+
+// Reveal on scroll
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});return;}
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+})();
+
+// Copy link
+(function(){
+  var btn = document.getElementById('copy-link');
+  if(!btn) return;
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    if(navigator.clipboard){
+      navigator.clipboard.writeText(location.href).then(function(){
+        var orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(function(){btn.innerHTML = orig;}, 1500);
+      });
+    }
+  });
+})();
+
+// Mobile drawer
+(function(){
+  var t = document.querySelector('.menu-toggle');
+  var d = document.getElementById('mobile-drawer');
+  if(!t || !d) return;
+  function open(){d.classList.add('is-open');t.classList.add('is-open');t.setAttribute('aria-expanded','true');d.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+  function close(){d.classList.remove('is-open');t.classList.remove('is-open');t.setAttribute('aria-expanded','false');d.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+  t.addEventListener('click',function(){d.classList.contains('is-open')?close():open();});
+  d.querySelector('.md-close').addEventListener('click',close);
+  d.querySelector('.md-backdrop').addEventListener('click',close);
+  d.querySelectorAll('.md-menu a').forEach(function(a){a.addEventListener('click',close);});
+  window.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
